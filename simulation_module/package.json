@@ -1,0 +1,22 @@
+{
+    "main": "lib/binding.js",
+    "dependencies": {},
+    "scripts": {
+        "pretest": "tsc",
+        "test": "node --napi-modules ./test/test_binding.js",
+        "build": "electron-build -f",
+        "build:debug": ".\\node_modules\\.bin\\electron-rebuild.cmd -f --debug"
+    },
+    "gypfile": true,
+    "name": "simulation_module",
+    "version": "1.0.0",
+    "description": "NSF Research Simulation Module",
+    "author": "Jacob Thornton",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^7.0.22",
+        "electron-rebuild": "^1.8.2",
+        "node-addon-api": "^1.6.2",
+        "typescript": "^2.3.3"
+    }
+}

@@ -2,9 +2,12 @@
   "name": "electron-quick-start",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "backend/main.js",
   "scripts": {
-    "start": "electron ."
+    "bindings": "tsc",
+    "start": "electron .",
+    "build": "node-gyp rebuild --target=1.2.3 --arch=x64 --dist-url=https://atom.io/download/electron",
+    "build:debug": "node-gyp rebuild --target=1.2.3 --arch=x64 --dist-url=https://atom.io/download/electron --debug"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -16,7 +19,12 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
+  "gypfile": true,
+  "dependencies": {},
   "devDependencies": {
-    "electron": "^3.0.7"
+    "electron": "^3.0.7",
+    "electron-rebuild": "^1.8.2",
+    "node-addon-api": "^0.6.3",
+    "typescript": "^3.2.2"
   }
 }

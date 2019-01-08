@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "F:\\Programming\\Languages\\NodeJS\\node",
+            "args": ["F:\\Programming\\Work\\NSFSimulation\\simulation_module\\test\\test_binding.js"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Electron Main",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "program": "${workspaceFolder}/backend/main.js",
+            "protocol": "legacy"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\main.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Test Program",
+            "program": "${workspaceFolder}\\simulation_module\\test\\test_binding.js"
+        }
+    ]
+}
