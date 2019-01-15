@@ -1,0 +1,3 @@
+[submodule "simulation_module/lib/json"]
+	path = simulation_module/lib/json
+	url = https://github.com/nlohmann/json
