@@ -88,13 +88,19 @@ void SimulationModule::Initialize(const Napi::CallbackInfo& info) {
     SettingsRef = Napi::Reference<Napi::Object>::New(settingsObj->Value(), 1);
     World = std::make_unique<SimulationWorld>(settingsObj->GetInternalInstance());
     World->SetCurrentMap("grid");
-    //Hackius Maximus(Jake): This will literally create a unique pointer that will immediately go out of scope afterwards deleting the reference :) 
+    //Hackius Maximus(Jake): This will literally create a unique pointer that will 
+    //immediately go out of scope afterwards deleting the reference :) 
     World->InitializeParticipants(
         std::make_unique<SimulationParticipantSettings>(
             "F:\\Programming\\Work\\NSFSimulation\\participants.json"
             ).get()
     );
 }
+
+/*
+*   GetClass is a static method for each JavaScript - Exposed object
+*   It is responsible for outlining the class method callbacks for the module exports section
+*/
 
 Napi::Function SimulationModule::GetClass(Napi::Env env) {
     return DefineClass(env, "SimulationModule", {
