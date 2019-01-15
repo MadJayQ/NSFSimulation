@@ -5,7 +5,9 @@
     "default_configuration": "Debug",
     "defines": [],
     "include_dirs": [],
-    "libraries": []
+    "libraries": [],
+    "msbuild_toolset": "v141",
+    "msvs_windows_target_platform_version": "10.0.16299.0"
   },
   "variables": {
     "asan": 0,
@@ -61,6 +63,8 @@
     "v8_use_snapshot": "true",
     "want_separate_host_toolset": 0,
     "nodedir": "C:\\Users\\jithornton47\\.node-gyp\\8.9.3",
-    "standalone_static_library": 1
+    "standalone_static_library": 1,
+    "msbuild_path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\MSBuild\\15.0\\Bin\\MSBuild.exe",
+    "f": "true"
   }
 }

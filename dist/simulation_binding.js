@@ -10,13 +10,25 @@ class SimulationModule {
     greet(strName) {
         return this._addonInstance.greet(strName);
     }
+    initialize(settings) {
+        this._addonInstance.initialize(settings.internal());
+    }
     onCommand() {
         return this._addonInstance.onCommand();
+    }
+    internal() {
+        return this._addonInstance;
+    }
+    getSettings() {
+        return this._addonInstance.getSettings();
     }
 }
 class SimulationSettings {
     constructor(jsonPath) {
         this._addonInstance = new addon.SimulationSettings(resolve(jsonPath));
+    }
+    internal() {
+        return this._addonInstance;
     }
 }
 module.exports.SimulationModule = SimulationModule;

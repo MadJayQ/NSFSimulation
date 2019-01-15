@@ -1,14 +1,17 @@
 const addon = require('../simulation_module/build/Debug/simulation_module-native');
 const resolve = require('path').resolve;
 
+interface ISimulationSettingsNative
+{
+
+};
+
 interface ISimulationModuleNative
 {
     greet(strName: string): string;
+    initialize(settings : ISimulationSettingsNative): void;
     onCommand() : void;
-
-};
-interface ISimulationSettingsNative
-{
+    getSettings() : ISimulationSettingsNative;
 
 };
 
@@ -21,8 +24,20 @@ class SimulationModule {
         return this._addonInstance.greet(strName);
     }
 
+    initialize (settings: SimulationSettings) {
+        this._addonInstance.initialize(settings.internal());
+    }
+
     onCommand () {
         return this._addonInstance.onCommand();
+    }
+
+    internal (): ISimulationModuleNative {
+        return this._addonInstance;
+    }
+
+    getSettings (): ISimulationSettingsNative {
+        return this._addonInstance.getSettings();
     }
 
     private _addonInstance: ISimulationModuleNative;
@@ -31,6 +46,10 @@ class SimulationModule {
 class SimulationSettings {
     constructor(jsonPath: string) {
         this._addonInstance = new addon.SimulationSettings(resolve(jsonPath));
+    }
+
+    internal (): ISimulationSettingsNative {
+        return this._addonInstance;
     }
 
     private _addonInstance: ISimulationSettingsNative;

@@ -1,5 +1,14 @@
 {
     "version": "v0.0.1",
     "width": 150,
-    "height": 150
+    "height": 150,
+	"maps":
+	{
+		"grid" : "F:\\Programming\\Work\\NSFSimulation\\grid.json"
+	},
+    "parameters":
+    {
+        "numInitialParticipants": 100,
+        "numInitialNonParticipants": 50
+    }
 }

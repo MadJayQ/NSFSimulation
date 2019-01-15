@@ -1,1 +1,7 @@
-#include "simulation_node.h"
+#include "simulation_map.h"
+
+SimulationNode::SimulationNode(std::string key) 
+    : key_(key)
+{
+
+}

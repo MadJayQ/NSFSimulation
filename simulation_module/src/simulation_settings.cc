@@ -25,11 +25,16 @@ SimulationSettingsWrap::SimulationSettingsWrap(const Napi::CallbackInfo& info) :
     }
 
     std::string jsonPath = info[0].As<Napi::String>();
-    _internalInstance = std::make_unique<SimulationSettings>(jsonPath);
+    _internalInstance = std::make_shared<SimulationSettings>(jsonPath);
 }
 
 Napi::Function SimulationSettingsWrap::GetClass(Napi::Env env) {
     return DefineClass(env, "SimulationSettings", {});
+}
+
+std::weak_ptr<SimulationSettings> SimulationSettingsWrap::GetInternalInstance() const
+{
+    return std::weak_ptr<SimulationSettings>(_internalInstance);
 }
 
 void SimulationSettingsWrap::Init(Napi::Env env, Napi::Object exports) {
@@ -43,12 +48,32 @@ SimulationSettings::SimulationSettings(const std::string& settingsPath)
     try{
         json settingsJson;
         jsonFile >> settingsJson;
-        assert(jsonFile.good());
-        width = settingsJson["width"].get<int>();
-        height = settingsJson["height"].get<int>();
-        std::cout << "Running simulation\nVersion:" << settingsJson["version"].get<std::string>() << "\nWidth: " << width << "\nHeight: " << height << std::endl;
+        assert(jsonFile.good()); //Check sanity of input json file
+        auto parametersJson = READ_JSON_RET(settingsJson, parameters, nlohmann::json); //Rip parameters out
+        auto mapsJson = READ_JSON_RET(settingsJson, maps, nlohmann::json);
+        parameters_ = std::make_unique<SimulationParameters>(parametersJson);
+        maps_ = std::make_unique<SimulationMaps>(mapsJson);
+        READ_JSON(width, settingsJson, width, int);
+        READ_JSON(height, settingsJson, height, int);
+        std::cout << "Running simulation\nVersion:" << READ_JSON_RET(settingsJson, version, std::string) << "\nWidth: " << width << "\nHeight: " << height << std::endl;
     } catch (detail::parse_error error) {
         auto errorMsg = error.what();
         std::cout << errorMsg << std::endl;
+    }
+    jsonFile.close();
+}
+
+SimulationParameters::SimulationParameters(const nlohmann::json& parametersJson)
+{
+    READ_JSON(num_initial_participants, 
+        parametersJson, numInitialParticipants, int);
+    READ_JSON(num_initial_nonparticipants,
+        parametersJson, numInitialNonParticipants, int);
+}
+
+SimulationMaps::SimulationMaps(const nlohmann::json& mapsJson)
+{
+    for(auto itr = mapsJson.begin(); itr != mapsJson.end(); ++itr) {
+        MapFiles.emplace(itr.key(), *itr);
     }
 }
