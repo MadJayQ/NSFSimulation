@@ -4,6 +4,7 @@
 #include "simulation_settings.h"
 #include "simulation_world.h"
 #include "simulation_participant.h"
+#include "simulation_data.h"
 
 #include <json.hpp>
 
@@ -90,11 +91,22 @@ void SimulationModule::Initialize(const Napi::CallbackInfo& info) {
     World->SetCurrentMap("grid");
     //Hackius Maximus(Jake): This will literally create a unique pointer that will 
     //immediately go out of scope afterwards deleting the reference :) 
-    World->InitializeParticipants(
-        std::make_unique<SimulationParticipantSettings>(
-            "F:\\Programming\\Work\\NSFSimulation\\participants.json"
+    try {
+        World->InitializeParticipants(
+            std::make_unique<SimulationParticipantSettings>(
+                "C:\\Users\\jakei_000\\Desktop\\NSFSimulation\\participants.json"
             ).get()
-    );
+        );
+        //Unwrap a new simulation data object
+        Data = std::unique_ptr<SimulationData>(
+            Napi::ObjectWrap<SimulationDataWrap>::Unwrap(
+                Napi::Persistent(SimulationDataWrap::GetClass(env)).New({})
+            )->GetInternalInstance()
+        );
+        World->RunSimulation(Data.get());
+    } catch (std::exception e) {
+        Napi::TypeError::New(env, e.what()).ThrowAsJavaScriptException();
+    }
 }
 
 /*
@@ -116,6 +128,7 @@ Napi::Object Init(Napi::Env env, Napi::Object exports) {
     exports.Set(name, SimulationModule::GetClass(env));
 
     SimulationSettingsWrap::Init(env, exports);
+    SimulationDataWrap::Init(env, exports);
 
     return exports;
 }

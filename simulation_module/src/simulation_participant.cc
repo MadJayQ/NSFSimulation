@@ -1,4 +1,7 @@
 #include "simulation_participant.h"
+#include "simulation_map.h"
+
+#include "simulation_data.h"
 
 SimulationParticipant::SimulationParticipant()
 {
@@ -7,10 +10,10 @@ SimulationParticipant::SimulationParticipant()
     destination_node_ = nullptr; 
 }
 
-SimulationParticipant::SimulationParticipant(SimulationNode* node, SimulationNode* dst) 
-    : current_node_(node), destination_node_(dst)
+SimulationParticipant::SimulationParticipant(SimulationNode* node, SimulationNode* dst, const std::string& name) 
+    : current_node_(node), destination_node_(dst), name_(name)
 {
-
+    current_node_->ParticipantEnter(this);
 }
 
 SimulationParticipantSettings::SimulationParticipantSettings(const std::string& participantsFile)
@@ -25,4 +28,21 @@ SimulationParticipantSettings::SimulationParticipantSettings(const std::string& 
 
         settings_.push_back(setting);
     }
+}
+
+void SimulationParticipant::MoveTo(SimulationNode* dst) 
+{
+    if(current_node_)
+    {
+        current_node_->ParticipantLeave(this);
+    }
+    dst->ParticipantEnter(this);
+    current_node_ = dst;
+}
+
+void SimulationParticipant::ParticipantThink(SimulationData* data)
+{
+    auto dstNode = current_node_->ShortestPath(destination_node_);
+    data->RecordHop(this, std::make_pair(current_node_, dstNode));
+    MoveTo(dstNode);
 }

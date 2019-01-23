@@ -10,7 +10,8 @@ class SimulationGraph; //Forward declaration for simul
 class SimulationSettings; //
 class SimulationParameters;
 class SimulationParticipantSettings;
-class SimultionParticipant;
+class SimulationParticipant;
+class SimulationData;
 
 class SimulationMap {
 public:
@@ -30,6 +31,7 @@ public:
 
     void SetCurrentMap(const std::string& map);
     void InitializeParticipants(SimulationParticipantSettings* settings);
+    void RunSimulation(SimulationData* data);
 
 public:
     int width;
@@ -40,6 +42,6 @@ private:
     SimulationMap* current_map_= nullptr;
     SimulationParameters* paramaters_;
 
-    std::vector<std::unique_ptr<SimultionParticipant>> participants_;
+    std::vector<std::unique_ptr<SimulationParticipant>> participants_;
     
 };

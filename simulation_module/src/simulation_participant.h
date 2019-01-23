@@ -5,6 +5,7 @@
 #include <functional>
 
 class SimulationNode; //Forward declaration
+class SimulationData;
 
 struct SimulationParticipantSetting
 {
@@ -42,8 +43,14 @@ class SimulationParticipant
 {
 public:
     SimulationParticipant();
-    explicit SimulationParticipant(SimulationNode*, SimulationNode*);
+    explicit SimulationParticipant(SimulationNode*, SimulationNode*, const std::string& name);
+
+    void MoveTo(SimulationNode* dst);
+    void ParticipantThink(SimulationData* data);
+
+    std::string Name() const { return name_; }
 private:
     SimulationNode* current_node_; //Where we are
     SimulationNode* destination_node_; //Where we're trying to go
+    std::string name_; //The name of our participant
 };

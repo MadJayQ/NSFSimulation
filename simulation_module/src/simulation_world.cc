@@ -3,6 +3,7 @@
 #include "simulation_settings.h"
 #include "simulation_map.h"
 #include "simulation_participant.h"
+#include "simulation_data.h"
 
 SimulationWorld::SimulationWorld(std::weak_ptr<SimulationSettings> settings)
 {
@@ -30,9 +31,11 @@ void SimulationWorld::SetCurrentMap(const std::string& map)
 
 void SimulationWorld::InitializeParticipants(SimulationParticipantSettings* settings) 
 {
-    SimulationMap* map = current_map_;
-    std::vector<std::unique_ptr<SimultionParticipant>>* participantList = &participants_; // :) 
-    if(map == nullptr) return; //Nope.exe
+    SimulationMap* map = current_map_; //Push our current map pointer onto local stack
+    std::vector<std::unique_ptr<SimulationParticipant>>* participantList = &participants_; //Push a pointer to our participants list onto the local stack 
+    if(map == nullptr) {
+        throw NoValidMapException();
+    }
     //HACK HACK(Jake): Honestly I thought lambdas would be be optimal for this, I was definitely wrong.
     //This is some hackatry right here
     settings->ForEach([&](SimulationParticipantSetting setting) -> void {
@@ -43,6 +46,16 @@ void SimulationWorld::InitializeParticipants(SimulationParticipantSettings* sett
             return; //TODO(Jake): We should throw an exception here instead
         }
 
-        participantList->push_back(std::make_unique<SimultionParticipant>(startNode, endNode));
+        participantList->push_back(std::make_unique<SimulationParticipant>(startNode, endNode, setting.Name));
     });
+}
+
+void SimulationWorld::RunSimulation(SimulationData* data)
+{
+    for(auto participantItr = participants_.begin();
+        participantItr != participants_.end(); 
+        ++participantItr)
+    {
+        (*participantItr)->ParticipantThink(data);
+    }
 }
