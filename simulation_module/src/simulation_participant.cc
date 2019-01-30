@@ -30,6 +30,11 @@ SimulationParticipantSettings::SimulationParticipantSettings(const std::string& 
     }
 }
 
+void SimulationParticipant::PreSimulationSetup()
+{
+    isFinished_ = false; //
+}
+
 void SimulationParticipant::MoveTo(SimulationNode* dst) 
 {
     if(current_node_)
@@ -45,4 +50,13 @@ void SimulationParticipant::ParticipantThink(SimulationData* data)
     auto dstNode = current_node_->ShortestPath(destination_node_);
     data->RecordHop(this, std::make_pair(current_node_, dstNode));
     MoveTo(dstNode);
+}
+
+
+void SimulationParticipant::ParticipantPostThink(SimulationData* data)
+{
+    if(current_node_ == destination_node_)
+    {
+        isFinished_ = true;
+    }
 }

@@ -45,17 +45,40 @@ void SimulationWorld::InitializeParticipants(SimulationParticipantSettings* sett
         if(!startNode || !endNode) {
             return; //TODO(Jake): We should throw an exception here instead
         }
-
-        participantList->push_back(std::make_unique<SimulationParticipant>(startNode, endNode, setting.Name));
+        auto newParticipant = std::make_unique<SimulationParticipant>(startNode, endNode, setting.Name);
+        newParticipant->PreSimulationSetup();
+        participantList->push_back(std::move(newParticipant));
     });
 }
 
+
 void SimulationWorld::RunSimulation(SimulationData* data)
 {
+    std::vector<SimulationParticipant*> activeParticiapnts; 
     for(auto participantItr = participants_.begin();
-        participantItr != participants_.end(); 
+        participantItr != participants_.end();
         ++participantItr)
     {
-        (*participantItr)->ParticipantThink(data);
+        activeParticiapnts.push_back(participantItr->get());
+    }
+    while(!activeParticiapnts.empty())
+    {
+        for(auto participantItr = activeParticiapnts.begin();
+            participantItr != activeParticiapnts.end();
+            participantItr++)
+        {
+            auto participant = (*participantItr);
+            participant->ParticipantThink(data);
+            participant->ParticipantPostThink(data);
+        }
+        //Erase-Remove idiom
+        activeParticiapnts.erase(
+            std::remove_if(
+                activeParticiapnts.begin(),
+                activeParticiapnts.end(),
+                [](SimulationParticipant* const & p) { return p->IsFinished(); }
+            ),
+            activeParticiapnts.end()
+        );
     }
 }

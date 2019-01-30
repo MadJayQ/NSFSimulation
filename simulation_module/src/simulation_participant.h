@@ -46,11 +46,16 @@ public:
     explicit SimulationParticipant(SimulationNode*, SimulationNode*, const std::string& name);
 
     void MoveTo(SimulationNode* dst);
+    void PreSimulationSetup();
     void ParticipantThink(SimulationData* data);
+    void ParticipantPostThink(SimulationData* data);
 
     std::string Name() const { return name_; }
+
+    bool IsFinished() const { return isFinished_; }
 private:
     SimulationNode* current_node_; //Where we are
     SimulationNode* destination_node_; //Where we're trying to go
     std::string name_; //The name of our participant
+    bool isFinished_;
 };

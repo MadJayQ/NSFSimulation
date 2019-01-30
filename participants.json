@@ -2,5 +2,9 @@
     "Bob": {
         "startKey":"0",
         "endKey":"15"
+    },
+    "Alice": {
+        "startKey":"3",
+        "endKey":"14"
     }
 }

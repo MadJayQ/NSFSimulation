@@ -8,31 +8,14 @@
 
 #include <json.hpp>
 
+#include "wrappers/nodejs/simulation_module.cc"
+
 using json = nlohmann::json;
 
 using namespace Napi;
 
-SimulationModule::SimulationModule(const Napi::CallbackInfo& info) : ObjectWrap(info) {
-    Napi::Env env = info.Env();
-
-    if (info.Length() < 1) {
-        Napi::TypeError::New(env, "Wrong number of arguments")
-          .ThrowAsJavaScriptException();
-        return;
-    }
-
-    if (!info[0].IsString()) {
-        Napi::TypeError::New(env, "You need to name yourself")
-          .ThrowAsJavaScriptException();
-        return;
-    }
-
-    Commands = std::make_unique<CommandParser>();
-    Commands->ExecuteCommand();
-
-    json j = "{ \"happy\": true, \"pi\": 3.141 }"_json;
-
-    this->_greeterName = info[0].As<Napi::String>().Utf8Value();
+SimulationModule::SimulationModule() {
+    
 }
 
 Napi::Value SimulationModule::Greet(const Napi::CallbackInfo& info) {
@@ -97,13 +80,19 @@ void SimulationModule::Initialize(const Napi::CallbackInfo& info) {
                 "C:\\Users\\jakei_000\\Desktop\\NSFSimulation\\participants.json"
             ).get()
         );
-        //Unwrap a new simulation data object
+        //Construct a new wrapped data collection module using the defined ctor
+        auto dataWrap = Napi::ObjectWrap<SimulationDataWrap>::Unwrap(
+            Napi::Persistent(SimulationDataWrap::GetClass(env)).New({})
+        );
+        //Store the data collection reference
+        DataRef = Napi::Reference<Napi::Object>::New(dataWrap->Value(), 1);
+        //Store the internal data collection pointer for C++ use
         Data = std::unique_ptr<SimulationData>(
-            Napi::ObjectWrap<SimulationDataWrap>::Unwrap(
-                Napi::Persistent(SimulationDataWrap::GetClass(env)).New({})
-            )->GetInternalInstance()
+            dataWrap->GetInternalInstance()
         );
         World->RunSimulation(Data.get());
+        auto bobHops = Data->GetHopCount("Bob");
+        auto aliceHops = Data->GetHopCount("Alice");
     } catch (std::exception e) {
         Napi::TypeError::New(env, e.what()).ThrowAsJavaScriptException();
     }
