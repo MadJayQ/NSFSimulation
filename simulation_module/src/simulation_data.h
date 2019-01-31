@@ -1,6 +1,5 @@
 #pragma once
 
-#include <napi.h>
 #include <json.hpp>
 
 #include <memory>

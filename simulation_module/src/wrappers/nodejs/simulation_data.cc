@@ -1,5 +1,26 @@
 #include "simulation_data.h"
-#include "../simulation_data.h"
+
+#include <napi.h>
+#include <memory>
+
+
+class SimulationDataWrap : public Napi::ObjectWrap<SimulationDataWrap>
+{
+public:
+    SimulationDataWrap(const Napi::CallbackInfo& info);
+
+    std::weak_ptr<SimulationData> GetInternalInstance() const;
+    void AquireWeakReference(std::weak_ptr<SimulationData> weakPtr) { _internalInstance = weakPtr; }
+
+    Napi::Value GetHopCount(const Napi::CallbackInfo&);
+
+    static void Init(Napi::Env env, Napi::Object exports);
+    static Napi::Function GetClass(Napi::Env); 
+private:
+    std::weak_ptr<SimulationData> _internalInstance; 
+};
+
+
 
 /*
     Simulation Data N-API Wrapper
@@ -8,7 +29,6 @@
 SimulationDataWrap::SimulationDataWrap(const Napi::CallbackInfo& info) 
     : ObjectWrap(info)
 {
-    _internalInstance = std::make_unique<SimulationData>();
 }
 
 Napi::Value SimulationDataWrap::GetHopCount(const Napi::CallbackInfo& info)
@@ -32,7 +52,7 @@ Napi::Value SimulationDataWrap::GetHopCount(const Napi::CallbackInfo& info)
     Napi::String name = info[0].As<Napi::String>();
     //auto hopCount = _internalInstance->GetHopCount(name.Utf8Value());
 
-    return Napi::Number::New(env, (double)hopCount);
+    return Napi::Number::New(env, 0.0);
 
 }
 

@@ -8,9 +8,7 @@ interface ISimulationSettingsNative
 
 interface ISimulationModuleNative
 {
-    greet(strName: string): string;
-    initialize(settings : ISimulationSettingsNative): void;
-    onCommand() : void;
+    initialize(settings : string): void;
     getSettings() : ISimulationSettingsNative;
 
 };
@@ -20,16 +18,9 @@ class SimulationModule {
         this._addonInstance = new addon.SimulationModule(name);
     }
 
-    greet (strName: string) {
-        return this._addonInstance.greet(strName);
-    }
 
-    initialize (settings: SimulationSettings) {
-        this._addonInstance.initialize(settings.internal());
-    }
-
-    onCommand () {
-        return this._addonInstance.onCommand();
+    initialize (settings: string) {
+        this._addonInstance.initialize(resolve(settings));
     }
 
     internal (): ISimulationModuleNative {
@@ -44,8 +35,8 @@ class SimulationModule {
 }
 
 class SimulationSettings {
-    constructor(jsonPath: string) {
-        this._addonInstance = new addon.SimulationSettings(resolve(jsonPath));
+    constructor() {
+        this._addonInstance = new addon.SimulationSettings();
     }
 
     internal (): ISimulationSettingsNative {

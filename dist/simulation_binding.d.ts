@@ -3,22 +3,18 @@ declare const resolve: any;
 interface ISimulationSettingsNative {
 }
 interface ISimulationModuleNative {
-    greet(strName: string): string;
-    initialize(settings: ISimulationSettingsNative): void;
-    onCommand(): void;
+    initialize(settings: string): void;
     getSettings(): ISimulationSettingsNative;
 }
 declare class SimulationModule {
     constructor(name: string);
-    greet(strName: string): string;
-    initialize(settings: SimulationSettings): void;
-    onCommand(): void;
+    initialize(settings: string): void;
     internal(): ISimulationModuleNative;
     getSettings(): ISimulationSettingsNative;
     private _addonInstance;
 }
 declare class SimulationSettings {
-    constructor(jsonPath: string);
+    constructor();
     internal(): ISimulationSettingsNative;
     private _addonInstance;
 }

@@ -7,14 +7,8 @@ class SimulationModule {
     constructor(name) {
         this._addonInstance = new addon.SimulationModule(name);
     }
-    greet(strName) {
-        return this._addonInstance.greet(strName);
-    }
     initialize(settings) {
-        this._addonInstance.initialize(settings.internal());
-    }
-    onCommand() {
-        return this._addonInstance.onCommand();
+        this._addonInstance.initialize(resolve(settings));
     }
     internal() {
         return this._addonInstance;
@@ -24,8 +18,8 @@ class SimulationModule {
     }
 }
 class SimulationSettings {
-    constructor(jsonPath) {
-        this._addonInstance = new addon.SimulationSettings(resolve(jsonPath));
+    constructor() {
+        this._addonInstance = new addon.SimulationSettings();
     }
     internal() {
         return this._addonInstance;

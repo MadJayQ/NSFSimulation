@@ -9,7 +9,7 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "C:\\Program Files\\nodejs\\node",
+            "program": "F:\\Programming\\Languages\\NodeJS\\node",
             "args": ["${workspaceFolder}\\simulation_module\\test\\test_binding.js"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

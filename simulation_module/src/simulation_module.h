@@ -13,7 +13,7 @@ public:
 
     void Initialize();
 
-    std::unique_ptr<SimulationWorld> World; //Internal world pointer
+    std::unique_ptr<SimulationWorld>    World; //Internal world pointer
     std::shared_ptr<SimulationSettings> Settings;
     std::shared_ptr<SimulationData> Data;
 };

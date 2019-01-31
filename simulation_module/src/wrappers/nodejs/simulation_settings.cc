@@ -1,6 +1,29 @@
 #include "simulation_settings.h"
 
-#include "../simulation_settings.h"
+#include <napi.h>
+#include <memory>
+/*
+    Wrapper object to N-API for the internal SimulationSettings class
+*/
+class SimulationSettingsWrap : public Napi::ObjectWrap<SimulationSettingsWrap>
+{
+public:
+    //Ctor
+    SimulationSettingsWrap(const Napi::CallbackInfo& info);
+
+    //Access our internal simulation settings instance
+    std::weak_ptr<SimulationSettings> GetInternalInstance() const;
+    void AquireWeakReference(std::weak_ptr<SimulationSettings> weakPtr) { _internalInstance = weakPtr; }
+
+    //Responsible for initializing our class 
+    static void Init(Napi::Env env, Napi::Object exports);
+    //Responsible for detailing the outline for our class to be referenced by the JavaScript runtime
+    static Napi::Function GetClass(Napi::Env);
+private:
+
+    std::weak_ptr<SimulationSettings> _internalInstance;
+};
+
 
 std::weak_ptr<SimulationSettings> SimulationSettingsWrap::GetInternalInstance() const
 {
@@ -10,6 +33,7 @@ std::weak_ptr<SimulationSettings> SimulationSettingsWrap::GetInternalInstance() 
 
 SimulationSettingsWrap::SimulationSettingsWrap(const Napi::CallbackInfo& info) : ObjectWrap(info) {
 
+    /*
     Napi::Env env = info.Env();
 
     if (info.Length() < 1) {
@@ -23,9 +47,7 @@ SimulationSettingsWrap::SimulationSettingsWrap(const Napi::CallbackInfo& info) :
           .ThrowAsJavaScriptException();
         return;
     }
-
-    std::string jsonPath = info[0].As<Napi::String>();
-    _internalInstance = std::make_shared<SimulationSettings>(jsonPath);
+    */
 }
 
 void SimulationSettingsWrap::Init(Napi::Env env, Napi::Object exports) {

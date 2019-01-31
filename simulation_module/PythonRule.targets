@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <PropertyPageSchema
+      Include="$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml" />
+    <AvailableItemName Include="PythonRule">
+      <Targets>_PythonRule</Targets>
+    </AvailableItemName>
+  </ItemGroup>
+  <PropertyGroup>
+    <ComputeCompileInputsTargets>
+      $(ComputeCompileInputsTargets);
+      ComputePythonRuleOutput;
+    </ComputeCompileInputsTargets>
+    <ComputeLinkInputsTargets>
+      $(ComputeLinkInputsTargets);
+      ComputePythonRuleOutput;
+    </ComputeLinkInputsTargets>
+    <ComputeLibInputsTargets>
+      $(ComputeLibInputsTargets);
+      ComputePythonRuleOutput;
+    </ComputeLibInputsTargets>
+  </PropertyGroup>
+  <UsingTask
+    TaskName="PythonRule"
+    TaskFactory="XamlTaskFactory"
+    AssemblyName="Microsoft.Build.Tasks.v4.0">
+    <Task>$(MSBuildThisFileDirectory)$(MSBuildThisFileName).xml</Task>
+  </UsingTask>
+  <Target
+    Name="_PythonRule"
+    BeforeTargets="$(PythonRuleBeforeTargets)"
+    AfterTargets="$(PythonRuleAfterTargets)"
+    Condition="'@(PythonRule)' != ''"
+    Outputs="%(PythonRule.Outputs)"
+    Inputs="%(PythonRule.Identity);%(PythonRule.AdditionalDependencies);$(MSBuildProjectFile)"
+    DependsOnTargets="$(PythonRuleDependsOn);ComputePythonRuleOutput">
+    <ItemGroup Condition="'@(SelectedFiles)' != ''">
+      <PythonRule Remove="@(PythonRule)" Condition="'%(Identity)' != '@(SelectedFiles)'" />
+    </ItemGroup>
+    <ItemGroup>
+      <PythonRule_tlog
+        Include="%(PythonRule.Outputs)"
+        Condition="'%(PythonRule.Outputs)' != '' and '%(PythonRule.ExcludedFromBuild)' != 'true'">
+        <Source>@(PythonRule, '|')</Source>
+        <Inputs>@(PythonRule, ';')</Inputs>
+      </PythonRule_tlog>
+    </ItemGroup>
+    <Message
+      Importance="High"
+      Text="%(PythonRule.ExecutionDescription)" />
+    <WriteLinesToFile
+      Condition="'@(PythonRule_tlog)' != '' and '%(PythonRule_tlog.ExcludedFromBuild)' != 'true'"
+      File="$(TLogLocation)PythonRule.write.1.tlog"
+      Lines="^%(PythonRule_tlog.Source);%(PythonRule_tlog.Fullpath)" />
+    <WriteLinesToFile
+      Condition="'@(PythonRule_tlog)' != '' and '%(PythonRule_tlog.ExcludedFromBuild)' != 'true'"
+      File="$(TLogLocation)PythonRule.read.1.tlog"
+      Lines="^%(PythonRule_tlog.Inputs);$(MSBuildProjectFullPath);%(PythonRule_tlog.Fullpath)" />
+    <PythonRule
+      Condition="'@(PythonRule)' != '' and '%(PythonRule.ExcludedFromBuild)' != 'true'"
+      CommandLineTemplate="%(PythonRule.CommandLineTemplate)"
+      AdditionalOptions="%(PythonRule.AdditionalOptions)"
+      Inputs="%(PythonRule.Identity)"
+      StandardOutputImportance="High"
+      StandardErrorImportance="High" />
+  </Target>
+  <Target
+    Name="ComputePythonRuleOutput"
+    Condition="'@(PythonRule)' != ''">
+    <ItemGroup>
+      <PythonRuleOutputs
+        Condition="'@(PythonRule)' != '' and '%(PythonRule.ExcludedFromBuild)' != 'true'"
+        Include="%(PythonRule.Outputs)" />
+    </ItemGroup>
+    <MakeDir Directories="@(PythonRuleOutputs->'%(RootDir)%(Directory)')" />
+  </Target>
+</Project>

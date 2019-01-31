@@ -1,10 +1,38 @@
+#include <napi.h>
+#include <memory>
+
+
 #include "simulation_module.h"
 
 #include "simulation_settings.cc"
 #include "simulation_data.cc"
 
-#include "../simulation_module.h" //Our actual simulation module object
-#include "../simulation_participant.h"
+#include "simulation_participant.h"
+
+
+#define UNPACK_ARGUMENT(type, name, container, pos) type* name = Napi::ObjectWrap<type>::Unwrap(container[pos].As<Napi::Object>());
+
+class SimulationModule;
+
+class SimulationModuleWrap : public Napi::ObjectWrap<SimulationModuleWrap>
+{
+public:
+    SimulationModuleWrap(const Napi::CallbackInfo&);
+
+    void Initialize(const Napi::CallbackInfo&);
+
+    static Napi::Function GetClass(Napi::Env);
+
+    Napi::Value GetSettings(const Napi::CallbackInfo&);
+    Napi::Value GetData(const Napi::CallbackInfo&);
+
+    Napi::Reference<Napi::Object> SettingsRef; //NodeJS Reference to our settings object, this is exposed to NodeJS
+    Napi::Reference<Napi::Object> DataRef; //NodeJS Reference to our Data Collection module, this is exposed to NodeJS
+
+private:
+    std::unique_ptr<SimulationModule> module_;
+};
+
 
 SimulationModuleWrap::SimulationModuleWrap(const Napi::CallbackInfo& info) : ObjectWrap(info)
 {
@@ -22,20 +50,28 @@ void SimulationModuleWrap::Initialize(const Napi::CallbackInfo& info) {
         Napi::TypeError::New(env, "Invalid settings path").ThrowAsJavaScriptException();
     }
 
-    Napi::String settingsPath = info[0].As<Napi::String>();
+    module_->Initialize(); //Initialize internal module
 
-    UNPACK_ARGUMENT(SimulationSettingsWrap, settingsObj, info, 0);
-    SettingsRef = Napi::Reference<Napi::Object>::New(settingsObj->Value(), 1);
-    module_->Settings = std::make_shared<SimulationSettings>();
-    module_->Data = 
+    Napi::String settingsPath = info[0].As<Napi::String>();
     module_->Settings->LoadSettingsFile(settingsPath.Utf8Value());
 
-    settingsObj->AquireWeakReference(
+    auto settingsWrap = Napi::ObjectWrap<SimulationSettingsWrap>::Unwrap(
+        Napi::Persistent(SimulationSettingsWrap::GetClass(env)).New({})
+    );
+    settingsWrap->AquireWeakReference(
         std::weak_ptr<SimulationSettings>(module_->Settings)
     );
+    SettingsRef = Napi::Reference<Napi::Object>::New(settingsWrap->Value(), 1);
 
+    auto dataWrap = Napi::ObjectWrap<SimulationDataWrap>::Unwrap(
+        Napi::Persistent(SimulationDataWrap::GetClass(env)).New({})
+    );
+    dataWrap->AquireWeakReference(
+        std::weak_ptr<SimulationData>(module_->Data)
+    );
+    DataRef = Napi::Reference<Napi::Object>::New(dataWrap->Value(), 1);
 
-    module_->World = std::make_unique<SimulationWorld>(settingsObj->GetInternalInstance());
+    module_->World = std::make_unique<SimulationWorld>(settingsWrap->GetInternalInstance());
     auto world = module_->World.get();
     world->SetCurrentMap("grid");
 
@@ -46,16 +82,21 @@ void SimulationModuleWrap::Initialize(const Napi::CallbackInfo& info) {
             ).get()
         );
 
-        auto dataWwap = Napi::ObjectWrap<SimulationDataWrap>::Unwrap(
-            Napi::Persistent(SimulationDataWrap::GetClass(env)).New({})
-        );
-        DataRef 
     } catch (std::exception e) {
         Napi::TypeError::New(env, e.what()).ThrowAsJavaScriptException();
     }
 
 
 
+}
+
+Napi::Value SimulationModuleWrap::GetSettings(const Napi::CallbackInfo& info)
+{
+    return info.Env().Null();
+}
+Napi::Value SimulationModuleWrap::GetData(const Napi::CallbackInfo& info)
+{
+    return info.Env().Null();
 }
 
 

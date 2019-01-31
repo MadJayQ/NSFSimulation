@@ -11,13 +11,11 @@ var relativeSettingsPath = "./settings.json";
 
 function testBasic()
 {
-    const instance = new SimulationModule("mr-yeoman");
-    const settingsInstance = new SimulationSettings(relativeSettingsPath);
-    instance.initialize(settingsInstance);
+    const instance = new SimulationModule();
+    const settingsInstance = new SimulationSettings();
+    instance.initialize(relativeSettingsPath);
     var settings = instance.getSettings();
     Grid.generateGrid(4, 4);
-    assert(instance.greet, "The expected method is not defined");
-    assert.strictEqual(instance.greet("kermit"), "mr-yeoman", "Unexpected value returned");
 }
 
 function testInvalidParams()
