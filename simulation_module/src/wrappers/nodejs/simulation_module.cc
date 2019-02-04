@@ -50,44 +50,27 @@ void SimulationModuleWrap::Initialize(const Napi::CallbackInfo& info) {
         Napi::TypeError::New(env, "Invalid settings path").ThrowAsJavaScriptException();
     }
 
-    module_->Initialize(); //Initialize internal module
-
-    Napi::String settingsPath = info[0].As<Napi::String>();
-    module_->Settings->LoadSettingsFile(settingsPath.Utf8Value());
-
-    auto settingsWrap = Napi::ObjectWrap<SimulationSettingsWrap>::Unwrap(
-        Napi::Persistent(SimulationSettingsWrap::GetClass(env)).New({})
-    );
-    settingsWrap->AquireWeakReference(
-        std::weak_ptr<SimulationSettings>(module_->Settings)
-    );
-    SettingsRef = Napi::Reference<Napi::Object>::New(settingsWrap->Value(), 1);
-
-    auto dataWrap = Napi::ObjectWrap<SimulationDataWrap>::Unwrap(
-        Napi::Persistent(SimulationDataWrap::GetClass(env)).New({})
-    );
-    dataWrap->AquireWeakReference(
-        std::weak_ptr<SimulationData>(module_->Data)
-    );
-    DataRef = Napi::Reference<Napi::Object>::New(dataWrap->Value(), 1);
-
-    module_->World = std::make_unique<SimulationWorld>(settingsWrap->GetInternalInstance());
-    auto world = module_->World.get();
-    world->SetCurrentMap("grid");
-
     try {
-        world->InitializeParticipants(
-            std::make_unique<SimulationParticipantSettings>(
-                "C:\\Users\\jakei_000\\Desktop\\NSFSimulation\\participants.json"
-            ).get()
+        Napi::String settingsPath = info[0].As<Napi::String>();
+        module_->Initialize(settingsPath.Utf8Value());
+        auto settingsWrap = Napi::ObjectWrap<SimulationSettingsWrap>::Unwrap(
+            Napi::Persistent(SimulationSettingsWrap::GetClass(env)).New({})
         );
+        settingsWrap->AquireWeakReference(
+            std::weak_ptr<SimulationSettings>(module_->Settings)
+        );
+        SettingsRef = Napi::Reference<Napi::Object>::New(settingsWrap->Value(), 1);
 
+        auto dataWrap = Napi::ObjectWrap<SimulationDataWrap>::Unwrap(
+            Napi::Persistent(SimulationDataWrap::GetClass(env)).New({})
+        );
+        dataWrap->AquireWeakReference(
+            std::weak_ptr<SimulationData>(module_->Data)
+        );
+        DataRef = Napi::Reference<Napi::Object>::New(dataWrap->Value(), 1);
     } catch (std::exception e) {
         Napi::TypeError::New(env, e.what()).ThrowAsJavaScriptException();
     }
-
-
-
 }
 
 Napi::Value SimulationModuleWrap::GetSettings(const Napi::CallbackInfo& info)

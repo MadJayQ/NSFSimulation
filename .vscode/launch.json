@@ -17,6 +17,17 @@
             "externalConsole": true
         },
         {
+            "name": "(Windows) Launch Py",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "C:\\Python34\\Python",
+            "args": ["${workspaceFolder}\\simulation_module\\SUMO\\nsf_sumo.py"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true
+        }
+        {
             "type": "node",
             "request": "launch",
             "name": "Electron Main",

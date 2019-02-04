@@ -1,6 +1,7 @@
 #pragma once
 
 #include <memory>
+#include <string>
 
 class SimulationSettings;
 class SimulationWorld;
@@ -11,7 +12,7 @@ class SimulationModule
 public:
     SimulationModule();
 
-    void Initialize();
+    void Initialize(const std::string& path);
 
     std::unique_ptr<SimulationWorld>    World; //Internal world pointer
     std::shared_ptr<SimulationSettings> Settings;
