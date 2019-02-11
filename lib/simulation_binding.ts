@@ -13,6 +13,11 @@ interface ISimulationModuleNative
 
 };
 
+interface ISimulationDataNative
+{
+    getHopCount(name : string) : Number;
+}
+
 class SimulationModule {
     constructor(name: string) {
         this._addonInstance = new addon.SimulationModule(name);
@@ -44,6 +49,18 @@ class SimulationSettings {
     }
 
     private _addonInstance: ISimulationSettingsNative;
+}
+
+class SimulationData {
+    constructor() {
+        throw "No";
+    }
+
+    getHopCount(name : string) {
+        return this._addonInstance.getHopCount(name);
+    }
+
+    private _addonInstance : ISimulationDataNative;
 }
 
 module.exports.SimulationModule = SimulationModule;

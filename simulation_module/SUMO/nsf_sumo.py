@@ -5,3 +5,5 @@ settingsJSONFilepath = abspath(settingsJSON);
 
 module = SimulationModule();
 module.initialize(settingsJSONFilepath);
+data = module.data();
+print(data)

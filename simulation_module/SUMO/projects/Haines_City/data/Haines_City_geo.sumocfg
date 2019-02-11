@@ -1,0 +1,11 @@
+<configuration>
+	<input>
+		<net-file value="Haines_City.net.xml" />
+		<route-files value="Haines_City.rou.xml" />
+		<additional-files value="Haines_City.poly.xml" />
+	</input>
+	<time>
+		<begin value="0" />
+		<end value="30000" />
+	</time>
+</configuration>

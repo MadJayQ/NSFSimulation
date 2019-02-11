@@ -1,0 +1,26 @@
+{
+	"gneJ0": {
+		 "true_center_coords": [0.0,0.0],
+		 "normal_center_coords": [0.0,0.5]
+	},
+	"gneJ1": {
+		 "true_center_coords": [50.0,0.0],
+		 "normal_center_coords": [0.2857142857142857,0.5]
+	},
+	"gneJ3": {
+		 "true_center_coords": [125.0,0.0],
+		 "normal_center_coords": [0.7142857142857143,0.5]
+	},
+	"gneJ5": {
+		 "true_center_coords": [175.0,0.0],
+		 "normal_center_coords": [1.0,0.5]
+	},
+	"gneJ6": {
+		 "true_center_coords": [75.0,25.0],
+		 "normal_center_coords": [0.42857142857142855,1.0]
+	},
+	"gneJ9": {
+		 "true_center_coords": [100.0,-25.0],
+		 "normal_center_coords": [0.5714285714285714,0.0]
+	}
+}

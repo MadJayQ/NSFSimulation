@@ -15,7 +15,6 @@ function testBasic()
     const settingsInstance = new SimulationSettings();
     instance.initialize(relativeSettingsPath);
     var settings = instance.getSettings();
-    Grid.generateGrid(4, 4);
 }
 
 function testInvalidParams()

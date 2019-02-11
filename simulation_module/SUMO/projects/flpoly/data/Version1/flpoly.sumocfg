@@ -1,0 +1,10 @@
+<configuration>
+	<input>
+		<net-file value="flpoly.net.xml" />
+		<route-files value="flpoly.rou.xml" />
+	</input>
+	<time>
+		<begin value="0" />
+		<end value="30000" />
+	</time>
+</configuration>

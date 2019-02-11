@@ -1,0 +1,626 @@
+{
+	"gneJ1_to_gneJ0": {
+		"true_coords": [[15.0,0.0],[0.0,0.0]],
+		"normal_coords": [[0.1875,0.5],[0.125,0.5]],
+		"from": "gneJ1",
+		"to": "gneJ0"
+	},
+	"gneJ2_to_gneJ1": {
+		"true_coords": [[30.0,0.0],[15.0,0.0]],
+		"normal_coords": [[0.25,0.5],[0.1875,0.5]],
+		"from": "gneJ2",
+		"to": "gneJ1"
+	},
+	"gneJ10_to_gneJ0": {
+		"true_coords": [[0.0,-20.0],[0.0,0.0]],
+		"normal_coords": [[0.125,0.25],[0.125,0.5]],
+		"from": "gneJ10",
+		"to": "gneJ0"
+	},
+	"gneJ10_to_gneJ11": {
+		"true_coords": [[0.0,-20.0],[0.0,-40.0]],
+		"normal_coords": [[0.125,0.25],[0.125,0.0]],
+		"from": "gneJ10",
+		"to": "gneJ11"
+	},
+	"gneJ12_to_gneJ3": {
+		"true_coords": [[45.0,-20.0],[45.0,0.0]],
+		"normal_coords": [[0.3125,0.25],[0.3125,0.5]],
+		"from": "gneJ12",
+		"to": "gneJ3"
+	},
+	"gneJ13_to_gneJ12": {
+		"true_coords": [[45.0,-40.0],[45.0,-20.0]],
+		"normal_coords": [[0.3125,0.0],[0.3125,0.25]],
+		"from": "gneJ13",
+		"to": "gneJ12"
+	},
+	"gneJ12_to_gneJ10": {
+		"true_coords": [[45.0,-20.0],[0.0,-20.0]],
+		"normal_coords": [[0.3125,0.25],[0.125,0.25]],
+		"from": "gneJ12",
+		"to": "gneJ10"
+	},
+	"gneJ11_to_gneJ13": {
+		"true_coords": [[0.0,-40.0],[45.0,-40.0]],
+		"normal_coords": [[0.125,0.0],[0.3125,0.0]],
+		"from": "gneJ11",
+		"to": "gneJ13"
+	},
+	"gneJ14_to_gneJ3": {
+		"true_coords": [[60.0,0.0],[45.0,0.0]],
+		"normal_coords": [[0.375,0.5],[0.3125,0.5]],
+		"from": "gneJ14",
+		"to": "gneJ3"
+	},
+	"gneJ15_to_gneJ14": {
+		"true_coords": [[75.0,0.0],[60.0,0.0]],
+		"normal_coords": [[0.4375,0.5],[0.375,0.5]],
+		"from": "gneJ15",
+		"to": "gneJ14"
+	},
+	"gneJ15_to_gneJ16": {
+		"true_coords": [[75.0,0.0],[90.0,0.0]],
+		"normal_coords": [[0.4375,0.5],[0.5,0.5]],
+		"from": "gneJ15",
+		"to": "gneJ16"
+	},
+	"gneJ17_to_gneJ16": {
+		"true_coords": [[90.0,20.0],[90.0,0.0]],
+		"normal_coords": [[0.5,0.75],[0.5,0.5]],
+		"from": "gneJ17",
+		"to": "gneJ16"
+	},
+	"gneJ2_to_gneJ3": {
+		"true_coords": [[30.0,0.0],[45.0,0.0]],
+		"normal_coords": [[0.25,0.5],[0.3125,0.5]],
+		"from": "gneJ2",
+		"to": "gneJ3"
+	},
+	"gneJ17_to_gneJ18": {
+		"true_coords": [[90.0,20.0],[90.0,40.0]],
+		"normal_coords": [[0.5,0.75],[0.5,1.0]],
+		"from": "gneJ17",
+		"to": "gneJ18"
+	},
+	"gneJ19_to_gneJ16": {
+		"true_coords": [[90.0,-20.0],[90.0,0.0]],
+		"normal_coords": [[0.5,0.25],[0.5,0.5]],
+		"from": "gneJ19",
+		"to": "gneJ16"
+	},
+	"gneJ20_to_gneJ19": {
+		"true_coords": [[90.0,-40.0],[90.0,-20.0]],
+		"normal_coords": [[0.5,0.0],[0.5,0.25]],
+		"from": "gneJ20",
+		"to": "gneJ19"
+	},
+	"gneJ6_to_gneJ18": {
+		"true_coords": [[45.0,40.0],[90.0,40.0]],
+		"normal_coords": [[0.3125,1.0],[0.5,1.0]],
+		"from": "gneJ6",
+		"to": "gneJ18"
+	},
+	"gneJ17_to_gneJ5": {
+		"true_coords": [[90.0,20.0],[45.0,20.0]],
+		"normal_coords": [[0.5,0.75],[0.3125,0.75]],
+		"from": "gneJ17",
+		"to": "gneJ5"
+	},
+	"gneJ12_to_gneJ19": {
+		"true_coords": [[45.0,-20.0],[90.0,-20.0]],
+		"normal_coords": [[0.3125,0.25],[0.5,0.25]],
+		"from": "gneJ12",
+		"to": "gneJ19"
+	},
+	"gneJ20_to_gneJ13": {
+		"true_coords": [[90.0,-40.0],[45.0,-40.0]],
+		"normal_coords": [[0.5,0.0],[0.3125,0.0]],
+		"from": "gneJ20",
+		"to": "gneJ13"
+	},
+	"gneJ21_to_gneJ16": {
+		"true_coords": [[105.0,0.0],[90.0,0.0]],
+		"normal_coords": [[0.5625,0.5],[0.5,0.5]],
+		"from": "gneJ21",
+		"to": "gneJ16"
+	},
+	"gneJ21_to_gneJ22": {
+		"true_coords": [[105.0,0.0],[120.0,0.0]],
+		"normal_coords": [[0.5625,0.5],[0.625,0.5]],
+		"from": "gneJ21",
+		"to": "gneJ22"
+	},
+	"gneJ23_to_gneJ22": {
+		"true_coords": [[135.0,0.0],[120.0,0.0]],
+		"normal_coords": [[0.6875,0.5],[0.625,0.5]],
+		"from": "gneJ23",
+		"to": "gneJ22"
+	},
+	"gneJ4_to_gneJ0": {
+		"true_coords": [[0.0,20.0],[0.0,0.0]],
+		"normal_coords": [[0.125,0.75],[0.125,0.5]],
+		"from": "gneJ4",
+		"to": "gneJ0"
+	},
+	"gneJ24_to_gneJ23": {
+		"true_coords": [[135.0,20.0],[135.0,0.0]],
+		"normal_coords": [[0.6875,0.75],[0.6875,0.5]],
+		"from": "gneJ24",
+		"to": "gneJ23"
+	},
+	"gneJ25_to_gneJ24": {
+		"true_coords": [[135.0,40.0],[135.0,20.0]],
+		"normal_coords": [[0.6875,1.0],[0.6875,0.75]],
+		"from": "gneJ25",
+		"to": "gneJ24"
+	},
+	"gneJ26_to_gneJ23": {
+		"true_coords": [[135.0,-20.0],[135.0,0.0]],
+		"normal_coords": [[0.6875,0.25],[0.6875,0.5]],
+		"from": "gneJ26",
+		"to": "gneJ23"
+	},
+	"gneJ27_to_gneJ26": {
+		"true_coords": [[135.0,-40.0],[135.0,-20.0]],
+		"normal_coords": [[0.6875,0.0],[0.6875,0.25]],
+		"from": "gneJ27",
+		"to": "gneJ26"
+	},
+	"gneJ17_to_gneJ24": {
+		"true_coords": [[90.0,20.0],[135.0,20.0]],
+		"normal_coords": [[0.5,0.75],[0.6875,0.75]],
+		"from": "gneJ17",
+		"to": "gneJ24"
+	},
+	"gneJ18_to_gneJ25": {
+		"true_coords": [[90.0,40.0],[135.0,40.0]],
+		"normal_coords": [[0.5,1.0],[0.6875,1.0]],
+		"from": "gneJ18",
+		"to": "gneJ25"
+	},
+	"gneJ19_to_gneJ26": {
+		"true_coords": [[90.0,-20.0],[135.0,-20.0]],
+		"normal_coords": [[0.5,0.25],[0.6875,0.25]],
+		"from": "gneJ19",
+		"to": "gneJ26"
+	},
+	"gneJ27_to_gneJ20": {
+		"true_coords": [[135.0,-40.0],[90.0,-40.0]],
+		"normal_coords": [[0.6875,0.0],[0.5,0.0]],
+		"from": "gneJ27",
+		"to": "gneJ20"
+	},
+	"gneJ28_to_gneJ23": {
+		"true_coords": [[150.0,0.0],[135.0,0.0]],
+		"normal_coords": [[0.75,0.5],[0.6875,0.5]],
+		"from": "gneJ28",
+		"to": "gneJ23"
+	},
+	"gneJ29_to_gneJ28": {
+		"true_coords": [[165.0,0.0],[150.0,0.0]],
+		"normal_coords": [[0.8125,0.5],[0.75,0.5]],
+		"from": "gneJ29",
+		"to": "gneJ28"
+	},
+	"gneJ5_to_gneJ3": {
+		"true_coords": [[45.0,20.0],[45.0,0.0]],
+		"normal_coords": [[0.3125,0.75],[0.3125,0.5]],
+		"from": "gneJ5",
+		"to": "gneJ3"
+	},
+	"gneJ30_to_gneJ29": {
+		"true_coords": [[180.0,0.0],[165.0,0.0]],
+		"normal_coords": [[0.875,0.5],[0.8125,0.5]],
+		"from": "gneJ30",
+		"to": "gneJ29"
+	},
+	"gneJ31_to_gneJ30": {
+		"true_coords": [[180.0,-20.0],[180.0,0.0]],
+		"normal_coords": [[0.875,0.25],[0.875,0.5]],
+		"from": "gneJ31",
+		"to": "gneJ30"
+	},
+	"gneJ32_to_gneJ31": {
+		"true_coords": [[180.0,-40.0],[180.0,-20.0]],
+		"normal_coords": [[0.875,0.0],[0.875,0.25]],
+		"from": "gneJ32",
+		"to": "gneJ31"
+	},
+	"gneJ33_to_gneJ30": {
+		"true_coords": [[180.0,20.0],[180.0,0.0]],
+		"normal_coords": [[0.875,0.75],[0.875,0.5]],
+		"from": "gneJ33",
+		"to": "gneJ30"
+	},
+	"gneJ34_to_gneJ33": {
+		"true_coords": [[180.0,40.0],[180.0,20.0]],
+		"normal_coords": [[0.875,1.0],[0.875,0.75]],
+		"from": "gneJ34",
+		"to": "gneJ33"
+	},
+	"gneJ25_to_gneJ34": {
+		"true_coords": [[135.0,40.0],[180.0,40.0]],
+		"normal_coords": [[0.6875,1.0],[0.875,1.0]],
+		"from": "gneJ25",
+		"to": "gneJ34"
+	},
+	"gneJ24_to_gneJ33": {
+		"true_coords": [[135.0,20.0],[180.0,20.0]],
+		"normal_coords": [[0.6875,0.75],[0.875,0.75]],
+		"from": "gneJ24",
+		"to": "gneJ33"
+	},
+	"gneJ26_to_gneJ31": {
+		"true_coords": [[135.0,-20.0],[180.0,-20.0]],
+		"normal_coords": [[0.6875,0.25],[0.875,0.25]],
+		"from": "gneJ26",
+		"to": "gneJ31"
+	},
+	"gneJ27_to_gneJ32": {
+		"true_coords": [[135.0,-40.0],[180.0,-40.0]],
+		"normal_coords": [[0.6875,0.0],[0.875,0.0]],
+		"from": "gneJ27",
+		"to": "gneJ32"
+	},
+	"gneJ35_to_gneJ30": {
+		"true_coords": [[195.0,0.0],[180.0,0.0]],
+		"normal_coords": [[0.9375,0.5],[0.875,0.5]],
+		"from": "gneJ35",
+		"to": "gneJ30"
+	},
+	"gneJ6_to_gneJ5": {
+		"true_coords": [[45.0,40.0],[45.0,20.0]],
+		"normal_coords": [[0.3125,1.0],[0.3125,0.75]],
+		"from": "gneJ6",
+		"to": "gneJ5"
+	},
+	"gneJ36_to_gneJ35": {
+		"true_coords": [[210.0,0.0],[195.0,0.0]],
+		"normal_coords": [[1.0,0.5],[0.9375,0.5]],
+		"from": "gneJ36",
+		"to": "gneJ35"
+	},
+	"gneJ37_to_gneJ0": {
+		"true_coords": [[-15.0,0.0],[0.0,0.0]],
+		"normal_coords": [[0.0625,0.5],[0.125,0.5]],
+		"from": "gneJ37",
+		"to": "gneJ0"
+	},
+	"gneJ37_to_gneJ38": {
+		"true_coords": [[-15.0,0.0],[-30.0,0.0]],
+		"normal_coords": [[0.0625,0.5],[0.0,0.5]],
+		"from": "gneJ37",
+		"to": "gneJ38"
+	},
+	"gneJ7_to_gneJ4": {
+		"true_coords": [[0.0,40.0],[0.0,20.0]],
+		"normal_coords": [[0.125,1.0],[0.125,0.75]],
+		"from": "gneJ7",
+		"to": "gneJ4"
+	},
+	"gneJ6_to_gneJ7": {
+		"true_coords": [[45.0,40.0],[0.0,40.0]],
+		"normal_coords": [[0.3125,1.0],[0.125,1.0]],
+		"from": "gneJ6",
+		"to": "gneJ7"
+	},
+	"gneJ5_to_gneJ4": {
+		"true_coords": [[45.0,20.0],[0.0,20.0]],
+		"normal_coords": [[0.3125,0.75],[0.125,0.75]],
+		"from": "gneJ5",
+		"to": "gneJ4"
+	},
+	"gneJ0_to_gneJ1": {
+		"true_coords": [[0.0,0.0],[15.0,0.0]],
+		"normal_coords": [[0.125,0.5],[0.1875,0.5]],
+		"from": "gneJ0",
+		"to": "gneJ1"
+	},
+	"gneJ1_to_gneJ2": {
+		"true_coords": [[15.0,0.0],[30.0,0.0]],
+		"normal_coords": [[0.1875,0.5],[0.25,0.5]],
+		"from": "gneJ1",
+		"to": "gneJ2"
+	},
+	"gneJ0_to_gneJ10": {
+		"true_coords": [[0.0,0.0],[0.0,-20.0]],
+		"normal_coords": [[0.125,0.5],[0.125,0.25]],
+		"from": "gneJ0",
+		"to": "gneJ10"
+	},
+	"gneJ11_to_gneJ10": {
+		"true_coords": [[0.0,-40.0],[0.0,-20.0]],
+		"normal_coords": [[0.125,0.0],[0.125,0.25]],
+		"from": "gneJ11",
+		"to": "gneJ10"
+	},
+	"gneJ3_to_gneJ12": {
+		"true_coords": [[45.0,0.0],[45.0,-20.0]],
+		"normal_coords": [[0.3125,0.5],[0.3125,0.25]],
+		"from": "gneJ3",
+		"to": "gneJ12"
+	},
+	"gneJ12_to_gneJ13": {
+		"true_coords": [[45.0,-20.0],[45.0,-40.0]],
+		"normal_coords": [[0.3125,0.25],[0.3125,0.0]],
+		"from": "gneJ12",
+		"to": "gneJ13"
+	},
+	"gneJ10_to_gneJ12": {
+		"true_coords": [[0.0,-20.0],[45.0,-20.0]],
+		"normal_coords": [[0.125,0.25],[0.3125,0.25]],
+		"from": "gneJ10",
+		"to": "gneJ12"
+	},
+	"gneJ13_to_gneJ11": {
+		"true_coords": [[45.0,-40.0],[0.0,-40.0]],
+		"normal_coords": [[0.3125,0.0],[0.125,0.0]],
+		"from": "gneJ13",
+		"to": "gneJ11"
+	},
+	"gneJ3_to_gneJ14": {
+		"true_coords": [[45.0,0.0],[60.0,0.0]],
+		"normal_coords": [[0.3125,0.5],[0.375,0.5]],
+		"from": "gneJ3",
+		"to": "gneJ14"
+	},
+	"gneJ14_to_gneJ15": {
+		"true_coords": [[60.0,0.0],[75.0,0.0]],
+		"normal_coords": [[0.375,0.5],[0.4375,0.5]],
+		"from": "gneJ14",
+		"to": "gneJ15"
+	},
+	"gneJ16_to_gneJ15": {
+		"true_coords": [[90.0,0.0],[75.0,0.0]],
+		"normal_coords": [[0.5,0.5],[0.4375,0.5]],
+		"from": "gneJ16",
+		"to": "gneJ15"
+	},
+	"gneJ16_to_gneJ17": {
+		"true_coords": [[90.0,0.0],[90.0,20.0]],
+		"normal_coords": [[0.5,0.5],[0.5,0.75]],
+		"from": "gneJ16",
+		"to": "gneJ17"
+	},
+	"gneJ3_to_gneJ2": {
+		"true_coords": [[45.0,0.0],[30.0,0.0]],
+		"normal_coords": [[0.3125,0.5],[0.25,0.5]],
+		"from": "gneJ3",
+		"to": "gneJ2"
+	},
+	"gneJ18_to_gneJ17": {
+		"true_coords": [[90.0,40.0],[90.0,20.0]],
+		"normal_coords": [[0.5,1.0],[0.5,0.75]],
+		"from": "gneJ18",
+		"to": "gneJ17"
+	},
+	"gneJ16_to_gneJ19": {
+		"true_coords": [[90.0,0.0],[90.0,-20.0]],
+		"normal_coords": [[0.5,0.5],[0.5,0.25]],
+		"from": "gneJ16",
+		"to": "gneJ19"
+	},
+	"gneJ19_to_gneJ20": {
+		"true_coords": [[90.0,-20.0],[90.0,-40.0]],
+		"normal_coords": [[0.5,0.25],[0.5,0.0]],
+		"from": "gneJ19",
+		"to": "gneJ20"
+	},
+	"gneJ18_to_gneJ6": {
+		"true_coords": [[90.0,40.0],[45.0,40.0]],
+		"normal_coords": [[0.5,1.0],[0.3125,1.0]],
+		"from": "gneJ18",
+		"to": "gneJ6"
+	},
+	"gneJ5_to_gneJ17": {
+		"true_coords": [[45.0,20.0],[90.0,20.0]],
+		"normal_coords": [[0.3125,0.75],[0.5,0.75]],
+		"from": "gneJ5",
+		"to": "gneJ17"
+	},
+	"gneJ19_to_gneJ12": {
+		"true_coords": [[90.0,-20.0],[45.0,-20.0]],
+		"normal_coords": [[0.5,0.25],[0.3125,0.25]],
+		"from": "gneJ19",
+		"to": "gneJ12"
+	},
+	"gneJ13_to_gneJ20": {
+		"true_coords": [[45.0,-40.0],[90.0,-40.0]],
+		"normal_coords": [[0.3125,0.0],[0.5,0.0]],
+		"from": "gneJ13",
+		"to": "gneJ20"
+	},
+	"gneJ16_to_gneJ21": {
+		"true_coords": [[90.0,0.0],[105.0,0.0]],
+		"normal_coords": [[0.5,0.5],[0.5625,0.5]],
+		"from": "gneJ16",
+		"to": "gneJ21"
+	},
+	"gneJ22_to_gneJ21": {
+		"true_coords": [[120.0,0.0],[105.0,0.0]],
+		"normal_coords": [[0.625,0.5],[0.5625,0.5]],
+		"from": "gneJ22",
+		"to": "gneJ21"
+	},
+	"gneJ22_to_gneJ23": {
+		"true_coords": [[120.0,0.0],[135.0,0.0]],
+		"normal_coords": [[0.625,0.5],[0.6875,0.5]],
+		"from": "gneJ22",
+		"to": "gneJ23"
+	},
+	"gneJ0_to_gneJ4": {
+		"true_coords": [[0.0,0.0],[0.0,20.0]],
+		"normal_coords": [[0.125,0.5],[0.125,0.75]],
+		"from": "gneJ0",
+		"to": "gneJ4"
+	},
+	"gneJ23_to_gneJ24": {
+		"true_coords": [[135.0,0.0],[135.0,20.0]],
+		"normal_coords": [[0.6875,0.5],[0.6875,0.75]],
+		"from": "gneJ23",
+		"to": "gneJ24"
+	},
+	"gneJ24_to_gneJ25": {
+		"true_coords": [[135.0,20.0],[135.0,40.0]],
+		"normal_coords": [[0.6875,0.75],[0.6875,1.0]],
+		"from": "gneJ24",
+		"to": "gneJ25"
+	},
+	"gneJ23_to_gneJ26": {
+		"true_coords": [[135.0,0.0],[135.0,-20.0]],
+		"normal_coords": [[0.6875,0.5],[0.6875,0.25]],
+		"from": "gneJ23",
+		"to": "gneJ26"
+	},
+	"gneJ26_to_gneJ27": {
+		"true_coords": [[135.0,-20.0],[135.0,-40.0]],
+		"normal_coords": [[0.6875,0.25],[0.6875,0.0]],
+		"from": "gneJ26",
+		"to": "gneJ27"
+	},
+	"gneJ24_to_gneJ17": {
+		"true_coords": [[135.0,20.0],[90.0,20.0]],
+		"normal_coords": [[0.6875,0.75],[0.5,0.75]],
+		"from": "gneJ24",
+		"to": "gneJ17"
+	},
+	"gneJ25_to_gneJ18": {
+		"true_coords": [[135.0,40.0],[90.0,40.0]],
+		"normal_coords": [[0.6875,1.0],[0.5,1.0]],
+		"from": "gneJ25",
+		"to": "gneJ18"
+	},
+	"gneJ26_to_gneJ19": {
+		"true_coords": [[135.0,-20.0],[90.0,-20.0]],
+		"normal_coords": [[0.6875,0.25],[0.5,0.25]],
+		"from": "gneJ26",
+		"to": "gneJ19"
+	},
+	"gneJ20_to_gneJ27": {
+		"true_coords": [[90.0,-40.0],[135.0,-40.0]],
+		"normal_coords": [[0.5,0.0],[0.6875,0.0]],
+		"from": "gneJ20",
+		"to": "gneJ27"
+	},
+	"gneJ23_to_gneJ28": {
+		"true_coords": [[135.0,0.0],[150.0,0.0]],
+		"normal_coords": [[0.6875,0.5],[0.75,0.5]],
+		"from": "gneJ23",
+		"to": "gneJ28"
+	},
+	"gneJ28_to_gneJ29": {
+		"true_coords": [[150.0,0.0],[165.0,0.0]],
+		"normal_coords": [[0.75,0.5],[0.8125,0.5]],
+		"from": "gneJ28",
+		"to": "gneJ29"
+	},
+	"gneJ3_to_gneJ5": {
+		"true_coords": [[45.0,0.0],[45.0,20.0]],
+		"normal_coords": [[0.3125,0.5],[0.3125,0.75]],
+		"from": "gneJ3",
+		"to": "gneJ5"
+	},
+	"gneJ29_to_gneJ30": {
+		"true_coords": [[165.0,0.0],[180.0,0.0]],
+		"normal_coords": [[0.8125,0.5],[0.875,0.5]],
+		"from": "gneJ29",
+		"to": "gneJ30"
+	},
+	"gneJ30_to_gneJ31": {
+		"true_coords": [[180.0,0.0],[180.0,-20.0]],
+		"normal_coords": [[0.875,0.5],[0.875,0.25]],
+		"from": "gneJ30",
+		"to": "gneJ31"
+	},
+	"gneJ31_to_gneJ32": {
+		"true_coords": [[180.0,-20.0],[180.0,-40.0]],
+		"normal_coords": [[0.875,0.25],[0.875,0.0]],
+		"from": "gneJ31",
+		"to": "gneJ32"
+	},
+	"gneJ30_to_gneJ33": {
+		"true_coords": [[180.0,0.0],[180.0,20.0]],
+		"normal_coords": [[0.875,0.5],[0.875,0.75]],
+		"from": "gneJ30",
+		"to": "gneJ33"
+	},
+	"gneJ33_to_gneJ34": {
+		"true_coords": [[180.0,20.0],[180.0,40.0]],
+		"normal_coords": [[0.875,0.75],[0.875,1.0]],
+		"from": "gneJ33",
+		"to": "gneJ34"
+	},
+	"gneJ34_to_gneJ25": {
+		"true_coords": [[180.0,40.0],[135.0,40.0]],
+		"normal_coords": [[0.875,1.0],[0.6875,1.0]],
+		"from": "gneJ34",
+		"to": "gneJ25"
+	},
+	"gneJ33_to_gneJ24": {
+		"true_coords": [[180.0,20.0],[135.0,20.0]],
+		"normal_coords": [[0.875,0.75],[0.6875,0.75]],
+		"from": "gneJ33",
+		"to": "gneJ24"
+	},
+	"gneJ31_to_gneJ26": {
+		"true_coords": [[180.0,-20.0],[135.0,-20.0]],
+		"normal_coords": [[0.875,0.25],[0.6875,0.25]],
+		"from": "gneJ31",
+		"to": "gneJ26"
+	},
+	"gneJ32_to_gneJ27": {
+		"true_coords": [[180.0,-40.0],[135.0,-40.0]],
+		"normal_coords": [[0.875,0.0],[0.6875,0.0]],
+		"from": "gneJ32",
+		"to": "gneJ27"
+	},
+	"gneJ30_to_gneJ35": {
+		"true_coords": [[180.0,0.0],[195.0,0.0]],
+		"normal_coords": [[0.875,0.5],[0.9375,0.5]],
+		"from": "gneJ30",
+		"to": "gneJ35"
+	},
+	"gneJ5_to_gneJ6": {
+		"true_coords": [[45.0,20.0],[45.0,40.0]],
+		"normal_coords": [[0.3125,0.75],[0.3125,1.0]],
+		"from": "gneJ5",
+		"to": "gneJ6"
+	},
+	"gneJ35_to_gneJ36": {
+		"true_coords": [[195.0,0.0],[210.0,0.0]],
+		"normal_coords": [[0.9375,0.5],[1.0,0.5]],
+		"from": "gneJ35",
+		"to": "gneJ36"
+	},
+	"gneJ0_to_gneJ37": {
+		"true_coords": [[0.0,0.0],[-15.0,0.0]],
+		"normal_coords": [[0.125,0.5],[0.0625,0.5]],
+		"from": "gneJ0",
+		"to": "gneJ37"
+	},
+	"gneJ38_to_gneJ37": {
+		"true_coords": [[-30.0,0.0],[-15.0,0.0]],
+		"normal_coords": [[0.0,0.5],[0.0625,0.5]],
+		"from": "gneJ38",
+		"to": "gneJ37"
+	},
+	"gneJ4_to_gneJ7": {
+		"true_coords": [[0.0,20.0],[0.0,40.0]],
+		"normal_coords": [[0.125,0.75],[0.125,1.0]],
+		"from": "gneJ4",
+		"to": "gneJ7"
+	},
+	"gneJ7_to_gneJ6": {
+		"true_coords": [[0.0,40.0],[45.0,40.0]],
+		"normal_coords": [[0.125,1.0],[0.3125,1.0]],
+		"from": "gneJ7",
+		"to": "gneJ6"
+	},
+	"gneJ4_to_gneJ5": {
+		"true_coords": [[0.0,20.0],[45.0,20.0]],
+		"normal_coords": [[0.125,0.75],[0.3125,0.75]],
+		"from": "gneJ4",
+		"to": "gneJ5"
+	}
+}

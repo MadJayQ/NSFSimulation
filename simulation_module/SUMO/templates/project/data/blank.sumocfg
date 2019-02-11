@@ -1,0 +1,25 @@
+<!--
+	This file points to the neccesary files needed to run a SUMO simulation.
+	You may run it with:
+		sumogui -o blank.sumocfg
+	and view the map, but nothing will run because we're managing SUMO with TraCI.
+-->
+<configuration>
+	<!--
+		Point SUMO to the .xml files.
+		The .poly.xml is optional and only neccesary if polygons are included.
+	-->
+	<input>
+		<net-file value="blank.net.xml" />
+		<route-files value="blank.rou.xml" />
+		<additional-files value="blank.poly.xml" /> <!-- OPTIONAL -->
+		<gui-settings-file value="blank.settings.xml" />
+	</input>
+	<!--
+		This is the amount of time the simulation will run for.
+	-->
+	<time>
+		<begin value="0" />
+		<end value="30000" /> <!-- Make me a very large number -->
+	</time>
+</configuration>

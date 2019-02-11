@@ -20,7 +20,7 @@
             "name": "(Windows) Launch Py",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "C:\\Python34\\Python",
+            "program": "F:\\Programming\\Languages\\Python\\Python34\\python3",
             "args": ["${workspaceFolder}\\simulation_module\\SUMO\\nsf_sumo.py"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

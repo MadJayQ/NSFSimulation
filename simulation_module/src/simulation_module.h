@@ -13,6 +13,7 @@ public:
     SimulationModule();
 
     void Initialize(const std::string& path);
+    void RunSimulation();
 
     std::unique_ptr<SimulationWorld>    World; //Internal world pointer
     std::shared_ptr<SimulationSettings> Settings;

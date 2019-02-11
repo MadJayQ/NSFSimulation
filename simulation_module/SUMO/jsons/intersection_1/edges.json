@@ -1,0 +1,74 @@
+{
+	"cluster_gneJ1_gneJ13_gneJ15_gneJ4_to_gneJ0": {
+		"true_coords": [[0.0,0.0],[-50.0,0.0]],
+		"normal_coords": [[0.5,0.5],[0.25,0.5]],
+		"from": "cluster_gneJ1_gneJ13_gneJ15_gneJ4",
+		"to": "gneJ0"
+	},
+	"gneJ14_to_cluster_gneJ1_gneJ13_gneJ15_gneJ4": {
+		"true_coords": [[0.0,-70.0],[0.0,0.0]],
+		"normal_coords": [[0.5,0.0],[0.5,0.5]],
+		"from": "gneJ14",
+		"to": "cluster_gneJ1_gneJ13_gneJ15_gneJ4"
+	},
+	"gneJ16_to_cluster_gneJ1_gneJ13_gneJ15_gneJ4": {
+		"true_coords": [[0.0,70.0],[0.0,0.0]],
+		"normal_coords": [[0.5,1.0],[0.5,0.5]],
+		"from": "gneJ16",
+		"to": "cluster_gneJ1_gneJ13_gneJ15_gneJ4"
+	},
+	"cluster_gneJ1_gneJ13_gneJ15_gneJ4_to_gneJ3": {
+		"true_coords": [[0.0,0.0],[50.0,0.0]],
+		"normal_coords": [[0.5,0.5],[0.75,0.5]],
+		"from": "cluster_gneJ1_gneJ13_gneJ15_gneJ4",
+		"to": "gneJ3"
+	},
+	"gneJ24_to_gneJ3": {
+		"true_coords": [[100.0,0.0],[50.0,0.0]],
+		"normal_coords": [[1.0,0.5],[0.75,0.5]],
+		"from": "gneJ24",
+		"to": "gneJ3"
+	},
+	"gneJ25_to_gneJ0": {
+		"true_coords": [[-100.0,0.0],[-50.0,0.0]],
+		"normal_coords": [[0.0,0.5],[0.25,0.5]],
+		"from": "gneJ25",
+		"to": "gneJ0"
+	},
+	"gneJ0_to_cluster_gneJ1_gneJ13_gneJ15_gneJ4": {
+		"true_coords": [[-50.0,0.0],[0.0,0.0]],
+		"normal_coords": [[0.25,0.5],[0.5,0.5]],
+		"from": "gneJ0",
+		"to": "cluster_gneJ1_gneJ13_gneJ15_gneJ4"
+	},
+	"cluster_gneJ1_gneJ13_gneJ15_gneJ4_to_gneJ14": {
+		"true_coords": [[0.0,0.0],[0.0,-70.0]],
+		"normal_coords": [[0.5,0.5],[0.5,0.0]],
+		"from": "cluster_gneJ1_gneJ13_gneJ15_gneJ4",
+		"to": "gneJ14"
+	},
+	"cluster_gneJ1_gneJ13_gneJ15_gneJ4_to_gneJ16": {
+		"true_coords": [[0.0,0.0],[0.0,70.0]],
+		"normal_coords": [[0.5,0.5],[0.5,1.0]],
+		"from": "cluster_gneJ1_gneJ13_gneJ15_gneJ4",
+		"to": "gneJ16"
+	},
+	"gneJ3_to_cluster_gneJ1_gneJ13_gneJ15_gneJ4": {
+		"true_coords": [[50.0,0.0],[0.0,0.0]],
+		"normal_coords": [[0.75,0.5],[0.5,0.5]],
+		"from": "gneJ3",
+		"to": "cluster_gneJ1_gneJ13_gneJ15_gneJ4"
+	},
+	"gneJ3_to_gneJ24": {
+		"true_coords": [[50.0,0.0],[100.0,0.0]],
+		"normal_coords": [[0.75,0.5],[1.0,0.5]],
+		"from": "gneJ3",
+		"to": "gneJ24"
+	},
+	"gneJ0_to_gneJ25": {
+		"true_coords": [[-50.0,0.0],[-100.0,0.0]],
+		"normal_coords": [[0.25,0.5],[0.0,0.5]],
+		"from": "gneJ0",
+		"to": "gneJ25"
+	}
+}

@@ -1,0 +1,12 @@
+<configuration>
+	<input>
+		<net-file value="regions.net.xml" />
+		<route-files value="regions.rou.xml" />
+		<additional-files value="regions.poly.xml" />
+		<gui-settings-file value="regions.settings.xml" />
+	</input>
+	<time>
+		<begin value="0" />
+		<end value="30000" />
+	</time>
+</configuration>

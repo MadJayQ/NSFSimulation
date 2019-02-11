@@ -1,0 +1,10 @@
+<configuration>
+	<input>
+		<net-file value="university.net.xml" />
+		<additional-files value="university.poly.xml"/>
+	</input>
+	<time>
+		<begin value="0" />
+		<end value="10000" />
+	</time>
+</configuration>

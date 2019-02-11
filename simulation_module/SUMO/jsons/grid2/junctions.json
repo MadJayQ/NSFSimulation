@@ -1,0 +1,150 @@
+{
+	"gneJ0": {
+		 "true_center_coords": [0.0,0.0],
+		 "normal_center_coords": [0.125,0.5]
+	},
+	"gneJ1": {
+		 "true_center_coords": [15.0,0.0],
+		 "normal_center_coords": [0.1875,0.5]
+	},
+	"gneJ10": {
+		 "true_center_coords": [0.0,-20.0],
+		 "normal_center_coords": [0.125,0.25]
+	},
+	"gneJ11": {
+		 "true_center_coords": [0.0,-40.0],
+		 "normal_center_coords": [0.125,0.0]
+	},
+	"gneJ12": {
+		 "true_center_coords": [45.0,-20.0],
+		 "normal_center_coords": [0.3125,0.25]
+	},
+	"gneJ13": {
+		 "true_center_coords": [45.0,-40.0],
+		 "normal_center_coords": [0.3125,0.0]
+	},
+	"gneJ14": {
+		 "true_center_coords": [60.0,0.0],
+		 "normal_center_coords": [0.375,0.5]
+	},
+	"gneJ15": {
+		 "true_center_coords": [75.0,0.0],
+		 "normal_center_coords": [0.4375,0.5]
+	},
+	"gneJ16": {
+		 "true_center_coords": [90.0,0.0],
+		 "normal_center_coords": [0.5,0.5]
+	},
+	"gneJ17": {
+		 "true_center_coords": [90.0,20.0],
+		 "normal_center_coords": [0.5,0.75]
+	},
+	"gneJ18": {
+		 "true_center_coords": [90.0,40.0],
+		 "normal_center_coords": [0.5,1.0]
+	},
+	"gneJ19": {
+		 "true_center_coords": [90.0,-20.0],
+		 "normal_center_coords": [0.5,0.25]
+	},
+	"gneJ2": {
+		 "true_center_coords": [30.0,0.0],
+		 "normal_center_coords": [0.25,0.5]
+	},
+	"gneJ20": {
+		 "true_center_coords": [90.0,-40.0],
+		 "normal_center_coords": [0.5,0.0]
+	},
+	"gneJ21": {
+		 "true_center_coords": [105.0,0.0],
+		 "normal_center_coords": [0.5625,0.5]
+	},
+	"gneJ22": {
+		 "true_center_coords": [120.0,0.0],
+		 "normal_center_coords": [0.625,0.5]
+	},
+	"gneJ23": {
+		 "true_center_coords": [135.0,0.0],
+		 "normal_center_coords": [0.6875,0.5]
+	},
+	"gneJ24": {
+		 "true_center_coords": [135.0,20.0],
+		 "normal_center_coords": [0.6875,0.75]
+	},
+	"gneJ25": {
+		 "true_center_coords": [135.0,40.0],
+		 "normal_center_coords": [0.6875,1.0]
+	},
+	"gneJ26": {
+		 "true_center_coords": [135.0,-20.0],
+		 "normal_center_coords": [0.6875,0.25]
+	},
+	"gneJ27": {
+		 "true_center_coords": [135.0,-40.0],
+		 "normal_center_coords": [0.6875,0.0]
+	},
+	"gneJ28": {
+		 "true_center_coords": [150.0,0.0],
+		 "normal_center_coords": [0.75,0.5]
+	},
+	"gneJ29": {
+		 "true_center_coords": [165.0,0.0],
+		 "normal_center_coords": [0.8125,0.5]
+	},
+	"gneJ3": {
+		 "true_center_coords": [45.0,0.0],
+		 "normal_center_coords": [0.3125,0.5]
+	},
+	"gneJ30": {
+		 "true_center_coords": [180.0,0.0],
+		 "normal_center_coords": [0.875,0.5]
+	},
+	"gneJ31": {
+		 "true_center_coords": [180.0,-20.0],
+		 "normal_center_coords": [0.875,0.25]
+	},
+	"gneJ32": {
+		 "true_center_coords": [180.0,-40.0],
+		 "normal_center_coords": [0.875,0.0]
+	},
+	"gneJ33": {
+		 "true_center_coords": [180.0,20.0],
+		 "normal_center_coords": [0.875,0.75]
+	},
+	"gneJ34": {
+		 "true_center_coords": [180.0,40.0],
+		 "normal_center_coords": [0.875,1.0]
+	},
+	"gneJ35": {
+		 "true_center_coords": [195.0,0.0],
+		 "normal_center_coords": [0.9375,0.5]
+	},
+	"gneJ36": {
+		 "true_center_coords": [210.0,0.0],
+		 "normal_center_coords": [1.0,0.5]
+	},
+	"gneJ37": {
+		 "true_center_coords": [-15.0,0.0],
+		 "normal_center_coords": [0.0625,0.5]
+	},
+	"gneJ38": {
+		 "true_center_coords": [-30.0,0.0],
+		 "normal_center_coords": [0.0,0.5]
+	},
+	"gneJ4": {
+		 "true_center_coords": [0.0,20.0],
+		 "normal_center_coords": [0.125,0.75]
+	},
+	"gneJ5": {
+		 "true_center_coords": [45.0,20.0],
+		 "normal_center_coords": [0.3125,0.75]
+	},
+	"gneJ6": {
+		 "true_center_coords": [45.0,40.0],
+		 "normal_center_coords": [0.3125,1.0]
+	},
+	"gneJ7": {
+		 "true_center_coords": [0.0,40.0],
+		 "normal_center_coords": [0.125,1.0]
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"cluster_gneJ1_gneJ13_gneJ15_gneJ4": {
+		 "true_center_coords": [0.0,0.0],
+		 "normal_center_coords": [0.5,0.5]
+	},
+	"gneJ0": {
+		 "true_center_coords": [-50.0,0.0],
+		 "normal_center_coords": [0.25,0.5]
+	},
+	"gneJ14": {
+		 "true_center_coords": [0.0,-70.0],
+		 "normal_center_coords": [0.5,0.0]
+	},
+	"gneJ16": {
+		 "true_center_coords": [0.0,70.0],
+		 "normal_center_coords": [0.5,1.0]
+	},
+	"gneJ24": {
+		 "true_center_coords": [100.0,0.0],
+		 "normal_center_coords": [1.0,0.5]
+	},
+	"gneJ25": {
+		 "true_center_coords": [-100.0,0.0],
+		 "normal_center_coords": [0.0,0.5]
+	},
+	"gneJ3": {
+		 "true_center_coords": [50.0,0.0],
+		 "normal_center_coords": [0.75,0.5]
+	}
+}

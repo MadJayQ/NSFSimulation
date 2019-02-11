@@ -1,0 +1,1650 @@
+{
+	"gneJ10": {
+		 "true_center_coords": [85.58,106.58],
+		 "normal_center_coords": [0.8933573510362693,0.7615924550800834]
+	},
+	"gneJ100": {
+		 "true_center_coords": [-261.9,-11.07],
+		 "normal_center_coords": [0.6589283786701209,0.4427491259925743]
+	},
+	"gneJ101": {
+		 "true_center_coords": [-289.27,2.26],
+		 "normal_center_coords": [0.6404630829015544,0.47887476625382797]
+	},
+	"gneJ103": {
+		 "true_center_coords": [-291.37,-81.94],
+		 "normal_center_coords": [0.6390463082901554,0.25068430038754436]
+	},
+	"gneJ104": {
+		 "true_center_coords": [-284.35,-107.19],
+		 "normal_center_coords": [0.6437823834196891,0.1822542616331066]
+	},
+	"gneJ106": {
+		 "true_center_coords": [-144.73,-36.33],
+		 "normal_center_coords": [0.7379776554404144,0.3742919862326893]
+	},
+	"gneJ107": {
+		 "true_center_coords": [-224.71,-52.47],
+		 "normal_center_coords": [0.6840187823834196,0.33055096344074364]
+	},
+	"gneJ109": {
+		 "true_center_coords": [-286.43,-50.56],
+		 "normal_center_coords": [0.6423791018998272,0.3357272554811783]
+	},
+	"gneJ11": {
+		 "true_center_coords": [129.67,104.45],
+		 "normal_center_coords": [0.9231028713298791,0.7558199409198081]
+	},
+	"gneJ110": {
+		 "true_center_coords": [-8.0,-23.63],
+		 "normal_center_coords": [0.8302231757340242,0.40871026315076286]
+	},
+	"gneJ111": {
+		 "true_center_coords": [-27.41,-29.97],
+		 "normal_center_coords": [0.8171281303972365,0.3915282256971733]
+	},
+	"gneJ113": {
+		 "true_center_coords": [-117.01,-78.29],
+		 "normal_center_coords": [0.7566790803108808,0.26057616737580963]
+	},
+	"gneJ114": {
+		 "true_center_coords": [102.89,-60.27],
+		 "normal_center_coords": [0.9050356217616581,0.309412179191848]
+	},
+	"gneJ115": {
+		 "true_center_coords": [-0.5,-107.24],
+		 "normal_center_coords": [0.835283085060449,0.18211875660587007]
+	},
+	"gneJ116": {
+		 "true_center_coords": [70.82,-107.82],
+		 "normal_center_coords": [0.8833994494818652,0.18054689828992657]
+	},
+	"gneJ117": {
+		 "true_center_coords": [134.61,-54.47],
+		 "normal_center_coords": [0.9264356649395509,0.32513076235128324]
+	},
+	"gneJ118": {
+		 "true_center_coords": [156.06,-66.07],
+		 "normal_center_coords": [0.940907005613126,0.2936935960324128]
+	},
+	"gneJ119": {
+		 "true_center_coords": [163.6,-85.21],
+		 "normal_center_coords": [0.945993901122625,0.2418222716062766]
+	},
+	"gneJ12": {
+		 "true_center_coords": [147.74,78.95],
+		 "normal_center_coords": [0.9352938795336787,0.6867123770291877]
+	},
+	"gneJ120": {
+		 "true_center_coords": [142.73,-92.75],
+		 "normal_center_coords": [0.9319138601036269,0.2213881134990108]
+	},
+	"gneJ121": {
+		 "true_center_coords": [124.17,-87.53],
+		 "normal_center_coords": [0.9193922711571675,0.2355348383425025]
+	},
+	"gneJ122": {
+		 "true_center_coords": [177.78,-68.23],
+		 "normal_center_coords": [0.9555605030224524,0.28783977885579554]
+	},
+	"gneJ123": {
+		 "true_center_coords": [199.92,-75.09],
+		 "normal_center_coords": [0.9704973553540587,0.2692484891189463]
+	},
+	"gneJ124": {
+		 "true_center_coords": [215.21,-82.47],
+		 "normal_center_coords": [0.9808128238341969,0.24924794709883735]
+	},
+	"gneJ125": {
+		 "true_center_coords": [218.9,-96.7],
+		 "normal_center_coords": [0.9833022992227979,0.21068321634732648]
+	},
+	"gneJ14": {
+		 "true_center_coords": [205.65,53.45],
+		 "normal_center_coords": [0.9743631260794473,0.6176048131385674]
+	},
+	"gneJ148": {
+		 "true_center_coords": [200.34,-112.13],
+		 "normal_center_coords": [0.9707807102763384,0.16886636494213936]
+	},
+	"gneJ149": {
+		 "true_center_coords": [158.21,-115.69],
+		 "normal_center_coords": [0.9423575129533679,0.1592184070028998]
+	},
+	"gneJ15": {
+		 "true_center_coords": [184.4,47.07],
+		 "normal_center_coords": [0.9600267163212435,0.6003143716631887]
+	},
+	"gneJ150": {
+		 "true_center_coords": [149.31,-106.79],
+		 "normal_center_coords": [0.9363530872193436,0.18333830185099864]
+	},
+	"gneJ153": {
+		 "true_center_coords": [228.22,-81.87],
+		 "normal_center_coords": [0.9895900798791019,0.25087400742567545]
+	},
+	"gneJ154": {
+		 "true_center_coords": [243.65,-99.67],
+		 "normal_center_coords": [1.0,0.20263421772947776]
+	},
+	"gneJ155": {
+		 "true_center_coords": [241.87,-119.25],
+		 "normal_center_coords": [0.9987991148531952,0.14957044906366027]
+	},
+	"gneJ156": {
+		 "true_center_coords": [215.17,-129.34],
+		 "normal_center_coords": [0.9807858376511226,0.12222553456733243]
+	},
+	"gneJ157": {
+		 "true_center_coords": [143.97,-130.53],
+		 "normal_center_coords": [0.9327504317789291,0.11900051491910349]
+	},
+	"gneJ158": {
+		 "true_center_coords": [104.21,-121.63],
+		 "normal_center_coords": [0.9059261658031088,0.14312040976720236]
+	},
+	"gneJ16": {
+		 "true_center_coords": [177.49,36.44],
+		 "normal_center_coords": [0.9553648531951641,0.5715060028727066]
+	},
+	"gneJ160": {
+		 "true_center_coords": [-338.23,145.54],
+		 "normal_center_coords": [0.6074319948186527,0.8671779723027725]
+	},
+	"gneJ161": {
+		 "true_center_coords": [-426.54,144.1],
+		 "normal_center_coords": [0.5478532491364421,0.8632754275183608]
+	},
+	"gneJ162": {
+		 "true_center_coords": [-565.69,148.02],
+		 "normal_center_coords": [0.4539750647668393,0.8738990216537035]
+	},
+	"gneJ163": {
+		 "true_center_coords": [-660.98,157.81],
+		 "normal_center_coords": [0.3896872301381692,0.9004309059866121]
+	},
+	"gneJ164": {
+		 "true_center_coords": [-544.15,108.2],
+		 "normal_center_coords": [0.46850712435233155,0.7659828179625463]
+	},
+	"gneJ165": {
+		 "true_center_coords": [-587.23,106.24],
+		 "normal_center_coords": [0.4394430051813471,0.7606710208948751]
+	},
+	"gneJ167": {
+		 "true_center_coords": [-613.99,94.5],
+		 "normal_center_coords": [0.42138924870466316,0.7288544404997425]
+	},
+	"gneJ168": {
+		 "true_center_coords": [-639.44,72.96],
+		 "normal_center_coords": [0.4042192897236614,0.6704788747662538]
+	},
+	"gneJ169": {
+		 "true_center_coords": [-662.01,37.44],
+		 "normal_center_coords": [0.38899233592400684,0.5742161034174368]
+	},
+	"gneJ170": {
+		 "true_center_coords": [-488.26,100.62],
+		 "normal_center_coords": [0.5062135686528497,0.7454402558334914]
+	},
+	"gneJ171": {
+		 "true_center_coords": [-461.41,101.41],
+		 "normal_center_coords": [0.5243280440414506,0.7475812352638284]
+	},
+	"gneJ172": {
+		 "true_center_coords": [-436.93,82.46],
+		 "normal_center_coords": [0.5408435880829014,0.6962248299411907]
+	},
+	"gneJ174": {
+		 "true_center_coords": [-408.84,34.9],
+		 "normal_center_coords": [0.5597946351468048,0.5673324480338221]
+	},
+	"gneJ175": {
+		 "true_center_coords": [-439.64,6.93],
+		 "normal_center_coords": [0.53901527417962,0.4915309357977181]
+	},
+	"gneJ176": {
+		 "true_center_coords": [-404.4,-20.85],
+		 "normal_center_coords": [0.5627901014680483,0.4162443426651129]
+	},
+	"gneJ18": {
+		 "true_center_coords": [200.34,10.94],
+		 "normal_center_coords": [0.9707807102763384,0.5023984389820862]
+	},
+	"gneJ180": {
+		 "true_center_coords": [-396.56,-58.06],
+		 "normal_center_coords": [0.5680793933506044,0.3154015013957018]
+	},
+	"gneJ182": {
+		 "true_center_coords": [-430.5,-75.68],
+		 "normal_center_coords": [0.5451816170120898,0.26764952979755546]
+	},
+	"gneJ183": {
+		 "true_center_coords": [-497.73,-90.69],
+		 "normal_center_coords": [0.4998245898100172,0.22697092062115504]
+	},
+	"gneJ19": {
+		 "true_center_coords": [205.65,34.85],
+		 "normal_center_coords": [0.9743631260794473,0.5671969430065855]
+	},
+	"gneJ191": {
+		 "true_center_coords": [-528.33,-89.99],
+		 "normal_center_coords": [0.4791801597582037,0.2288679910024662]
+	},
+	"gneJ192": {
+		 "true_center_coords": [-605.47,-63.28],
+		 "normal_center_coords": [0.4271373056994818,0.30125477655221006]
+	},
+	"gneJ193": {
+		 "true_center_coords": [-669.55,-30.06],
+		 "normal_center_coords": [0.38390544041450775,0.3912843166481476]
+	},
+	"gneJ194": {
+		 "true_center_coords": [-710.49,-20.56],
+		 "normal_center_coords": [0.35628508203799647,0.4170302718230846]
+	},
+	"gneJ195": {
+		 "true_center_coords": [-738.97,-34.21],
+		 "normal_center_coords": [0.3370709196891191,0.38003739938751724]
+	},
+	"gneJ196": {
+		 "true_center_coords": [-624.81,104.63],
+		 "normal_center_coords": [0.41408948618307423,0.7563077590178595]
+	},
+	"gneJ197": {
+		 "true_center_coords": [-633.11,136.67],
+		 "normal_center_coords": [0.408489853195164,0.8431393804710154]
+	},
+	"gneJ198": {
+		 "true_center_coords": [-701.35,181.41],
+		 "normal_center_coords": [0.3624514248704662,0.9643892788422451]
+	},
+	"gneJ199": {
+		 "true_center_coords": [-755.34,174.29],
+		 "normal_center_coords": [0.32602682426597573,0.945093362963766]
+	},
+	"gneJ2": {
+		 "true_center_coords": [73.94,55.94],
+		 "normal_center_coords": [0.885504371761658,0.6243529634949456]
+	},
+	"gneJ20": {
+		 "true_center_coords": [166.96,41.13],
+		 "normal_center_coords": [0.9482607405008635,0.5842163744274912]
+	},
+	"gneJ200": {
+		 "true_center_coords": [-829.51,177.26],
+		 "normal_center_coords": [0.27598769430051806,0.9531423615816146]
+	},
+	"gneJ201": {
+		 "true_center_coords": [-785.6,156.49],
+		 "normal_center_coords": [0.30561177677029355,0.8968535732675682]
+	},
+	"gneJ202": {
+		 "true_center_coords": [-820.61,145.22],
+		 "normal_center_coords": [0.28199212003454227,0.8663107401284587]
+	},
+	"gneJ203": {
+		 "true_center_coords": [-847.31,125.64],
+		 "normal_center_coords": [0.26397884283246975,0.8132469714626412]
+	},
+	"gneJ204": {
+		 "true_center_coords": [-856.81,58.59],
+		 "normal_center_coords": [0.2575696243523316,0.6315347299384807]
+	},
+	"gneJ207": {
+		 "true_center_coords": [-822.98,63.34],
+		 "normal_center_coords": [0.280393188687392,0.6444077075259492]
+	},
+	"gneJ208": {
+		 "true_center_coords": [-793.91,58.0],
+		 "normal_center_coords": [0.3000053972366148,0.6299357706170898]
+	},
+	"gneJ209": {
+		 "true_center_coords": [-774.33,39.6],
+		 "normal_center_coords": [0.313215133851468,0.580069920594054]
+	},
+	"gneJ21": {
+		 "true_center_coords": [206.29,2.01],
+		 "normal_center_coords": [0.9747949050086355,0.47819724111764544]
+	},
+	"gneJ210": {
+		 "true_center_coords": [-682.36,6.37],
+		 "normal_center_coords": [0.375263115284974,0.49001327949266915]
+	},
+	"gneJ211": {
+		 "true_center_coords": [-771.82,-59.31],
+		 "normal_center_coords": [0.31490851683937815,0.312013875714789]
+	},
+	"gneJ214": {
+		 "true_center_coords": [-775.38,-71.77],
+		 "normal_center_coords": [0.3125067465457685,0.2782460229274506]
+	},
+	"gneJ215": {
+		 "true_center_coords": [-804.46,-79.48],
+		 "normal_center_coords": [0.29288779145077715,0.25735114772758066]
+	},
+	"gneJ216": {
+		 "true_center_coords": [-844.21,-68.21],
+		 "normal_center_coords": [0.2660702720207253,0.28789398086669016]
+	},
+	"gneJ217": {
+		 "true_center_coords": [-899.99,-62.87],
+		 "normal_center_coords": [0.22843803972366142,0.30236591777554944]
+	},
+	"gneJ218": {
+		 "true_center_coords": [-929.65,-43.88],
+		 "normal_center_coords": [0.20842778497409323,0.35383072711997615]
+	},
+	"gneJ219": {
+		 "true_center_coords": [-909.48,47.49],
+		 "normal_center_coords": [0.22203556778929182,0.6014526138919754]
+	},
+	"gneJ22": {
+		 "true_center_coords": [196.49,-12.14],
+		 "normal_center_coords": [0.9681832901554404,0.43984931840971303]
+	},
+	"gneJ220": {
+		 "true_center_coords": [-958.13,58.17],
+		 "normal_center_coords": [0.18921362262521585,0.630396487709694]
+	},
+	"gneJ221": {
+		 "true_center_coords": [-980.68,76.57],
+		 "normal_center_coords": [0.1740001619170984,0.6802623377327298]
+	},
+	"gneJ222": {
+		 "true_center_coords": [-995.51,77.16],
+		 "normal_center_coords": [0.1639950345423143,0.6818612970541207]
+	},
+	"gneJ223": {
+		 "true_center_coords": [-1045.36,41.56],
+		 "normal_center_coords": [0.13036350388601037,0.5853817176617252]
+	},
+	"gneJ224": {
+		 "true_center_coords": [-1007.97,51.05],
+		 "normal_center_coords": [0.15558883851468042,0.6111005718312149]
+	},
+	"gneJ225": {
+		 "true_center_coords": [-987.8,61.14],
+		 "normal_center_coords": [0.1691966213298791,0.6384454863275427]
+	},
+	"gneJ226": {
+		 "true_center_coords": [-973.56,51.65],
+		 "normal_center_coords": [0.17880370250431776,0.612726632158053]
+	},
+	"gneJ227": {
+		 "true_center_coords": [-953.25,-23.71],
+		 "normal_center_coords": [0.1925059369602763,0.40849345510718443]
+	},
+	"gneJ23": {
+		 "true_center_coords": [178.35,-13.95],
+		 "normal_center_coords": [0.9559450561312607,0.43494403642375135]
+	},
+	"gneJ231": {
+		 "true_center_coords": [-987.94,-14.81],
+		 "normal_center_coords": [0.1691021696891191,0.43261334995528333]
+	},
+	"gneJ232": {
+		 "true_center_coords": [-1019.22,-20.74],
+		 "normal_center_coords": [0.1479989745250431,0.4165424537250332]
+	},
+	"gneJ233": {
+		 "true_center_coords": [-1091.5,11.62],
+		 "normal_center_coords": [0.09923494170984451,0.5042413073525027]
+	},
+	"gneJ234": {
+		 "true_center_coords": [-1115.78,22.41],
+		 "normal_center_coords": [0.08285432858376507,0.5334832922301417]
+	},
+	"gneJ235": {
+		 "true_center_coords": [-1138.97,14.86],
+		 "normal_center_coords": [0.06720908894645934,0.5130220331174287]
+	},
+	"gneJ236": {
+		 "true_center_coords": [-1162.7,-5.64],
+		 "normal_center_coords": [0.051199535837651036,0.4574649719504594]
+	},
+	"gneJ237": {
+		 "true_center_coords": [-1120.09,-45.01],
+		 "normal_center_coords": [0.07994656735751295,0.35076831350443105]
+	},
+	"gneJ238": {
+		 "true_center_coords": [-1061.84,-42.32],
+		 "normal_center_coords": [0.11924519645941278,0.35805848396975526]
+	},
+	"gneJ239": {
+		 "true_center_coords": [-720.39,-83.47],
+		 "normal_center_coords": [0.34960600172711565,0.24653784655410715]
+	},
+	"gneJ24": {
+		 "true_center_coords": [143.15,-0.53],
+		 "normal_center_coords": [0.9321972150259067,0.4713135857340307]
+	},
+	"gneJ240": {
+		 "true_center_coords": [-653.35,-76.35],
+		 "normal_center_coords": [0.3948348445595854,0.2658337624325863]
+	},
+	"gneJ241": {
+		 "true_center_coords": [-873.15,172.22],
+		 "normal_center_coords": [0.2465457685664939,0.9394834548361743]
+	},
+	"gneJ242": {
+		 "true_center_coords": [-942.79,134.17],
+		 "normal_center_coords": [0.19956282383419685,0.83636412910919]
+	},
+	"gneJ245": {
+		 "true_center_coords": [-1104.33,37.96],
+		 "normal_center_coords": [0.09057912348877374,0.5756253557006965]
+	},
+	"gneJ246": {
+		 "true_center_coords": [-1148.13,31.5],
+		 "normal_center_coords": [0.06102925302245237,0.5581181061817393]
+	},
+	"gneJ247": {
+		 "true_center_coords": [-1189.77,51.6],
+		 "normal_center_coords": [0.03293663644214158,0.6125911271308165]
+	},
+	"gneJ249": {
+		 "true_center_coords": [-1208.44,61.65],
+		 "normal_center_coords": [0.02034083549222789,0.6398276376053551]
+	},
+	"gneJ25": {
+		 "true_center_coords": [121.01,2.38],
+		 "normal_center_coords": [0.9172603626943004,0.4791999783191956]
+	},
+	"gneJ250": {
+		 "true_center_coords": [-1233.56,56.63],
+		 "normal_center_coords": [0.003393512521588928,0.6262229328708094]
+	},
+	"gneJ251": {
+		 "true_center_coords": [-1238.59,38.68],
+		 "normal_center_coords": [0.0,0.5775766280929022]
+	},
+	"gneJ252": {
+		 "true_center_coords": [-1217.77,18.58],
+		 "normal_center_coords": [0.014046308290155397,0.523103607143825]
+	},
+	"gneJ253": {
+		 "true_center_coords": [-924.65,86.57],
+		 "normal_center_coords": [0.21180105785837647,0.7073633431800319]
+	},
+	"gneJ254": {
+		 "true_center_coords": [-880.21,119.2],
+		 "normal_center_coords": [0.24178270725388593,0.7957939239545787]
+	},
+	"gneJ255": {
+		 "true_center_coords": [-852.26,134.41],
+		 "normal_center_coords": [0.2606393026770293,0.8370145532399252]
+	},
+	"gneJ26": {
+		 "true_center_coords": [110.12,-7.78],
+		 "normal_center_coords": [0.9099133743523317,0.4516653567847367]
+	},
+	"gneJ269": {
+		 "true_center_coords": [-812.62,-108.89],
+		 "normal_center_coords": [0.28738261010362687,0.17764709070706522]
+	},
+	"gneJ27": {
+		 "true_center_coords": [122.46,-17.22],
+		 "normal_center_coords": [0.9182386118307426,0.4260820076424835]
+	},
+	"gneJ270": {
+		 "true_center_coords": [-732.93,-121.09],
+		 "normal_center_coords": [0.3411458333333333,0.14458386406135665]
+	},
+	"gneJ271": {
+		 "true_center_coords": [-689.85,-108.89],
+		 "normal_center_coords": [0.3702099525043177,0.17764709070706522]
+	},
+	"gneJ272": {
+		 "true_center_coords": [-695.6,-96.68],
+		 "normal_center_coords": [0.366330688687392,0.21073741835822107]
+	},
+	"gneJ273": {
+		 "true_center_coords": [-363.97,-121.75],
+		 "normal_center_coords": [0.5900663860103627,0.14279519770183474]
+	},
+	"gneJ28": {
+		 "true_center_coords": [139.88,-17.48],
+		 "normal_center_coords": [0.9299910945595854,0.4253773815008537]
+	},
+	"gneJ288": {
+		 "true_center_coords": [-329.88,-112.62],
+		 "normal_center_coords": [0.6130653605354058,0.16753841567522154]
+	},
+	"gneJ289": {
+		 "true_center_coords": [-308.56,-109.46],
+		 "normal_center_coords": [0.6274489961139896,0.17610233339656903]
+	},
+	"gneJ290": {
+		 "true_center_coords": [-261.18,-129.21],
+		 "normal_center_coords": [0.6594141299654576,0.12257784763814734]
+	},
+	"gneJ291": {
+		 "true_center_coords": [-233.54,-130.0],
+		 "normal_center_coords": [0.6780615824697754,0.12043686820781051]
+	},
+	"gneJ292": {
+		 "true_center_coords": [-349.63,-143.42],
+		 "normal_center_coords": [0.599740932642487,0.08406731889753112]
+	},
+	"gneJ3": {
+		 "true_center_coords": [108.42,74.06],
+		 "normal_center_coords": [0.9087664615716753,0.673459985365457]
+	},
+	"gneJ30": {
+		 "true_center_coords": [173.99,-38.89],
+		 "normal_center_coords": [0.9530035621761658,0.3673541288381799]
+	},
+	"gneJ301": {
+		 "true_center_coords": [-206.17,-147.68],
+		 "normal_center_coords": [0.6965268782383418,0.07252229057698038]
+	},
+	"gneJ302": {
+		 "true_center_coords": [-202.35,-166.79],
+		 "normal_center_coords": [0.6991040587219344,0.020732269167186117]
+	},
+	"gneJ303": {
+		 "true_center_coords": [-243.44,-174.44],
+		 "normal_center_coords": [0.6713825021588945,0.0]
+	},
+	"gneJ304": {
+		 "true_center_coords": [-329.44,-164.88],
+		 "normal_center_coords": [0.6133622085492227,0.02590856120762081]
+	},
+	"gneJ31": {
+		 "true_center_coords": [141.33,-33.45],
+		 "normal_center_coords": [0.9309693436960276,0.38209707580151225]
+	},
+	"gneJ32": {
+		 "true_center_coords": [122.1,-33.81],
+		 "normal_center_coords": [0.9179957361830742,0.38112143960540934]
+	},
+	"gneJ33": {
+		 "true_center_coords": [66.21,-14.94],
+		 "normal_center_coords": [0.8802892918825561,0.43226103688446843]
+	},
+	"gneJ34": {
+		 "true_center_coords": [48.04,104.84],
+		 "normal_center_coords": [0.8680308182210708,0.7568768801322528]
+	},
+	"gneJ343": {
+		 "true_center_coords": [-373.43,40.53],
+		 "normal_center_coords": [0.5836841537132987,0.5825903141006531]
+	},
+	"gneJ344": {
+		 "true_center_coords": [-369.42,4.99],
+		 "normal_center_coords": [0.5863895185664938,0.4862733407409415]
+	},
+	"gneJ345": {
+		 "true_center_coords": [-336.18,-0.16],
+		 "normal_center_coords": [0.6088150367012088,0.4723163229355809]
+	},
+	"gneJ346": {
+		 "true_center_coords": [-318.41,6.71],
+		 "normal_center_coords": [0.6208036485319516,0.49093471367787744]
+	},
+	"gneJ347": {
+		 "true_center_coords": [-329.88,27.34],
+		 "normal_center_coords": [0.6130653605354058,0.5468440879156616]
+	},
+	"gneJ348": {
+		 "true_center_coords": [-325.86,-17.93],
+		 "normal_center_coords": [0.6157774719343695,0.42415783625572506]
+	},
+	"gneJ349": {
+		 "true_center_coords": [-344.2,-28.25],
+		 "normal_center_coords": [0.6034043069948186,0.3961895986341093]
+	},
+	"gneJ35": {
+		 "true_center_coords": [-11.68,113.63],
+		 "normal_center_coords": [0.8277404468911916,0.7806986639204314]
+	},
+	"gneJ350": {
+		 "true_center_coords": [-345.35,-55.76],
+		 "normal_center_coords": [0.6026284542314334,0.3216347326485813]
+	},
+	"gneJ351": {
+		 "true_center_coords": [-326.44,-82.69],
+		 "normal_center_coords": [0.6153861722797926,0.2486517249789967]
+	},
+	"gneJ352": {
+		 "true_center_coords": [-312.68,-55.76],
+		 "normal_center_coords": [0.6246694192573401,0.3216347326485813]
+	},
+	"gneJ353": {
+		 "true_center_coords": [-322.88,-129.1],
+		 "normal_center_coords": [0.6177879425734024,0.12287595869806771]
+	},
+	"gneJ354": {
+		 "true_center_coords": [-290.73,-140.44],
+		 "normal_center_coords": [0.6394780872193436,0.09214341852082712]
+	},
+	"gneJ355": {
+		 "true_center_coords": [-377.82,-33.82],
+		 "normal_center_coords": [0.580722420120898,0.38109433859996206]
+	},
+	"gneJ356": {
+		 "true_center_coords": [-367.61,-60.31],
+		 "normal_center_coords": [0.5876106433506044,0.3093037751700588]
+	},
+	"gneJ357": {
+		 "true_center_coords": [-363.0,-87.26],
+		 "normal_center_coords": [0.5907208009499136,0.23626656548957964]
+	},
+	"gneJ358": {
+		 "true_center_coords": [-348.17,-99.41],
+		 "normal_center_coords": [0.6007259283246976,0.20333884387110762]
+	},
+	"gneJ359": {
+		 "true_center_coords": [-313.35,98.11],
+		 "normal_center_coords": [0.6242174006908462,0.7386379034662186]
+	},
+	"gneJ360": {
+		 "true_center_coords": [-290.26,109.07],
+		 "normal_center_coords": [0.6397951748704662,0.7683406054364617]
+	},
+	"gneJ361": {
+		 "true_center_coords": [-266.38,89.89],
+		 "normal_center_coords": [0.655905926165803,0.7163608769885362]
+	},
+	"gneJ362": {
+		 "true_center_coords": [-280.08,62.09],
+		 "normal_center_coords": [0.646663158462867,0.6410200818450364]
+	},
+	"gneJ363": {
+		 "true_center_coords": [-303.57,67.97],
+		 "normal_center_coords": [0.6308155224525043,0.65695547304805]
+	},
+	"gneJ364": {
+		 "true_center_coords": [-350.79,100.95],
+		 "normal_center_coords": [0.5989583333333333,0.7463345890132523]
+	},
+	"gneJ365": {
+		 "true_center_coords": [-377.96,94.84],
+		 "normal_center_coords": [0.5806279684801381,0.7297758746849508]
+	},
+	"gneJ366": {
+		 "true_center_coords": [-385.44,74.91],
+		 "normal_center_coords": [0.5755815522452503,0.6757635708284777]
+	},
+	"gneJ367": {
+		 "true_center_coords": [-349.85,64.95],
+		 "normal_center_coords": [0.5995925086355786,0.6487709694029647]
+	},
+	"gneJ368": {
+		 "true_center_coords": [-329.57,74.2],
+		 "normal_center_coords": [0.6132745034542314,0.6738393994417192]
+	},
+	"gneJ369": {
+		 "true_center_coords": [-293.63,40.04],
+		 "normal_center_coords": [0.6375215889464594,0.5812623648337353]
+	},
+	"gneJ37": {
+		 "true_center_coords": [-53.39,129.87],
+		 "normal_center_coords": [0.7996006044905007,0.82471069676685]
+	},
+	"gneJ370": {
+		 "true_center_coords": [-285.44,21.53],
+		 "normal_center_coords": [0.6430470099309152,0.5310984037507791]
+	},
+	"gneJ371": {
+		 "true_center_coords": [-257.68,10.15],
+		 "normal_center_coords": [0.6617754209844559,0.5002574595517494]
+	},
+	"gneJ372": {
+		 "true_center_coords": [-237.76,20.11],
+		 "normal_center_coords": [0.6752145401554404,0.5272500609772622]
+	},
+	"gneJ373": {
+		 "true_center_coords": [-256.62,43.6],
+		 "normal_center_coords": [0.6624905548359239,0.5909103227729748]
+	},
+	"gneJ374": {
+		 "true_center_coords": [-199.21,7.91],
+		 "normal_center_coords": [0.7012224740932642,0.4941868343315537]
+	},
+	"gneJ376": {
+		 "true_center_coords": [-106.47,2.6],
+		 "normal_center_coords": [0.7637899395509499,0.47979620043903626]
+	},
+	"gneJ377": {
+		 "true_center_coords": [-48.82,19.36],
+		 "normal_center_coords": [0.8026837759067358,0.5252174855687146]
+	},
+	"gneJ378": {
+		 "true_center_coords": [-192.22,49.54],
+		 "normal_center_coords": [0.7059383095854922,0.6070083200086723]
+	},
+	"gneJ379": {
+		 "true_center_coords": [-212.11,33.47],
+		 "normal_center_coords": [0.6925194300518135,0.5634570042548578]
+	},
+	"gneJ38": {
+		 "true_center_coords": [-62.62,127.68],
+		 "normal_center_coords": [0.793373542746114,0.8187755765738909]
+	},
+	"gneJ380": {
+		 "true_center_coords": [-168.52,21.92],
+		 "normal_center_coords": [0.7219276230569948,0.532155342963224]
+	},
+	"gneJ381": {
+		 "true_center_coords": [-156.47,45.22],
+		 "normal_center_coords": [0.7300572107081174,0.5953006856554378]
+	},
+	"gneJ382": {
+		 "true_center_coords": [-142.81,74.94],
+		 "normal_center_coords": [0.7392729922279793,0.6758448738448196]
+	},
+	"gneJ383": {
+		 "true_center_coords": [-178.76,78.56],
+		 "normal_center_coords": [0.7150191601899827,0.685655437816743]
+	},
+	"gneJ384": {
+		 "true_center_coords": [-237.78,151.78],
+		 "normal_center_coords": [0.6752010470639033,0.884088999701889]
+	},
+	"gneJ385": {
+		 "true_center_coords": [-209.54,139.81],
+		 "normal_center_coords": [0.6942532923143351,0.8516490961814683]
+	},
+	"gneJ386": {
+		 "true_center_coords": [-251.54,137.43],
+		 "normal_center_coords": [0.6659178000863557,0.8451990568850104]
+	},
+	"gneJ387": {
+		 "true_center_coords": [-182.43,111.84],
+		 "normal_center_coords": [0.7125431778929188,0.7758475839453642]
+	},
+	"gneJ388": {
+		 "true_center_coords": [-221.09,112.09],
+		 "normal_center_coords": [0.6864610319516407,0.7765251090815468]
+	},
+	"gneJ389": {
+		 "true_center_coords": [-195.9,91.1],
+		 "normal_center_coords": [0.7034555807426597,0.7196400986476598]
+	},
+	"gneJ39": {
+		 "true_center_coords": [-62.18,111.87],
+		 "normal_center_coords": [0.7936703907599308,0.7759288869617063]
+	},
+	"gneJ390": {
+		 "true_center_coords": [-152.66,100.68],
+		 "normal_center_coords": [0.7326276446459412,0.7456028618661752]
+	},
+	"gneJ391": {
+		 "true_center_coords": [-182.63,177.82],
+		 "normal_center_coords": [0.7124082469775476,0.9546600178866635]
+	},
+	"gneJ392": {
+		 "true_center_coords": [-155.09,169.09],
+		 "normal_center_coords": [0.7309882340241796,0.9310008401311688]
+	},
+	"gneJ393": {
+		 "true_center_coords": [-155.92,155.65],
+		 "normal_center_coords": [0.7304282707253885,0.8945770888099949]
+	},
+	"gneJ394": {
+		 "true_center_coords": [135.58,68.37],
+		 "normal_center_coords": [0.9270900798791017,0.6580395132659421]
+	},
+	"gneJ395": {
+		 "true_center_coords": [117.9,87.59],
+		 "normal_center_coords": [0.9151621869602763,0.7101276457356567]
+	},
+	"gneJ396": {
+		 "true_center_coords": [83.65,88.26],
+		 "normal_center_coords": [0.8920552677029361,0.711943413100626]
+	},
+	"gneJ397": {
+		 "true_center_coords": [-102.0,142.77],
+		 "normal_center_coords": [0.766805645509499,0.8596709937938698]
+	},
+	"gneJ398": {
+		 "true_center_coords": [-87.67,148.96],
+		 "normal_center_coords": [0.7764734455958548,0.8764465161657496]
+	},
+	"gneJ399": {
+		 "true_center_coords": [-26.18,127.0],
+		 "normal_center_coords": [0.8179579555267702,0.8169327082034743]
+	},
+	"gneJ40": {
+		 "true_center_coords": [-48.13,90.79],
+		 "normal_center_coords": [0.8031492875647667,0.7187999674787935]
+	},
+	"gneJ400": {
+		 "true_center_coords": [-100.89,92.0],
+		 "normal_center_coords": [0.7675545120898098,0.722079189137917]
+	},
+	"gneJ401": {
+		 "true_center_coords": [-103.16,113.58],
+		 "normal_center_coords": [0.7660230462003453,0.7805631588931948]
+	},
+	"gneJ402": {
+		 "true_center_coords": [-92.65,72.82],
+		 "normal_center_coords": [0.7731136658031087,0.6700994606899916]
+	},
+	"gneJ403": {
+		 "true_center_coords": [-66.85,75.7],
+		 "normal_center_coords": [0.7905197538860104,0.6779045502588146]
+	},
+	"gneJ404": {
+		 "true_center_coords": [-89.19,49.41],
+		 "normal_center_coords": [0.7754479706390327,0.6066560069378574]
+	},
+	"gneJ405": {
+		 "true_center_coords": [-43.5,52.43],
+		 "normal_center_coords": [0.8062729382556131,0.6148405105829426]
+	},
+	"gneJ406": {
+		 "true_center_coords": [9.16,28.56],
+		 "normal_center_coords": [0.8418002482728842,0.5501504105802325]
+	},
+	"gneJ407": {
+		 "true_center_coords": [-16.14,34.44],
+		 "normal_center_coords": [0.824731487478411,0.5660858017832461]
+	},
+	"gneJ408": {
+		 "true_center_coords": [63.86,10.91],
+		 "normal_center_coords": [0.8787038536269429,0.5023171359657443]
+	},
+	"gneJ409": {
+		 "true_center_coords": [98.85,2.97],
+		 "normal_center_coords": [0.902310017271157,0.48079893764058645]
+	},
+	"gneJ41": {
+		 "true_center_coords": [-32.76,82.45],
+		 "normal_center_coords": [0.8135187284110534,0.6961977289357435]
+	},
+	"gneJ410": {
+		 "true_center_coords": [137.79,13.56],
+		 "normal_center_coords": [0.928581066493955,0.5094989024092794]
+	},
+	"gneJ411": {
+		 "true_center_coords": [165.73,12.97],
+		 "normal_center_coords": [0.9474309153713298,0.5078999430878886]
+	},
+	"gneJ412": {
+		 "true_center_coords": [184.26,1.5],
+		 "normal_center_coords": [0.9599322646804835,0.47681508983983306]
+	},
+	"gneJ413": {
+		 "true_center_coords": [-227.72,-36.53],
+		 "normal_center_coords": [0.6819880721070811,0.37374996612374317]
+	},
+	"gneJ414": {
+		 "true_center_coords": [-189.99,-29.74],
+		 "normal_center_coords": [0.7074427892918825,0.3921515488224613]
+	},
+	"gneJ415": {
+		 "true_center_coords": [-150.6,-21.29],
+		 "normal_center_coords": [0.7340174330742659,0.4150518984254316]
+	},
+	"gneJ416": {
+		 "true_center_coords": [-52.23,-38.7],
+		 "normal_center_coords": [0.8003832037996546,0.36786904794167863]
+	},
+	"gneJ418": {
+		 "true_center_coords": [-102.84,-52.96],
+		 "normal_center_coords": [0.7662389356649395,0.3292230141738258]
+	},
+	"gneJ419": {
+		 "true_center_coords": [-47.0,-75.46],
+		 "normal_center_coords": [0.8039116472366148,0.26824575191739614]
+	},
+	"gneJ42": {
+		 "true_center_coords": [-23.97,91.23],
+		 "normal_center_coords": [0.8194489421416234,0.7199924117184748]
+	},
+	"gneJ420": {
+		 "true_center_coords": [-85.97,-29.66],
+		 "normal_center_coords": [0.7776203583765111,0.3923683568660397]
+	},
+	"gneJ421": {
+		 "true_center_coords": [-67.69,-46.74],
+		 "normal_center_coords": [0.7899530440414507,0.3460798395620477]
+	},
+	"gneJ422": {
+		 "true_center_coords": [-33.74,-58.99],
+		 "normal_center_coords": [0.812857566925734,0.31288110788910267]
+	},
+	"gneJ423": {
+		 "true_center_coords": [0.21,-81.76],
+		 "normal_center_coords": [0.8357620898100172,0.2511721184855958]
+	},
+	"gneJ424": {
+		 "true_center_coords": [-14.06,-58.06],
+		 "normal_center_coords": [0.8261347689982729,0.3154015013957018]
+	},
+	"gneJ425": {
+		 "true_center_coords": [2.62,-43.4],
+		 "normal_center_coords": [0.8373880073402417,0.35513157538144663]
+	},
+	"gneJ426": {
+		 "true_center_coords": [31.94,-60.67],
+		 "normal_center_coords": [0.8571688795336787,0.3083281389739559]
+	},
+	"gneJ427": {
+		 "true_center_coords": [25.72,-84.17],
+		 "normal_center_coords": [0.8529725280656304,0.244640776172796]
+	},
+	"gneJ428": {
+		 "true_center_coords": [-50.81,-94.42],
+		 "normal_center_coords": [0.801341213298791,0.21686224558931136]
+	},
+	"gneJ429": {
+		 "true_center_coords": [43.85,-41.55],
+		 "normal_center_coords": [0.8652040155440414,0.3601452613891975]
+	},
+	"gneJ43": {
+		 "true_center_coords": [-28.8,71.03],
+		 "normal_center_coords": [0.8161903605354058,0.6652483807149245]
+	},
+	"gneJ430": {
+		 "true_center_coords": [64.1,-85.29],
+		 "normal_center_coords": [0.8788657707253885,0.24160546356269816]
+	},
+	"gneJ431": {
+		 "true_center_coords": [72.07,-66.36],
+		 "normal_center_coords": [0.884242767702936,0.29290766687444103]
+	},
+	"gneJ432": {
+		 "true_center_coords": [94.65,-87.11],
+		 "normal_center_coords": [0.8994764680483592,0.2366730805712892]
+	},
+	"gneJ433": {
+		 "true_center_coords": [111.25,-101.22],
+		 "normal_center_coords": [0.9106757340241796,0.19843356188514594]
+	},
+	"gneJ435": {
+		 "true_center_coords": [-233.25,-153.57],
+		 "normal_center_coords": [0.6782572322970638,0.05655979836851948]
+	},
+	"gneJ436": {
+		 "true_center_coords": [-262.63,-157.77],
+		 "normal_center_coords": [0.6584358808290155,0.04517737608065256]
+	},
+	"gneJ438": {
+		 "true_center_coords": [-457.7,49.46],
+		 "normal_center_coords": [0.5268310125215888,0.606791511965094]
+	},
+	"gneJ439": {
+		 "true_center_coords": [-490.86,50.41],
+		 "normal_center_coords": [0.5044594667530223,0.6093661074825876]
+	},
+	"gneJ44": {
+		 "true_center_coords": [10.27,53.91],
+		 "normal_center_coords": [0.8425491148531951,0.6188514593891433]
+	},
+	"gneJ440": {
+		 "true_center_coords": [-499.86,14.89],
+		 "normal_center_coords": [0.4983875755613125,0.5131033361337705]
+	},
+	"gneJ441": {
+		 "true_center_coords": [-471.91,-10.21],
+		 "normal_center_coords": [0.5172441709844559,0.4450798124610423]
+	},
+	"gneJ444": {
+		 "true_center_coords": [-504.36,71.69],
+		 "normal_center_coords": [0.4953516299654576,0.6670370470744464]
+	},
+	"gneJ445": {
+		 "true_center_coords": [-542.88,70.22],
+		 "normal_center_coords": [0.4693639356649395,0.663053199273693]
+	},
+	"gneJ446": {
+		 "true_center_coords": [-568.18,35.22],
+		 "normal_center_coords": [0.4522951748704663,0.5681996802081357]
+	},
+	"gneJ447": {
+		 "true_center_coords": [-548.18,1.4],
+		 "normal_center_coords": [0.4657882664075993,0.47654407978536]
+	},
+	"gneJ449": {
+		 "true_center_coords": [-474.65,-42.96],
+		 "normal_center_coords": [0.5153956174438687,0.3563240196211279]
+	},
+	"gneJ45": {
+		 "true_center_coords": [24.33,58.3],
+		 "normal_center_coords": [0.8520347582037996,0.630748800780509]
+	},
+	"gneJ450": {
+		 "true_center_coords": [-502.89,-49.43],
+		 "normal_center_coords": [0.49634337219343694,0.3387896690967235]
+	},
+	"gneJ451": {
+		 "true_center_coords": [-521.71,-23.26],
+		 "normal_center_coords": [0.48364637305699476,0.40971300035231306]
+	},
+	"gneJ452": {
+		 "true_center_coords": [-495.24,-72.37],
+		 "normal_center_coords": [0.5015044797063902,0.27661996260061245]
+	},
+	"gneJ454": {
+		 "true_center_coords": [-527.3,-67.96],
+		 "normal_center_coords": [0.47987505397236613,0.28857150600287274]
+	},
+	"gneJ455": {
+		 "true_center_coords": [-541.71,-41.49],
+		 "normal_center_coords": [0.47015328151986174,0.3603078674218813]
+	},
+	"gneJ456": {
+		 "true_center_coords": [-587.88,-33.85],
+		 "normal_center_coords": [0.4390044797063903,0.38101303558362015]
+	},
+	"gneJ457": {
+		 "true_center_coords": [-594.94,1.15],
+		 "normal_center_coords": [0.4342414183937823,0.4758665546491775]
+	},
+	"gneJ458": {
+		 "true_center_coords": [-589.06,26.15],
+		 "normal_center_coords": [0.43820838730569944,0.5436190682674327]
+	},
+	"gneJ459": {
+		 "true_center_coords": [-658.82,-4.62],
+		 "normal_center_coords": [0.3911444840241795,0.46022927450608414]
+	},
+	"gneJ46": {
+		 "true_center_coords": [-46.81,115.38],
+		 "normal_center_coords": [0.8040398316062176,0.7854413398737092]
+	},
+	"gneJ460": {
+		 "true_center_coords": [-626.49,-2.91],
+		 "normal_center_coords": [0.41295606649395505,0.4648635464375728]
+	},
+	"gneJ461": {
+		 "true_center_coords": [-627.69,28.63],
+		 "normal_center_coords": [0.412146481001727,0.5503401176183637]
+	},
+	"gneJ462": {
+		 "true_center_coords": [-619.66,57.37],
+		 "normal_center_coords": [0.41756395725388595,0.6282284072739098]
+	},
+	"gneJ463": {
+		 "true_center_coords": [-586.51,55.16],
+		 "normal_center_coords": [0.4399287564766839,0.6222390850700561]
+	},
+	"gneJ464": {
+		 "true_center_coords": [-578.88,82.88],
+		 "normal_center_coords": [0.4450763708981001,0.6973630721699775]
+	},
+	"gneJ465": {
+		 "true_center_coords": [-604.41,80.21],
+		 "normal_center_coords": [0.42785243955094987,0.6901271037155478]
+	},
+	"gneJ466": {
+		 "true_center_coords": [-558.21,85.89],
+		 "normal_center_coords": [0.459021481001727,0.7055204748096153]
+	},
+	"gneJ467": {
+		 "true_center_coords": [-510.63,117.17],
+		 "normal_center_coords": [0.4911215457685664,0.7902924198487764]
+	},
+	"gneJ468": {
+		 "true_center_coords": [-453.41,-54.3],
+		 "normal_center_coords": [0.5297252806563039,0.3255914794438874]
+	},
+	"gneJ469": {
+		 "true_center_coords": [-434.62,-30.66],
+		 "normal_center_coords": [0.5424020401554404,0.3896582563213095]
+	},
+	"gneJ47": {
+		 "true_center_coords": [-31.44,113.19],
+		 "normal_center_coords": [0.8144092724525043,0.7795062196807502]
+	},
+	"gneJ470": {
+		 "true_center_coords": [-426.8,-6.91],
+		 "normal_center_coords": [0.5476778389464594,0.454023144258652]
+	},
+	"gneJ471": {
+		 "true_center_coords": [203.79,-29.88],
+		 "normal_center_coords": [0.9731082685664939,0.3917721347461991]
+	},
+	"gneJ474": {
+		 "true_center_coords": [3.27,159.62],
+		 "normal_center_coords": [0.8378265328151986,0.9053361879725738]
+	},
+	"gneJ475": {
+		 "true_center_coords": [-15.8,158.28],
+		 "normal_center_coords": [0.8249608700345423,0.9017046532426354]
+	},
+	"gneJ476": {
+		 "true_center_coords": [-566.17,131.13],
+		 "normal_center_coords": [0.45365123056994816,0.82812542345321]
+	},
+	"gneJ477": {
+		 "true_center_coords": [-512.55,129.31],
+		 "normal_center_coords": [0.4898262089810017,0.8231930404618011]
+	},
+	"gneJ478": {
+		 "true_center_coords": [-470.08,128.48],
+		 "normal_center_coords": [0.5184787888601036,0.820943657009675]
+	},
+	"gneJ479": {
+		 "true_center_coords": [-453.98,115.2],
+		 "normal_center_coords": [0.5293407275474956,0.7849535217756578]
+	},
+	"gneJ48": {
+		 "true_center_coords": [-18.27,100.89],
+		 "normal_center_coords": [0.8232944732297064,0.7461719829805685]
+	},
+	"gneJ480": {
+		 "true_center_coords": [-440.36,128.48],
+		 "normal_center_coords": [0.5385295228842831,0.820943657009675]
+	},
+	"gneJ481": {
+		 "true_center_coords": [-420.97,117.5],
+		 "normal_center_coords": [0.5516110751295336,0.7911867530285374]
+	},
+	"gneJ482": {
+		 "true_center_coords": [-399.98,132.45],
+		 "normal_center_coords": [0.5657720746977547,0.831702756172254]
+	},
+	"gneJ483": {
+		 "true_center_coords": [-381.18,134.51],
+		 "normal_center_coords": [0.5784555807426597,0.8372855632943982]
+	},
+	"gneJ484": {
+		 "true_center_coords": [-347.92,133.15],
+		 "normal_center_coords": [0.6008945919689118,0.8335998265535652]
+	},
+	"gneJ485": {
+		 "true_center_coords": [-621.38,142.84],
+		 "normal_center_coords": [0.4164035513816925,0.8598607008320007]
+	},
+	"gneJ486": {
+		 "true_center_coords": [-593.58,125.73],
+		 "normal_center_coords": [0.43515894861830734,0.813490880511667]
+	},
+	"gneJ487": {
+		 "true_center_coords": [-160.9,140.34],
+		 "normal_center_coords": [0.7270684909326424,0.8530854494701753]
+	},
+	"gneJ488": {
+		 "true_center_coords": [-721.5,-53.61],
+		 "normal_center_coords": [0.3488571351468048,0.3274614488197512]
+	},
+	"gneJ489": {
+		 "true_center_coords": [-703.36,-43.41],
+		 "normal_center_coords": [0.3610953691709844,0.35510447437599935]
+	},
+	"gneJ49": {
+		 "true_center_coords": [-6.85,96.94],
+		 "normal_center_coords": [0.8309990284974094,0.7354670858288842]
+	},
+	"gneJ490": {
+		 "true_center_coords": [-677.94,-55.4],
+		 "normal_center_coords": [0.3782450885146804,0.3226103688446841]
+	},
+	"gneJ493": {
+		 "true_center_coords": [-659.47,-56.28],
+		 "normal_center_coords": [0.39070595854922274,0.32022548036532156]
+	},
+	"gneJ494": {
+		 "true_center_coords": [-735.38,-100.29],
+		 "normal_center_coords": [0.33949292962003447,0.20095395539174501]
+	},
+	"gneJ495": {
+		 "true_center_coords": [-764.24,-86.92],
+		 "normal_center_coords": [0.3200223985319516,0.23718799967478793]
+	},
+	"gneJ496": {
+		 "true_center_coords": [-781.52,-96.37],
+		 "normal_center_coords": [0.3083643674438687,0.21157754952708743]
+	},
+	"gneJ497": {
+		 "true_center_coords": [-805.03,-94.23],
+		 "normal_center_coords": [0.2925032383419689,0.21737716469281007]
+	},
+	"gneJ5": {
+		 "true_center_coords": [121.86,60.62],
+		 "normal_center_coords": [0.9178338190846286,0.637036234044283]
+	},
+	"gneJ50": {
+		 "true_center_coords": [-13.08,79.3],
+		 "normal_center_coords": [0.8267959304835923,0.6876609122198434]
+	},
+	"gneJ501": {
+		 "true_center_coords": [-755.98,156.14],
+		 "normal_center_coords": [0.3255950453367875,0.8959050380769126]
+	},
+	"gneJ502": {
+		 "true_center_coords": [-725.77,138.55],
+		 "normal_center_coords": [0.3459763601036269,0.8482343694951082]
+	},
+	"gneJ503": {
+		 "true_center_coords": [-718.89,117.14],
+		 "normal_center_coords": [0.35061798359240065,0.7902111168324344]
+	},
+	"gneJ504": {
+		 "true_center_coords": [-740.3,101.27],
+		 "normal_center_coords": [0.3361736291018998,0.747201821187566]
+	},
+	"gneJ505": {
+		 "true_center_coords": [-770.7,109.11],
+		 "normal_center_coords": [0.3156641299654576,0.7684490094582509]
+	},
+	"gneJ506": {
+		 "true_center_coords": [-771.28,129.95],
+		 "normal_center_coords": [0.31527283031088077,0.8249275048104284]
+	},
+	"gneJ507": {
+		 "true_center_coords": [-671.67,136.38],
+		 "normal_center_coords": [0.38247517271157166,0.8423534513130436]
+	},
+	"gneJ508": {
+		 "true_center_coords": [-651.02,128.73],
+		 "normal_center_coords": [0.39640678972366145,0.8216211821458574]
+	},
+	"gneJ509": {
+		 "true_center_coords": [-653.12,105.21],
+		 "normal_center_coords": [0.39499001511226245,0.757879617333803]
+	},
+	"gneJ51": {
+		 "true_center_coords": [5.68,79.3],
+		 "normal_center_coords": [0.8394524503454232,0.6876609122198434]
+	},
+	"gneJ510": {
+		 "true_center_coords": [-678.55,97.57],
+		 "normal_center_coords": [0.3778335492227979,0.7371744491720642]
+	},
+	"gneJ511": {
+		 "true_center_coords": [-693.27,117.26],
+		 "normal_center_coords": [0.367902633851468,0.790536328897802]
+	},
+	"gneJ512": {
+		 "true_center_coords": [-715.45,161.11],
+		 "normal_center_coords": [0.35293879533678746,0.9093742377842218]
+	},
+	"gneJ513": {
+		 "true_center_coords": [-702.26,160.15],
+		 "normal_center_coords": [0.3618374892055267,0.9067725412612808]
+	},
+	"gneJ514": {
+		 "true_center_coords": [-683.73,78.98],
+		 "normal_center_coords": [0.3743388385146804,0.6867936800455298]
+	},
+	"gneJ515": {
+		 "true_center_coords": [-666.38,69.04],
+		 "normal_center_coords": [0.3860440954231433,0.6598552806309115]
+	},
+	"gneJ516": {
+		 "true_center_coords": [-676.79,50.53],
+		 "normal_center_coords": [0.37902094127806557,0.6096913195479552]
+	},
+	"gneJ517": {
+		 "true_center_coords": [-694.6,35.49],
+		 "normal_center_coords": [0.3670053432642486,0.5689314073552129]
+	},
+	"gneJ518": {
+		 "true_center_coords": [-712.65,54.0],
+		 "normal_center_coords": [0.35482782815198616,0.619095368438169]
+	},
+	"gneJ519": {
+		 "true_center_coords": [-711.95,84.54],
+		 "normal_center_coords": [0.35530008635578575,0.7018618390742297]
+	},
+	"gneJ52": {
+		 "true_center_coords": [20.85,86.48],
+		 "normal_center_coords": [0.8496869602763384,0.7071194341310063]
+	},
+	"gneJ520": {
+		 "true_center_coords": [-734.39,78.52],
+		 "normal_center_coords": [0.3401608376511226,0.6855470337949537]
+	},
+	"gneJ521": {
+		 "true_center_coords": [-788.06,134.28],
+		 "normal_center_coords": [0.3039521265112262,0.8366622401691103]
+	},
+	"gneJ522": {
+		 "true_center_coords": [-813.28,119.93],
+		 "normal_center_coords": [0.2869373380829015,0.7977722973522318]
+	},
+	"gneJ523": {
+		 "true_center_coords": [-832.81,108.62],
+		 "normal_center_coords": [0.2737613341968912,0.7671210601913331]
+	},
+	"gneJ524": {
+		 "true_center_coords": [-819.62,88.27],
+		 "normal_center_coords": [0.28266002806563034,0.7119705141060733]
+	},
+	"gneJ525": {
+		 "true_center_coords": [-782.23,82.8],
+		 "normal_center_coords": [0.30788536269430045,0.6971462641263991]
+	},
+	"gneJ526": {
+		 "true_center_coords": [-794.84,101.1],
+		 "normal_center_coords": [0.2993779684801381,0.7467411040949619]
+	},
+	"gneJ527": {
+		 "true_center_coords": [-759.3,66.81],
+		 "normal_center_coords": [0.32335519214162345,0.6538117564161631]
+	},
+	"gneJ528": {
+		 "true_center_coords": [-756.78,49.68],
+		 "normal_center_coords": [0.3250553216753022,0.6073877340849345]
+	},
+	"gneJ529": {
+		 "true_center_coords": [-700.58,19.66],
+		 "normal_center_coords": [0.36297090889464584,0.5260305157321337]
+	},
+	"gneJ53": {
+		 "true_center_coords": [36.09,82.13],
+		 "normal_center_coords": [0.8599686960276337,0.6953304967614298]
+	},
+	"gneJ530": {
+		 "true_center_coords": [-731.35,8.48],
+		 "normal_center_coords": [0.3422117875647668,0.4957315916420499]
+	},
+	"gneJ532": {
+		 "true_center_coords": [-751.38,-13.58],
+		 "normal_center_coords": [0.3286984563903281,0.43594677362530143]
+	},
+	"gneJ533": {
+		 "true_center_coords": [-788.7,19.72],
+		 "normal_center_coords": [0.3035203475820379,0.5261931217648175]
+	},
+	"gneJ534": {
+		 "true_center_coords": [-752.37,20.59],
+		 "normal_center_coords": [0.32803054835924,0.5285509092387327]
+	},
+	"gneJ536": {
+		 "true_center_coords": [-734.99,35.54],
+		 "normal_center_coords": [0.33975604490500855,0.5690669123824493]
+	},
+	"gneJ537": {
+		 "true_center_coords": [-714.48,31.89],
+		 "normal_center_coords": [0.35359321027633844,0.5591750453941841]
+	},
+	"gneJ538": {
+		 "true_center_coords": [-803.69,-50.69],
+		 "normal_center_coords": [0.2934072754749567,0.3353749424103634]
+	},
+	"gneJ539": {
+		 "true_center_coords": [-787.44,-44.19],
+		 "normal_center_coords": [0.3043704123488773,0.35299059595110976]
+	},
+	"gneJ54": {
+		 "true_center_coords": [53.51,77.77],
+		 "normal_center_coords": [0.8717211787564766,0.683514458386406]
+	},
+	"gneJ540": {
+		 "true_center_coords": [-776.35,-11.67],
+		 "normal_center_coords": [0.31185233160621756,0.4411230656657362]
+	},
+	"gneJ541": {
+		 "true_center_coords": [-886.9,-32.36],
+		 "normal_center_coords": [0.237269268134715,0.3850510853952681]
+	},
+	"gneJ542": {
+		 "true_center_coords": [-852.66,-20.36],
+		 "normal_center_coords": [0.26036944084628666,0.4175722919320306]
+	},
+	"gneJ543": {
+		 "true_center_coords": [-831.63,-48.87],
+		 "normal_center_coords": [0.274557426597582,0.3403073254017724]
+	},
+	"gneJ544": {
+		 "true_center_coords": [-835.38,10.92],
+		 "normal_center_coords": [0.27202747193436955,0.5023442369711916]
+	},
+	"gneJ545": {
+		 "true_center_coords": [-864.28,32.28],
+		 "normal_center_coords": [0.2525299546632124,0.5602319846066289]
+	},
+	"gneJ546": {
+		 "true_center_coords": [-894.36,17.98],
+		 "normal_center_coords": [0.23223634499136436,0.5214775468169869]
+	},
+	"gneJ547": {
+		 "true_center_coords": [-905.92,-13.36],
+		 "normal_center_coords": [0.22443733808290153,0.4365429957451421]
+	},
+	"gneJ549": {
+		 "true_center_coords": [-937.68,-3.26],
+		 "normal_center_coords": [0.20301030872193435,0.46391501124691725]
+	},
+	"gneJ550": {
+		 "true_center_coords": [-998.46,13.35],
+		 "normal_center_coords": [0.16200480354058713,0.508929781294886]
+	},
+	"gneJ551": {
+		 "true_center_coords": [-979.74,33.75],
+		 "normal_center_coords": [0.17463433721934363,0.5642158324073823]
+	},
+	"gneJ552": {
+		 "true_center_coords": [-1001.62,35.01],
+		 "normal_center_coords": [0.15987289507772015,0.5676305590937424]
+	},
+	"gneJ553": {
+		 "true_center_coords": [-1027.78,22.87],
+		 "normal_center_coords": [0.14222393134715022,0.5347299384807176]
+	},
+	"gneJ554": {
+		 "true_center_coords": [-960.48,30.23],
+		 "normal_center_coords": [0.18762818436960269,0.554676278489932]
+	},
+	"gneJ555": {
+		 "true_center_coords": [-926.41,24.13],
+		 "normal_center_coords": [0.21061366580310878,0.5381446651670777]
+	},
+	"gneJ558": {
+		 "true_center_coords": [-801.05,37.78],
+		 "normal_center_coords": [0.2951883635578583,0.5751375376026451]
+	},
+	"gneJ559": {
+		 "true_center_coords": [-847.53,41.78],
+		 "normal_center_coords": [0.2638304188255613,0.5859779397815659]
+	},
+	"gneJ56": {
+		 "true_center_coords": [60.41,86.48],
+		 "normal_center_coords": [0.8763762953367875,0.7071194341310063]
+	},
+	"gneJ560": {
+		 "true_center_coords": [-1116.12,-6.17],
+		 "normal_center_coords": [0.08262494602763387,0.45602861866175237]
+	},
+	"gneJ562": {
+		 "true_center_coords": [-1080.79,-25.73],
+		 "normal_center_coords": [0.10646049222797924,0.40301905200682947]
+	},
+	"gneJ563": {
+		 "true_center_coords": [-1112.34,-25.8],
+		 "normal_center_coords": [0.08517514032815199,0.40282934496869827]
+	},
+	"gneJ564": {
+		 "true_center_coords": [-1054.23,-13.65],
+		 "normal_center_coords": [0.12437931778929182,0.43575706658717034]
+	},
+	"gneJ565": {
+		 "true_center_coords": [-1027.07,-5.03],
+		 "normal_center_coords": [0.14270293609671847,0.45911813328274476]
+	},
+	"gneJ566": {
+		 "true_center_coords": [-1034.72,9.3],
+		 "normal_center_coords": [0.13754182858376504,0.4979538740887287]
+	},
+	"gneJ567": {
+		 "true_center_coords": [-1061.68,12.94],
+		 "normal_center_coords": [0.11935314119170974,0.5078186400715466]
+	},
+	"gneJ568": {
+		 "true_center_coords": [-1204.22,35.2],
+		 "normal_center_coords": [0.023187877806562965,0.568145478197241]
+	},
+	"gneJ569": {
+		 "true_center_coords": [-1169.28,18.69],
+		 "normal_center_coords": [0.04676030872193433,0.5234017182037454]
+	},
+	"gneJ57": {
+		 "true_center_coords": [63.31,121.68],
+		 "normal_center_coords": [0.8783327936096718,0.8025149733055096]
+	},
+	"gneJ571": {
+		 "true_center_coords": [-929.63,114.68],
+		 "normal_center_coords": [0.20844127806563034,0.7835442694923982]
+	},
+	"gneJ572": {
+		 "true_center_coords": [-941.32,103.3],
+		 "normal_center_coords": [0.2005545660621761,0.7527033252933684]
+	},
+	"gneJ573": {
+		 "true_center_coords": [-891.07,133.48],
+		 "normal_center_coords": [0.23445595854922271,0.834494159733326]
+	},
+	"gneJ574": {
+		 "true_center_coords": [-863.33,151.61],
+		 "normal_center_coords": [0.25317087651122616,0.8836282826092848]
+	},
+	"gneJ575": {
+		 "true_center_coords": [-827.93,161.41],
+		 "normal_center_coords": [0.27705364853195164,0.9101872679476409]
+	},
+	"gneJ577": {
+		 "true_center_coords": [-1057.87,59.62],
+		 "normal_center_coords": [0.1219235751295337,0.6343261334995528]
+	},
+	"gneJ578": {
+		 "true_center_coords": [-1003.2,93.9],
+		 "normal_center_coords": [0.1588069408462866,0.7272283801729045]
+	},
+	"gneJ58": {
+		 "true_center_coords": [5.97,126.76],
+		 "normal_center_coords": [0.8396481001727115,0.8162822840727391]
+	},
+	"gneJ580": {
+		 "true_center_coords": [29.38,149.19],
+		 "normal_center_coords": [0.8554417638169257,0.8770698392910377]
+	},
+	"gneJ581": {
+		 "true_center_coords": [177.8,69.32],
+		 "normal_center_coords": [0.9555739961139895,0.6606141087834358]
+	},
+	"gneJ6": {
+		 "true_center_coords": [139.4,51.85],
+		 "normal_center_coords": [0.9296672603626943,0.6132686522669991]
+	},
+	"gneJ62": {
+		 "true_center_coords": [4.35,-3.33],
+		 "normal_center_coords": [0.8385551597582037,0.4637253042087861]
+	},
+	"gneJ66": {
+		 "true_center_coords": [56.16,48.93],
+		 "normal_center_coords": [0.8735090133851467,0.6053551586763869]
+	},
+	"gneJ67": {
+		 "true_center_coords": [82.94,33.12],
+		 "normal_center_coords": [0.8915762629533679,0.5625084690642023]
+	},
+	"gneJ68": {
+		 "true_center_coords": [109.29,34.0],
+		 "normal_center_coords": [0.9093534110535405,0.5648933575435648]
+	},
+	"gneJ69": {
+		 "true_center_coords": [139.15,41.9],
+		 "normal_center_coords": [0.9294985967184801,0.5863031518469335]
+	},
+	"gneJ71": {
+		 "true_center_coords": [-115.31,141.45],
+		 "normal_center_coords": [0.7578259930915371,0.8560936610748258]
+	},
+	"gneJ72": {
+		 "true_center_coords": [-24.45,142.73],
+		 "normal_center_coords": [0.8191251079447323,0.8595625897720804]
+	},
+	"gneJ73": {
+		 "true_center_coords": [-192.09,167.68],
+		 "normal_center_coords": [0.7060260146804835,0.9271795983630993]
+	},
+	"gneJ74": {
+		 "true_center_coords": [-22.53,23.72],
+		 "normal_center_coords": [0.820420444732297,0.5370335239437383]
+	},
+	"gneJ75": {
+		 "true_center_coords": [-52.61,37.15],
+		 "normal_center_coords": [0.800126835060449,0.5734301742594651]
+	},
+	"gneJ76": {
+		 "true_center_coords": [-25.73,3.24],
+		 "normal_center_coords": [0.8182615500863557,0.48153066478766365]
+	},
+	"gneJ77": {
+		 "true_center_coords": [-62.84,-1.88],
+		 "normal_center_coords": [0.7932251187392055,0.46765494999864493]
+	},
+	"gneJ78": {
+		 "true_center_coords": [-72.44,16.04],
+		 "normal_center_coords": [0.7867484348013816,0.5162199517602103]
+	},
+	"gneJ79": {
+		 "true_center_coords": [-99.31,28.2],
+		 "normal_center_coords": [0.7686204663212435,0.5491747743841296]
+	},
+	"gneJ8": {
+		 "true_center_coords": [90.36,46.54],
+		 "normal_center_coords": [0.8965821999136441,0.5988780183744816]
+	},
+	"gneJ80": {
+		 "true_center_coords": [-144.1,186.23],
+		 "normal_center_coords": [0.7384026878238342,0.9774519634678446]
+	},
+	"gneJ81": {
+		 "true_center_coords": [-184.41,194.55],
+		 "normal_center_coords": [0.7112073618307425,1.0]
+	},
+	"gneJ82": {
+		 "true_center_coords": [-238.8,175.36],
+		 "normal_center_coords": [0.6745128993955095,0.9479931705466272]
+	},
+	"gneJ84": {
+		 "true_center_coords": [-154.98,127.37],
+		 "normal_center_coords": [0.7310624460276338,0.8179354454050245]
+	},
+	"gneJ85": {
+		 "true_center_coords": [-267.59,158.72],
+		 "normal_center_coords": [0.6550895941278065,0.9028970974823165]
+	},
+	"gneJ86": {
+		 "true_center_coords": [-286.15,131.21],
+		 "normal_center_coords": [0.6425680051813472,0.8283422314967884]
+	},
+	"gneJ87": {
+		 "true_center_coords": [-116.59,85.78],
+		 "normal_center_coords": [0.7569624352331606,0.7052223637496952]
+	},
+	"gneJ88": {
+		 "true_center_coords": [-124.91,18.6],
+		 "normal_center_coords": [0.7513493091537132,0.5231578091547197]
+	},
+	"gneJ89": {
+		 "true_center_coords": [-207.45,66.59],
+		 "normal_center_coords": [0.6956633203799654,0.6532155342963224]
+	},
+	"gneJ9": {
+		 "true_center_coords": [112.67,46.54],
+		 "normal_center_coords": [0.911633743523316,0.5988780183744816]
+	},
+	"gneJ90": {
+		 "true_center_coords": [-229.84,98.58],
+		 "normal_center_coords": [0.680557804404145,0.7399116507222417]
+	},
+	"gneJ91": {
+		 "true_center_coords": [-377.0,112.65],
+		 "normal_center_coords": [0.5812756368739205,0.7780427653865959]
+	},
+	"gneJ92": {
+		 "true_center_coords": [-398.12,108.81],
+		 "normal_center_coords": [0.5670269322107081,0.7676359792948318]
+	},
+	"gneJ93": {
+		 "true_center_coords": [-410.91,78.74],
+		 "normal_center_coords": [0.5583981001727114,0.6861432559147944]
+	},
+	"gneJ97": {
+		 "true_center_coords": [-379.58,-107.64],
+		 "normal_center_coords": [0.5795350280656304,0.181034716387978]
+	},
+	"gneJ99": {
+		 "true_center_coords": [-193.84,-12.47],
+		 "normal_center_coords": [0.7048453691709845,0.438954985229952]
+	}
+}
