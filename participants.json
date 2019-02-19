@@ -1,10 +1,22 @@
 {
-    "Bob": {
+    "1": {
         "startKey":"0",
         "endKey":"15"
     },
-    "Alice": {
+    "2": {
         "startKey":"3",
         "endKey":"14"
+    },
+    "3": {
+        "startKey":"8",
+        "endKey":"13"
+    },
+    "4": {
+        "startKey":"3",
+        "endKey":"11"
+    },
+    "5": {
+        "startKey":"4",
+        "endKey":"12"
     }
 }

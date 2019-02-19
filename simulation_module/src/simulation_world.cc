@@ -5,6 +5,7 @@
 #include "simulation_participant.h"
 #include "simulation_data.h"
 
+
 SimulationWorld::SimulationWorld(std::weak_ptr<SimulationSettings> settings)
 {
     auto settingsLock = settings.lock(); //Lock a temporary reference to our shared settings resource.
@@ -54,6 +55,7 @@ void SimulationWorld::InitializeParticipants(SimulationParticipantSettings* sett
 
 void SimulationWorld::RunSimulation(SimulationData* data)
 {
+    data->ResetClock();
     std::vector<SimulationParticipant*> activeParticiapnts; 
     for(auto participantItr = participants_.begin();
         participantItr != participants_.end();
@@ -80,5 +82,6 @@ void SimulationWorld::RunSimulation(SimulationData* data)
             ),
             activeParticiapnts.end()
         );
+        data->AdvanceClock(1.f);
     }
 }

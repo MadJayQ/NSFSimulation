@@ -32,6 +32,10 @@ public:
 
     unsigned int Weight() const { return weight_; }
 
+    const SimulationGraph* GetGraph() { return graph_; }
+
+    ParticipantMap* GetParticipants() const { return const_cast<ParticipantMap*>(&participants_); }
+
 private: 
     std::string key_;
     unsigned int budget_; //The budget that has been dispersed to our node
@@ -56,6 +60,9 @@ public:
     //Does this graph currently have the node?
     bool HasNode(const std::string& key);
     static nlohmann::json ReadMapfile(const std::string& mapFile);
+
+    std::vector<SimulationParticipant*> GetParticipants(std::initializer_list<SimulationParticipant*> ignoreList);
+
 private:
     void CreateNode(const nlohmann::json& nodesJson, const std::string& itr);
     void DijkstraComputePaths(const SimulationNode* src, std::unordered_map<std::string, const SimulationNode*>& previous) const;

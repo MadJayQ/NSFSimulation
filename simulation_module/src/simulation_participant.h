@@ -51,8 +51,9 @@ public:
     void ParticipantPostThink(SimulationData* data);
 
     std::string Name() const { return name_; }
-
     bool IsFinished() const { return isFinished_; }
+    float SampleProbabilityCurve(float time);
+    
 private:
     SimulationNode* current_node_; //Where we are
     SimulationNode* destination_node_; //Where we're trying to go

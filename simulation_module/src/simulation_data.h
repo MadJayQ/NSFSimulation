@@ -23,6 +23,10 @@ public:
     explicit SimulationData();
     void RecordHop(SimulationParticipant* participant, SimulationHop hop);
     int GetHopCount(const std::string& name);
+    float GetTime() { return _current_timestamp; }
+    void ResetClock() { _current_timestamp = 0.f; }
+    void AdvanceClock(float dt) { _current_timestamp += dt; }
 private:
     std::unordered_map<std::string, std::vector<SimulationHop>> hop_data_;
+    float _current_timestamp;
 };
