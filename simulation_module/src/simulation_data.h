@@ -26,6 +26,7 @@ public:
     float GetTime() { return _current_timestamp; }
     void ResetClock() { _current_timestamp = 0.f; }
     void AdvanceClock(float dt) { _current_timestamp += dt; }
+    float CurrentTime() const { return _current_timestamp; }
 private:
     std::unordered_map<std::string, std::vector<SimulationHop>> hop_data_;
     float _current_timestamp;

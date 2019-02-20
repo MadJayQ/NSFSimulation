@@ -48,27 +48,6 @@ void SimulationParticipant::MoveTo(SimulationNode *dst)
     current_node_ = dst;
 }
 
-std::vector<std::vector<SimulationParticipant *>> CombinationUtil(
-    const std::vector<SimulationParticipant *> &set,
-    std::vector<SimulationParticipant *> tempSet,
-    std::vector<std::vector<SimulationParticipant *>> currentRet,
-    int start, int end, int index, int r)
-{
-    if (index == r)
-    {
-        currentRet.push_back(tempSet);
-        tempSet.clear();
-        tempSet = std::vector<SimulationParticipant *>(r);
-        return currentRet;
-    }
-
-    for (int i = start; i <= end && end - i + 1 >= r - index; i++)
-    {
-        tempSet[index] = set[i];
-        CombinationUtil(set, tempSet, currentRet, i + 1, end, index + 1, r);
-    }
-}
-
 struct probability_solver
 {
     float cumulativeProbability;

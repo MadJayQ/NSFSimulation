@@ -5,11 +5,14 @@
 #include <unordered_map>
 #include <stack>
 
+#include <random>
+
 class SimulationParticipant;
 
 using ParticipantMap = std::unordered_map<std::string, const SimulationParticipant*>;
 
 class SimulationGraph;
+class SimulationEdge;
 
 class SimulationNode
 {
@@ -42,6 +45,33 @@ private:
     unsigned int weight_; //Weight for shortest path algortihm (NOTE): It should always be 1
     ParticipantMap participants_; //This is a list of all active participants in this node
     const SimulationGraph* graph_; 
+};
+
+class SimulationEdge
+{
+public:
+    explicit SimulationEdge(SimulationNode* src, SimulationNode* dst) : src_(src), dst_(dst) 
+    {
+        distance_ = -1;
+        speed_distribution_ = std::normal_distribution<float>(-1.f, 0.f);
+    }
+
+    SimulationEdge(SimulationNode* src, SimulationNode* dst, float distance, float avgSpeed, float speedDev) 
+        : src_(src), dst_(dst), distance_(distance)
+    {
+        speed_distribution_ = std::normal_distribution<float>(avgSpeed, speedDev);
+    }
+
+    SimulationNode* operator -> () { return dst_; }
+
+    SimulationNode* Destination() { return dst_; }
+    SimulationNode* Source() { return src_; }
+
+
+private:
+    SimulationNode* src_, * dst_;
+    float distance_;
+    std::normal_distribution<float> speed_distribution_;
 };
 
 using NodeMap = std::unordered_map<std::string, std::unique_ptr<SimulationNode>>;

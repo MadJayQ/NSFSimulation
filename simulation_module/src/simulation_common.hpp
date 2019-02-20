@@ -5,6 +5,7 @@
 #include <fstream>
 #include <exception>
 #include <random>
+#include <chrono>
 
 #define READ_JSON(dst, json, key, type) dst = json[#key].get<type>();
 #define READ_JSON_RET(json, key, type) json[#key].get<type>()
@@ -29,6 +30,11 @@ struct NoValidMapException : std::exception
         return "No valid map was supplied";
     }
 };
+
+
+static unsigned long long TimestampMS() {
+    return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now().time_since_epoch()).count();
+}
 
 
 static std::random_device s_randomDevice;

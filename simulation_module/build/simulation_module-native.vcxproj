@@ -11,12 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1B25BBDD-EA41-859C-33D8-4943E2A070C1}</ProjectGuid>
+    <ProjectGuid>{C03745BC-A626-A7E9-D9C0-68151A1D6B5F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>simulation_module-native</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
   <PropertyGroup Label="Configuration">
@@ -48,7 +48,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\jithornton47\.node-gyp\8.9.3\include\node;C:\Users\jithornton47\.node-gyp\8.9.3\src;C:\Users\jithornton47\.node-gyp\8.9.3\deps\openssl\config;C:\Users\jithornton47\.node-gyp\8.9.3\deps\openssl\openssl\include;C:\Users\jithornton47\.node-gyp\8.9.3\deps\uv\include;C:\Users\jithornton47\.node-gyp\8.9.3\deps\zlib;C:\Users\jithornton47\.node-gyp\8.9.3\deps\v8\include;F:\Programming\Work\NSFSimulation\simulation_module\node_modules\node-addon-api;..\lib\json\single_include\nlohmann;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\jakei_000\.node-gyp\8.9.2\include\node;C:\Users\jakei_000\.node-gyp\8.9.2\src;C:\Users\jakei_000\.node-gyp\8.9.2\deps\openssl\config;C:\Users\jakei_000\.node-gyp\8.9.2\deps\openssl\openssl\include;C:\Users\jakei_000\.node-gyp\8.9.2\deps\uv\include;C:\Users\jakei_000\.node-gyp\8.9.2\deps\zlib;C:\Users\jakei_000\.node-gyp\8.9.2\deps\v8\include;C:\Users\jakei_000\Desktop\NSFSimulation\simulation_module\node_modules\node-addon-api;..\lib\json\single_include\nlohmann;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/bigobj /MP %(AdditionalOptions)</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -68,7 +68,7 @@
       <WarningLevel>Level3</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\Users\jithornton47\.node-gyp\8.9.3\x64\node.lib&quot;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\Users\jakei_000\.node-gyp\8.9.2\x64\node.lib&quot;</AdditionalDependencies>
       <AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
       <AllowIsolation>true</AllowIsolation>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -83,13 +83,13 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\jithornton47\.node-gyp\8.9.3\include\node;C:\Users\jithornton47\.node-gyp\8.9.3\src;C:\Users\jithornton47\.node-gyp\8.9.3\deps\openssl\config;C:\Users\jithornton47\.node-gyp\8.9.3\deps\openssl\openssl\include;C:\Users\jithornton47\.node-gyp\8.9.3\deps\uv\include;C:\Users\jithornton47\.node-gyp\8.9.3\deps\zlib;C:\Users\jithornton47\.node-gyp\8.9.3\deps\v8\include;F:\Programming\Work\NSFSimulation\simulation_module\node_modules\node-addon-api;..\lib\json\single_include\nlohmann;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\jakei_000\.node-gyp\8.9.2\include\node;C:\Users\jakei_000\.node-gyp\8.9.2\src;C:\Users\jakei_000\.node-gyp\8.9.2\deps\openssl\config;C:\Users\jakei_000\.node-gyp\8.9.2\deps\openssl\openssl\include;C:\Users\jakei_000\.node-gyp\8.9.2\deps\uv\include;C:\Users\jakei_000\.node-gyp\8.9.2\deps\zlib;C:\Users\jakei_000\.node-gyp\8.9.2\deps\v8\include;C:\Users\jakei_000\Desktop\NSFSimulation\simulation_module\node_modules\node-addon-api;..\lib\json\single_include\nlohmann;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=simulation_module-native;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;BUILDING_NODE_EXTENSION;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\jithornton47\.node-gyp\8.9.3\include\node;C:\Users\jithornton47\.node-gyp\8.9.3\src;C:\Users\jithornton47\.node-gyp\8.9.3\deps\openssl\config;C:\Users\jithornton47\.node-gyp\8.9.3\deps\openssl\openssl\include;C:\Users\jithornton47\.node-gyp\8.9.3\deps\uv\include;C:\Users\jithornton47\.node-gyp\8.9.3\deps\zlib;C:\Users\jithornton47\.node-gyp\8.9.3\deps\v8\include;F:\Programming\Work\NSFSimulation\simulation_module\node_modules\node-addon-api;..\lib\json\single_include\nlohmann;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\jakei_000\.node-gyp\8.9.2\include\node;C:\Users\jakei_000\.node-gyp\8.9.2\src;C:\Users\jakei_000\.node-gyp\8.9.2\deps\openssl\config;C:\Users\jakei_000\.node-gyp\8.9.2\deps\openssl\openssl\include;C:\Users\jakei_000\.node-gyp\8.9.2\deps\uv\include;C:\Users\jakei_000\.node-gyp\8.9.2\deps\zlib;C:\Users\jakei_000\.node-gyp\8.9.2\deps\v8\include;C:\Users\jakei_000\Desktop\NSFSimulation\simulation_module\node_modules\node-addon-api;..\lib\json\single_include\nlohmann;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -116,7 +116,7 @@
       <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\Users\jithornton47\.node-gyp\8.9.3\x64\node.lib&quot;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\Users\jakei_000\.node-gyp\8.9.2\x64\node.lib&quot;</AdditionalDependencies>
       <AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
       <AllowIsolation>true</AllowIsolation>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -134,7 +134,7 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\jithornton47\.node-gyp\8.9.3\include\node;C:\Users\jithornton47\.node-gyp\8.9.3\src;C:\Users\jithornton47\.node-gyp\8.9.3\deps\openssl\config;C:\Users\jithornton47\.node-gyp\8.9.3\deps\openssl\openssl\include;C:\Users\jithornton47\.node-gyp\8.9.3\deps\uv\include;C:\Users\jithornton47\.node-gyp\8.9.3\deps\zlib;C:\Users\jithornton47\.node-gyp\8.9.3\deps\v8\include;F:\Programming\Work\NSFSimulation\simulation_module\node_modules\node-addon-api;..\lib\json\single_include\nlohmann;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\jakei_000\.node-gyp\8.9.2\include\node;C:\Users\jakei_000\.node-gyp\8.9.2\src;C:\Users\jakei_000\.node-gyp\8.9.2\deps\openssl\config;C:\Users\jakei_000\.node-gyp\8.9.2\deps\openssl\openssl\include;C:\Users\jakei_000\.node-gyp\8.9.2\deps\uv\include;C:\Users\jakei_000\.node-gyp\8.9.2\deps\zlib;C:\Users\jakei_000\.node-gyp\8.9.2\deps\v8\include;C:\Users\jakei_000\Desktop\NSFSimulation\simulation_module\node_modules\node-addon-api;..\lib\json\single_include\nlohmann;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=simulation_module-native;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;BUILDING_NODE_EXTENSION;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
@@ -149,11 +149,11 @@
     <ClCompile Include="..\src\simulation_graph.cc"/>
     <ClCompile Include="..\src\simulation_participant.cc"/>
     <ClCompile Include="..\src\simulation_data.cc"/>
-    <ClCompile Include="C:\Users\jithornton47\AppData\Roaming\npm\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
+    <ClCompile Include="C:\Users\jakei_000\AppData\Roaming\npm\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\node_modules\node-addon-api\src\nothing.vcxproj">
-      <Project>{74963148-9A31-126A-43AA-E74DB9414D98}</Project>
+      <Project>{301E7D36-1A65-A771-C085-6D4D6D340C1F}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

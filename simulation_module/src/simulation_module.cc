@@ -2,9 +2,11 @@
 #include "wrappers/nodejs/simulation_module.cc"
 //#include "wrappers/python/simulation_module.cc"
 
+#include "simulation_common.hpp"
 #include "simulation_world.h"
 #include "simulation_map.h"
 #include <iostream>
+
 
 using json = nlohmann::json;
 
@@ -25,12 +27,16 @@ void SimulationModule::Initialize(const std::string& path) {
     World->SetCurrentMap("grid");
     World->InitializeParticipants(
         std::make_unique<SimulationParticipantSettings>(
-            "F:\\Programming\\Work\\NSFSimulation\\participants.json"
+            "C:\\Users\\jakei_000\\Desktop\\NSFSimulation\\participants.json"
         ).get()
+
     );
 
+    auto startTime = TimestampMS();
     World->RunSimulation(Data.get());
-
-    std::cout << "World participants initialized." << std::endl;
+    auto endTime = TimestampMS();
+    auto duration = (endTime - startTime);
+    std::cout << "Simulation took: " << duration << " ms(real-time) " << Data->CurrentTime() << " (simulation-time)!" << std::endl;
+    Data->ResetClock();
 }
 
