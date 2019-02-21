@@ -57,6 +57,47 @@ The includedirs and libdirs for boost, and python need to be configured to your 
 With NodeJS compile the NodeJS binary with [node-gyp](https://github.com/nodejs/node-gyp)
 Instead of premake5.lua for NodeJS the binding is specified in binding.gyp
 
+## Map layout
+To demonstrate a basic map layout, a simple map structure of a 3-node directed graph is presented with the following node layout
+```
+    0->1->2
+    
+    Distance from 0 to 1: 50km, Average speed: 45km/hr, Speed Deviation: 3.5km/hr
+    Distance from 1 to 2: 43km  Average speed: 30km/hr, Speed Deviation: 5km/hr
+```
+
+in JSON
+```
+{
+    "metadata":
+    {
+        "name": "Test"
+        "author": "Jake"
+    },
+    "nodes":
+    {
+        "0":{}
+        "1":{}
+        "2":{}
+    },
+    "edges":
+    {
+        "0_to_1":
+        {
+            "distance": 50.0,
+            "avgSpeed": 45.0,
+            "speedDev": 3.5
+        },
+        "1_to_2":
+        {
+            "distance": 43.0,
+            "avgSpeed": 30.0,
+            "speedDev": 5.0
+        }
+    }
+}
+```
+
 ## To Use
 
 To clone and run this repository you'll need [Git](https://git-scm.com) and either [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer, or [Python](https://www.python.org/)
