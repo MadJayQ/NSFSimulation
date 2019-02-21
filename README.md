@@ -73,6 +73,11 @@ in JSON
     {
         "name": "Test"
         "author": "Jake"
+        "units":
+        {
+            "distance": "km",
+            "speed": "km/hr"
+        }
     },
     "nodes":
     {
