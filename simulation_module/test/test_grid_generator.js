@@ -43,15 +43,27 @@ let generateGrid = (w , h) => {
         height: h,
         nodes: {
 
+        },
+        edges: {
+
         }
     };
     for(var node in adjacency) {
-        adjacencyJSON.nodes[node] = adjacency[node];
+        adjacencyJSON.nodes[node] = {};
+        var edge = {
+            speed: 55,
+            distance: 50
+        };
+        for(var adjacentNode in adjacency[node]) {
+            var edgeName = node.toString() + "_to_" + adjacency[node][adjacentNode].toString();
+            adjacencyJSON.edges[edgeName] = edge; 
+        }
     }
+    var jsonData = JSON.stringify(adjacencyJSON, null, 2);
     let gridFilePath = path.resolve(gridPath);
     fs.open(gridFilePath, 'r', (err, fd) => {
         if(err) {
-            fs.writeFile(gridFilePath, '', (err) => {
+            fs.writeFile(gridFilePath, jsonData, (err) => {
                 if(err) {
                     console.error(err);
                 }

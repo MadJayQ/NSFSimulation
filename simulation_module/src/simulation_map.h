@@ -19,7 +19,7 @@ class SimulationNode
 public:
     explicit SimulationNode(std::string nodeID, const SimulationGraph* graph);
 public:
-    std::vector<SimulationNode*> AdjacencyList;   
+    std::vector<SimulationEdge*> EdgeList;
 
     void SetBudget(unsigned int budget) { budget_ = budget; }
     unsigned int GetBudget() { return budget_; }
@@ -69,12 +69,27 @@ public:
 
 
 private:
+    friend class SimulationNode; //Allow our simulation node to know about these private members
     SimulationNode* src_, * dst_;
     float distance_;
     std::normal_distribution<float> speed_distribution_;
 };
 
 using NodeMap = std::unordered_map<std::string, std::unique_ptr<SimulationNode>>;
+using EdgeMap = std::unordered_map<std::string, std::unique_ptr<SimulationEdge>>;
+
+struct EdgeConstructData
+{
+    EdgeConstructData(float distance_, float avgSpeed_, float speedDev_) 
+    {
+        distance = distance_;
+        avgSpeed = avgSpeed_;
+        speedDev = speedDev_;
+    }
+    float distance;
+    float avgSpeed;
+    float speedDev;
+};
 
 class SimulationGraph
 {
@@ -93,11 +108,15 @@ public:
 
     std::vector<SimulationParticipant*> GetParticipants(std::initializer_list<SimulationParticipant*> ignoreList);
 
+    void ConstructEdge(const std::string& name, std::pair<SimulationNode*, SimulationNode*>& pair);
+    void ConstructEdge(const std::string& name, std::pair<SimulationNode*, SimulationNode*>& pair, EdgeConstructData* edgeParams);
+
 private:
-    void CreateNode(const nlohmann::json& nodesJson, const std::string& itr);
+    void CreateNode(const std::string& itr);
     void DijkstraComputePaths(const SimulationNode* src, std::unordered_map<std::string, const SimulationNode*>& previous) const;
 private:
     NodeMap nodes_;
+    EdgeMap edges_;
 };
 
 

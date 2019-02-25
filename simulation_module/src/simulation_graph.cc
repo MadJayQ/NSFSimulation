@@ -17,6 +17,7 @@ SimulationGraph::SimulationGraph(const std::string &mapJsonFile)
 {
     auto graphJson = ReadJsonFile(mapJsonFile);
     auto nodesJson = READ_JSON_RET(graphJson, nodes, nlohmann::json);
+    auto edgesJson = READ_JSON_RET(graphJson, edges, nlohmann::json);
     nodes_ = NodeMap();
     for (auto itr = nodesJson.begin(); itr != nodesJson.end(); ++itr)
     {
@@ -24,8 +25,39 @@ SimulationGraph::SimulationGraph(const std::string &mapJsonFile)
         {
             if (!HasNode(itr.key()))
             {
-                CreateNode(nodesJson, itr.key());
+                CreateNode(itr.key());
             }
+        }
+        catch (std::invalid_argument e)
+        {
+            continue;
+        }
+    }
+    for (auto itr = edgesJson.begin(); itr != edgesJson.end(); ++itr)
+    {
+        try
+        {
+            auto edge = (*itr).get<nlohmann::json>();
+            std::string edgeName = itr.key();
+            std::pair<SimulationNode *, SimulationNode *> edgeNodes = {nullptr, nullptr};
+            std::string delimeter = "_to_";
+            std::string token;
+            size_t pos = 0;
+            pos = edgeName.find(delimeter);
+            token = edgeName.substr(0, pos);
+            auto nodeName = edgeName.substr(0, pos);
+            auto dstNode = GetNode(edgeName.substr(pos + delimeter.length(), edgeName.size()));
+            if (dstNode == nullptr)
+            {
+                throw InvalidEdgeException(edgeName);
+            }
+            edgeNodes.first = GetNode(nodeName);
+            edgeNodes.second = dstNode;
+            EdgeConstructData params(
+                edge["distance"].get<float>(),
+                edge["speed"].get<float>(),
+                0.001f);
+            ConstructEdge(edgeName, edgeNodes, &params);
         }
         catch (std::invalid_argument e)
         {
@@ -48,30 +80,10 @@ SimulationNode *SimulationGraph::GetNode(const std::string &key)
     return nodes_[key].get();
 }
 
-/*
-*    CreateNode - Recursive function to populate directed graph adjacency lists
-*    Parameters: 
-*        1) nodeJson - JSON Object
-*            This object contains the list of all of our nodes, and their adjacent nodes provided to us by our map JSON file
-*        2) key - UTF-8 String
-*           This string is the name of the node's key name that we wish to create
-*
-*/
-void SimulationGraph::CreateNode(const nlohmann::json &nodesJson,
-                                 const std::string &key)
+void SimulationGraph::CreateNode(const std::string &key)
 {
     nodes_[key] = std::make_unique<SimulationNode>(key, this); //Create our new node
-    auto adjacencyArray = nodesJson[key];                      //Read node adjacency key (this schema is STRICT)
-    for (auto i = 0u; i < adjacencyArray.size(); i++)
-    {
-        auto adjKey = std::to_string(adjacencyArray[i].get<unsigned int>()); //HACK HACK(Jake): The key should just be stored as a string since it can be a non-integer
-        if (!HasNode(adjKey))
-        {                                  //Don't try to form an edge to a node that doesn't exist yet
-            CreateNode(nodesJson, adjKey); //Recursively create our target node
-        }
-        nodes_[key]->AdjacencyList.push_back(nodes_[adjKey].get()); //Create our edge to our target node
-        nodes_[key]->SetBudget(dist(e2));
-    }
+    nodes_[key]->SetBudget(dist(e2));
 }
 
 unsigned int SimulationGraph::IndexOf(const std::string &key)
@@ -157,18 +169,46 @@ void SimulationGraph::DijkstraComputePaths(const SimulationNode *src,
         auto weight = node->Weight();
         vertices.erase(vertices.begin());
 
-        auto adjacencyList = &node->AdjacencyList;
+        auto adjacencyList = &node->EdgeList;
         for (auto adjItr = adjacencyList->begin(); adjItr != adjacencyList->end(); ++adjItr)
         {
             auto adjNode = (*adjItr);
-            auto distance = weight + adjNode->Weight();
+            auto distance = weight + (*adjNode)->Weight();
 
-            if (distance < dists[adjNode->Key()])
+            if (distance < dists[(*adjNode)->Key()])
             {
-                dists[adjNode->Key()] = distance;
-                previous[adjNode->Key()] = node;
-                vertices.push_back(adjNode);
+                dists[(*adjNode)->Key()] = distance;
+                previous[(*adjNode)->Key()] = node;
+                vertices.push_back(adjNode->Destination());
             }
         }
     }
+}
+
+/*
+    ConstructEdge
+    Allows the realtime addition of edges to our simulation
+*/
+void SimulationGraph::ConstructEdge(const std::string &name, std::pair<SimulationNode *, SimulationNode *> &pair)
+{
+    edges_[name] = std::make_unique<SimulationEdge>(
+        pair.first,
+        pair.second);
+    pair.first->EdgeList.push_back(edges_[name].get());
+}
+
+/*
+    ConstructEdge - Parameters
+    Allows the realtime addition of edges to our simulation
+    Pass parameter object to set the specific edge parameters
+*/
+void SimulationGraph::ConstructEdge(const std::string &name, std::pair<SimulationNode *, SimulationNode *> &pair, EdgeConstructData *params)
+{
+    edges_[name] = std::make_unique<SimulationEdge>(
+        pair.first,
+        pair.second,
+        params->distance,
+        params->avgSpeed,
+        params->speedDev);
+    pair.first->EdgeList.push_back(edges_[name].get());
 }

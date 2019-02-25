@@ -31,6 +31,23 @@ struct NoValidMapException : std::exception
     }
 };
 
+class InvalidEdgeException : std::exception
+{
+public:
+    InvalidEdgeException(const std::string& edgeName)
+    {
+        edge_name_ = edgeName;
+    }
+
+    const char* what() const throw()
+    {
+        std::string errorStr = "Invalid edge format: " + edge_name_;
+        return errorStr.c_str();
+    }
+private:
+    std::string edge_name_; 
+};
+
 
 static unsigned long long TimestampMS() {
     return std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now().time_since_epoch()).count();

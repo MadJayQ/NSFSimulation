@@ -95,7 +95,7 @@ SimulationParticipant::ParticipantThink(SimulationData *data)
     auto graph = const_cast<SimulationGraph *>(current_node_->GetGraph());
     auto allParticipants = graph->GetParticipants({});
     auto allParticipantsMinusThis = graph->GetParticipants({this});
-    auto adjacencyList = current_node_->AdjacencyList;
+    auto adjacencyList = current_node_->EdgeList;
     auto N = allParticipants.size();
     auto t = data->GetTime();        //Current simulation timestamp
     SimulationNode* bestNode = nullptr;
@@ -105,7 +105,7 @@ SimulationParticipant::ParticipantThink(SimulationData *data)
         float expectedUtility = 0.f; //Our expected utility
         for (int i = 1; i <= N; i++) //For i = 1 ... N
         {
-            float utility = (float)i / powf((float)node->GetBudget(), 2.f); //U(i) = i / R^2
+            float utility = (float)i / powf((float)(*node)->GetBudget(), 2.f); //U(i) = i / R^2
             float cumulativeProbability = 0.f;
             if (i == 1) //If we're only calculating the utility for 1 car, it is our probability times the probability that no one else will be there
             {
@@ -140,7 +140,7 @@ SimulationParticipant::ParticipantThink(SimulationData *data)
         if(expectedUtility > bestUtility)
         {
             bestUtility = expectedUtility;
-            bestNode = node;
+            bestNode = node->Destination();
         }
     }
 

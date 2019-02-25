@@ -1,1 +1,2844 @@
-{"width":4,"height":4,"nodes":{"0":[1,5,4],"1":[0,4,2,6,5],"2":[1,5,3,7,6],"3":[2,6,7],"4":[5,9,1,0,8],"5":[4,8,0,6,10,2,1,9],"6":[5,9,1,7,11,3,2,10],"7":[6,10,2,3,11],"8":[9,13,5,4,12],"9":[8,12,4,10,14,6,5,13],"10":[9,13,5,11,15,7,6,14],"11":[10,14,6,7,15],"12":[13,9,8],"13":[12,8,14,10,9],"14":[13,9,15,11,10],"15":[14,10,11]}}
+{
+  "width": 10,
+  "height": 10,
+  "nodes": {
+    "0": {},
+    "1": {},
+    "2": {},
+    "3": {},
+    "4": {},
+    "5": {},
+    "6": {},
+    "7": {},
+    "8": {},
+    "9": {},
+    "10": {},
+    "11": {},
+    "12": {},
+    "13": {},
+    "14": {},
+    "15": {},
+    "16": {},
+    "17": {},
+    "18": {},
+    "19": {},
+    "20": {},
+    "21": {},
+    "22": {},
+    "23": {},
+    "24": {},
+    "25": {},
+    "26": {},
+    "27": {},
+    "28": {},
+    "29": {},
+    "30": {},
+    "31": {},
+    "32": {},
+    "33": {},
+    "34": {},
+    "35": {},
+    "36": {},
+    "37": {},
+    "38": {},
+    "39": {},
+    "40": {},
+    "41": {},
+    "42": {},
+    "43": {},
+    "44": {},
+    "45": {},
+    "46": {},
+    "47": {},
+    "48": {},
+    "49": {},
+    "50": {},
+    "51": {},
+    "52": {},
+    "53": {},
+    "54": {},
+    "55": {},
+    "56": {},
+    "57": {},
+    "58": {},
+    "59": {},
+    "60": {},
+    "61": {},
+    "62": {},
+    "63": {},
+    "64": {},
+    "65": {},
+    "66": {},
+    "67": {},
+    "68": {},
+    "69": {},
+    "70": {},
+    "71": {},
+    "72": {},
+    "73": {},
+    "74": {},
+    "75": {},
+    "76": {},
+    "77": {},
+    "78": {},
+    "79": {},
+    "80": {},
+    "81": {},
+    "82": {},
+    "83": {},
+    "84": {},
+    "85": {},
+    "86": {},
+    "87": {},
+    "88": {},
+    "89": {},
+    "90": {},
+    "91": {},
+    "92": {},
+    "93": {},
+    "94": {},
+    "95": {},
+    "96": {},
+    "97": {},
+    "98": {},
+    "99": {}
+  },
+  "edges": {
+    "0_to_1": {
+      "speed": 55,
+      "distance": 50
+    },
+    "0_to_11": {
+      "speed": 55,
+      "distance": 50
+    },
+    "0_to_10": {
+      "speed": 55,
+      "distance": 50
+    },
+    "1_to_0": {
+      "speed": 55,
+      "distance": 50
+    },
+    "1_to_10": {
+      "speed": 55,
+      "distance": 50
+    },
+    "1_to_2": {
+      "speed": 55,
+      "distance": 50
+    },
+    "1_to_12": {
+      "speed": 55,
+      "distance": 50
+    },
+    "1_to_11": {
+      "speed": 55,
+      "distance": 50
+    },
+    "2_to_1": {
+      "speed": 55,
+      "distance": 50
+    },
+    "2_to_11": {
+      "speed": 55,
+      "distance": 50
+    },
+    "2_to_3": {
+      "speed": 55,
+      "distance": 50
+    },
+    "2_to_13": {
+      "speed": 55,
+      "distance": 50
+    },
+    "2_to_12": {
+      "speed": 55,
+      "distance": 50
+    },
+    "3_to_2": {
+      "speed": 55,
+      "distance": 50
+    },
+    "3_to_12": {
+      "speed": 55,
+      "distance": 50
+    },
+    "3_to_4": {
+      "speed": 55,
+      "distance": 50
+    },
+    "3_to_14": {
+      "speed": 55,
+      "distance": 50
+    },
+    "3_to_13": {
+      "speed": 55,
+      "distance": 50
+    },
+    "4_to_3": {
+      "speed": 55,
+      "distance": 50
+    },
+    "4_to_13": {
+      "speed": 55,
+      "distance": 50
+    },
+    "4_to_5": {
+      "speed": 55,
+      "distance": 50
+    },
+    "4_to_15": {
+      "speed": 55,
+      "distance": 50
+    },
+    "4_to_14": {
+      "speed": 55,
+      "distance": 50
+    },
+    "5_to_4": {
+      "speed": 55,
+      "distance": 50
+    },
+    "5_to_14": {
+      "speed": 55,
+      "distance": 50
+    },
+    "5_to_6": {
+      "speed": 55,
+      "distance": 50
+    },
+    "5_to_16": {
+      "speed": 55,
+      "distance": 50
+    },
+    "5_to_15": {
+      "speed": 55,
+      "distance": 50
+    },
+    "6_to_5": {
+      "speed": 55,
+      "distance": 50
+    },
+    "6_to_15": {
+      "speed": 55,
+      "distance": 50
+    },
+    "6_to_7": {
+      "speed": 55,
+      "distance": 50
+    },
+    "6_to_17": {
+      "speed": 55,
+      "distance": 50
+    },
+    "6_to_16": {
+      "speed": 55,
+      "distance": 50
+    },
+    "7_to_6": {
+      "speed": 55,
+      "distance": 50
+    },
+    "7_to_16": {
+      "speed": 55,
+      "distance": 50
+    },
+    "7_to_8": {
+      "speed": 55,
+      "distance": 50
+    },
+    "7_to_18": {
+      "speed": 55,
+      "distance": 50
+    },
+    "7_to_17": {
+      "speed": 55,
+      "distance": 50
+    },
+    "8_to_7": {
+      "speed": 55,
+      "distance": 50
+    },
+    "8_to_17": {
+      "speed": 55,
+      "distance": 50
+    },
+    "8_to_9": {
+      "speed": 55,
+      "distance": 50
+    },
+    "8_to_19": {
+      "speed": 55,
+      "distance": 50
+    },
+    "8_to_18": {
+      "speed": 55,
+      "distance": 50
+    },
+    "9_to_8": {
+      "speed": 55,
+      "distance": 50
+    },
+    "9_to_18": {
+      "speed": 55,
+      "distance": 50
+    },
+    "9_to_19": {
+      "speed": 55,
+      "distance": 50
+    },
+    "10_to_11": {
+      "speed": 55,
+      "distance": 50
+    },
+    "10_to_21": {
+      "speed": 55,
+      "distance": 50
+    },
+    "10_to_1": {
+      "speed": 55,
+      "distance": 50
+    },
+    "10_to_0": {
+      "speed": 55,
+      "distance": 50
+    },
+    "10_to_20": {
+      "speed": 55,
+      "distance": 50
+    },
+    "11_to_10": {
+      "speed": 55,
+      "distance": 50
+    },
+    "11_to_20": {
+      "speed": 55,
+      "distance": 50
+    },
+    "11_to_0": {
+      "speed": 55,
+      "distance": 50
+    },
+    "11_to_12": {
+      "speed": 55,
+      "distance": 50
+    },
+    "11_to_22": {
+      "speed": 55,
+      "distance": 50
+    },
+    "11_to_2": {
+      "speed": 55,
+      "distance": 50
+    },
+    "11_to_1": {
+      "speed": 55,
+      "distance": 50
+    },
+    "11_to_21": {
+      "speed": 55,
+      "distance": 50
+    },
+    "12_to_11": {
+      "speed": 55,
+      "distance": 50
+    },
+    "12_to_21": {
+      "speed": 55,
+      "distance": 50
+    },
+    "12_to_1": {
+      "speed": 55,
+      "distance": 50
+    },
+    "12_to_13": {
+      "speed": 55,
+      "distance": 50
+    },
+    "12_to_23": {
+      "speed": 55,
+      "distance": 50
+    },
+    "12_to_3": {
+      "speed": 55,
+      "distance": 50
+    },
+    "12_to_2": {
+      "speed": 55,
+      "distance": 50
+    },
+    "12_to_22": {
+      "speed": 55,
+      "distance": 50
+    },
+    "13_to_12": {
+      "speed": 55,
+      "distance": 50
+    },
+    "13_to_22": {
+      "speed": 55,
+      "distance": 50
+    },
+    "13_to_2": {
+      "speed": 55,
+      "distance": 50
+    },
+    "13_to_14": {
+      "speed": 55,
+      "distance": 50
+    },
+    "13_to_24": {
+      "speed": 55,
+      "distance": 50
+    },
+    "13_to_4": {
+      "speed": 55,
+      "distance": 50
+    },
+    "13_to_3": {
+      "speed": 55,
+      "distance": 50
+    },
+    "13_to_23": {
+      "speed": 55,
+      "distance": 50
+    },
+    "14_to_13": {
+      "speed": 55,
+      "distance": 50
+    },
+    "14_to_23": {
+      "speed": 55,
+      "distance": 50
+    },
+    "14_to_3": {
+      "speed": 55,
+      "distance": 50
+    },
+    "14_to_15": {
+      "speed": 55,
+      "distance": 50
+    },
+    "14_to_25": {
+      "speed": 55,
+      "distance": 50
+    },
+    "14_to_5": {
+      "speed": 55,
+      "distance": 50
+    },
+    "14_to_4": {
+      "speed": 55,
+      "distance": 50
+    },
+    "14_to_24": {
+      "speed": 55,
+      "distance": 50
+    },
+    "15_to_14": {
+      "speed": 55,
+      "distance": 50
+    },
+    "15_to_24": {
+      "speed": 55,
+      "distance": 50
+    },
+    "15_to_4": {
+      "speed": 55,
+      "distance": 50
+    },
+    "15_to_16": {
+      "speed": 55,
+      "distance": 50
+    },
+    "15_to_26": {
+      "speed": 55,
+      "distance": 50
+    },
+    "15_to_6": {
+      "speed": 55,
+      "distance": 50
+    },
+    "15_to_5": {
+      "speed": 55,
+      "distance": 50
+    },
+    "15_to_25": {
+      "speed": 55,
+      "distance": 50
+    },
+    "16_to_15": {
+      "speed": 55,
+      "distance": 50
+    },
+    "16_to_25": {
+      "speed": 55,
+      "distance": 50
+    },
+    "16_to_5": {
+      "speed": 55,
+      "distance": 50
+    },
+    "16_to_17": {
+      "speed": 55,
+      "distance": 50
+    },
+    "16_to_27": {
+      "speed": 55,
+      "distance": 50
+    },
+    "16_to_7": {
+      "speed": 55,
+      "distance": 50
+    },
+    "16_to_6": {
+      "speed": 55,
+      "distance": 50
+    },
+    "16_to_26": {
+      "speed": 55,
+      "distance": 50
+    },
+    "17_to_16": {
+      "speed": 55,
+      "distance": 50
+    },
+    "17_to_26": {
+      "speed": 55,
+      "distance": 50
+    },
+    "17_to_6": {
+      "speed": 55,
+      "distance": 50
+    },
+    "17_to_18": {
+      "speed": 55,
+      "distance": 50
+    },
+    "17_to_28": {
+      "speed": 55,
+      "distance": 50
+    },
+    "17_to_8": {
+      "speed": 55,
+      "distance": 50
+    },
+    "17_to_7": {
+      "speed": 55,
+      "distance": 50
+    },
+    "17_to_27": {
+      "speed": 55,
+      "distance": 50
+    },
+    "18_to_17": {
+      "speed": 55,
+      "distance": 50
+    },
+    "18_to_27": {
+      "speed": 55,
+      "distance": 50
+    },
+    "18_to_7": {
+      "speed": 55,
+      "distance": 50
+    },
+    "18_to_19": {
+      "speed": 55,
+      "distance": 50
+    },
+    "18_to_29": {
+      "speed": 55,
+      "distance": 50
+    },
+    "18_to_9": {
+      "speed": 55,
+      "distance": 50
+    },
+    "18_to_8": {
+      "speed": 55,
+      "distance": 50
+    },
+    "18_to_28": {
+      "speed": 55,
+      "distance": 50
+    },
+    "19_to_18": {
+      "speed": 55,
+      "distance": 50
+    },
+    "19_to_28": {
+      "speed": 55,
+      "distance": 50
+    },
+    "19_to_8": {
+      "speed": 55,
+      "distance": 50
+    },
+    "19_to_9": {
+      "speed": 55,
+      "distance": 50
+    },
+    "19_to_29": {
+      "speed": 55,
+      "distance": 50
+    },
+    "20_to_21": {
+      "speed": 55,
+      "distance": 50
+    },
+    "20_to_31": {
+      "speed": 55,
+      "distance": 50
+    },
+    "20_to_11": {
+      "speed": 55,
+      "distance": 50
+    },
+    "20_to_10": {
+      "speed": 55,
+      "distance": 50
+    },
+    "20_to_30": {
+      "speed": 55,
+      "distance": 50
+    },
+    "21_to_20": {
+      "speed": 55,
+      "distance": 50
+    },
+    "21_to_30": {
+      "speed": 55,
+      "distance": 50
+    },
+    "21_to_10": {
+      "speed": 55,
+      "distance": 50
+    },
+    "21_to_22": {
+      "speed": 55,
+      "distance": 50
+    },
+    "21_to_32": {
+      "speed": 55,
+      "distance": 50
+    },
+    "21_to_12": {
+      "speed": 55,
+      "distance": 50
+    },
+    "21_to_11": {
+      "speed": 55,
+      "distance": 50
+    },
+    "21_to_31": {
+      "speed": 55,
+      "distance": 50
+    },
+    "22_to_21": {
+      "speed": 55,
+      "distance": 50
+    },
+    "22_to_31": {
+      "speed": 55,
+      "distance": 50
+    },
+    "22_to_11": {
+      "speed": 55,
+      "distance": 50
+    },
+    "22_to_23": {
+      "speed": 55,
+      "distance": 50
+    },
+    "22_to_33": {
+      "speed": 55,
+      "distance": 50
+    },
+    "22_to_13": {
+      "speed": 55,
+      "distance": 50
+    },
+    "22_to_12": {
+      "speed": 55,
+      "distance": 50
+    },
+    "22_to_32": {
+      "speed": 55,
+      "distance": 50
+    },
+    "23_to_22": {
+      "speed": 55,
+      "distance": 50
+    },
+    "23_to_32": {
+      "speed": 55,
+      "distance": 50
+    },
+    "23_to_12": {
+      "speed": 55,
+      "distance": 50
+    },
+    "23_to_24": {
+      "speed": 55,
+      "distance": 50
+    },
+    "23_to_34": {
+      "speed": 55,
+      "distance": 50
+    },
+    "23_to_14": {
+      "speed": 55,
+      "distance": 50
+    },
+    "23_to_13": {
+      "speed": 55,
+      "distance": 50
+    },
+    "23_to_33": {
+      "speed": 55,
+      "distance": 50
+    },
+    "24_to_23": {
+      "speed": 55,
+      "distance": 50
+    },
+    "24_to_33": {
+      "speed": 55,
+      "distance": 50
+    },
+    "24_to_13": {
+      "speed": 55,
+      "distance": 50
+    },
+    "24_to_25": {
+      "speed": 55,
+      "distance": 50
+    },
+    "24_to_35": {
+      "speed": 55,
+      "distance": 50
+    },
+    "24_to_15": {
+      "speed": 55,
+      "distance": 50
+    },
+    "24_to_14": {
+      "speed": 55,
+      "distance": 50
+    },
+    "24_to_34": {
+      "speed": 55,
+      "distance": 50
+    },
+    "25_to_24": {
+      "speed": 55,
+      "distance": 50
+    },
+    "25_to_34": {
+      "speed": 55,
+      "distance": 50
+    },
+    "25_to_14": {
+      "speed": 55,
+      "distance": 50
+    },
+    "25_to_26": {
+      "speed": 55,
+      "distance": 50
+    },
+    "25_to_36": {
+      "speed": 55,
+      "distance": 50
+    },
+    "25_to_16": {
+      "speed": 55,
+      "distance": 50
+    },
+    "25_to_15": {
+      "speed": 55,
+      "distance": 50
+    },
+    "25_to_35": {
+      "speed": 55,
+      "distance": 50
+    },
+    "26_to_25": {
+      "speed": 55,
+      "distance": 50
+    },
+    "26_to_35": {
+      "speed": 55,
+      "distance": 50
+    },
+    "26_to_15": {
+      "speed": 55,
+      "distance": 50
+    },
+    "26_to_27": {
+      "speed": 55,
+      "distance": 50
+    },
+    "26_to_37": {
+      "speed": 55,
+      "distance": 50
+    },
+    "26_to_17": {
+      "speed": 55,
+      "distance": 50
+    },
+    "26_to_16": {
+      "speed": 55,
+      "distance": 50
+    },
+    "26_to_36": {
+      "speed": 55,
+      "distance": 50
+    },
+    "27_to_26": {
+      "speed": 55,
+      "distance": 50
+    },
+    "27_to_36": {
+      "speed": 55,
+      "distance": 50
+    },
+    "27_to_16": {
+      "speed": 55,
+      "distance": 50
+    },
+    "27_to_28": {
+      "speed": 55,
+      "distance": 50
+    },
+    "27_to_38": {
+      "speed": 55,
+      "distance": 50
+    },
+    "27_to_18": {
+      "speed": 55,
+      "distance": 50
+    },
+    "27_to_17": {
+      "speed": 55,
+      "distance": 50
+    },
+    "27_to_37": {
+      "speed": 55,
+      "distance": 50
+    },
+    "28_to_27": {
+      "speed": 55,
+      "distance": 50
+    },
+    "28_to_37": {
+      "speed": 55,
+      "distance": 50
+    },
+    "28_to_17": {
+      "speed": 55,
+      "distance": 50
+    },
+    "28_to_29": {
+      "speed": 55,
+      "distance": 50
+    },
+    "28_to_39": {
+      "speed": 55,
+      "distance": 50
+    },
+    "28_to_19": {
+      "speed": 55,
+      "distance": 50
+    },
+    "28_to_18": {
+      "speed": 55,
+      "distance": 50
+    },
+    "28_to_38": {
+      "speed": 55,
+      "distance": 50
+    },
+    "29_to_28": {
+      "speed": 55,
+      "distance": 50
+    },
+    "29_to_38": {
+      "speed": 55,
+      "distance": 50
+    },
+    "29_to_18": {
+      "speed": 55,
+      "distance": 50
+    },
+    "29_to_19": {
+      "speed": 55,
+      "distance": 50
+    },
+    "29_to_39": {
+      "speed": 55,
+      "distance": 50
+    },
+    "30_to_31": {
+      "speed": 55,
+      "distance": 50
+    },
+    "30_to_41": {
+      "speed": 55,
+      "distance": 50
+    },
+    "30_to_21": {
+      "speed": 55,
+      "distance": 50
+    },
+    "30_to_20": {
+      "speed": 55,
+      "distance": 50
+    },
+    "30_to_40": {
+      "speed": 55,
+      "distance": 50
+    },
+    "31_to_30": {
+      "speed": 55,
+      "distance": 50
+    },
+    "31_to_40": {
+      "speed": 55,
+      "distance": 50
+    },
+    "31_to_20": {
+      "speed": 55,
+      "distance": 50
+    },
+    "31_to_32": {
+      "speed": 55,
+      "distance": 50
+    },
+    "31_to_42": {
+      "speed": 55,
+      "distance": 50
+    },
+    "31_to_22": {
+      "speed": 55,
+      "distance": 50
+    },
+    "31_to_21": {
+      "speed": 55,
+      "distance": 50
+    },
+    "31_to_41": {
+      "speed": 55,
+      "distance": 50
+    },
+    "32_to_31": {
+      "speed": 55,
+      "distance": 50
+    },
+    "32_to_41": {
+      "speed": 55,
+      "distance": 50
+    },
+    "32_to_21": {
+      "speed": 55,
+      "distance": 50
+    },
+    "32_to_33": {
+      "speed": 55,
+      "distance": 50
+    },
+    "32_to_43": {
+      "speed": 55,
+      "distance": 50
+    },
+    "32_to_23": {
+      "speed": 55,
+      "distance": 50
+    },
+    "32_to_22": {
+      "speed": 55,
+      "distance": 50
+    },
+    "32_to_42": {
+      "speed": 55,
+      "distance": 50
+    },
+    "33_to_32": {
+      "speed": 55,
+      "distance": 50
+    },
+    "33_to_42": {
+      "speed": 55,
+      "distance": 50
+    },
+    "33_to_22": {
+      "speed": 55,
+      "distance": 50
+    },
+    "33_to_34": {
+      "speed": 55,
+      "distance": 50
+    },
+    "33_to_44": {
+      "speed": 55,
+      "distance": 50
+    },
+    "33_to_24": {
+      "speed": 55,
+      "distance": 50
+    },
+    "33_to_23": {
+      "speed": 55,
+      "distance": 50
+    },
+    "33_to_43": {
+      "speed": 55,
+      "distance": 50
+    },
+    "34_to_33": {
+      "speed": 55,
+      "distance": 50
+    },
+    "34_to_43": {
+      "speed": 55,
+      "distance": 50
+    },
+    "34_to_23": {
+      "speed": 55,
+      "distance": 50
+    },
+    "34_to_35": {
+      "speed": 55,
+      "distance": 50
+    },
+    "34_to_45": {
+      "speed": 55,
+      "distance": 50
+    },
+    "34_to_25": {
+      "speed": 55,
+      "distance": 50
+    },
+    "34_to_24": {
+      "speed": 55,
+      "distance": 50
+    },
+    "34_to_44": {
+      "speed": 55,
+      "distance": 50
+    },
+    "35_to_34": {
+      "speed": 55,
+      "distance": 50
+    },
+    "35_to_44": {
+      "speed": 55,
+      "distance": 50
+    },
+    "35_to_24": {
+      "speed": 55,
+      "distance": 50
+    },
+    "35_to_36": {
+      "speed": 55,
+      "distance": 50
+    },
+    "35_to_46": {
+      "speed": 55,
+      "distance": 50
+    },
+    "35_to_26": {
+      "speed": 55,
+      "distance": 50
+    },
+    "35_to_25": {
+      "speed": 55,
+      "distance": 50
+    },
+    "35_to_45": {
+      "speed": 55,
+      "distance": 50
+    },
+    "36_to_35": {
+      "speed": 55,
+      "distance": 50
+    },
+    "36_to_45": {
+      "speed": 55,
+      "distance": 50
+    },
+    "36_to_25": {
+      "speed": 55,
+      "distance": 50
+    },
+    "36_to_37": {
+      "speed": 55,
+      "distance": 50
+    },
+    "36_to_47": {
+      "speed": 55,
+      "distance": 50
+    },
+    "36_to_27": {
+      "speed": 55,
+      "distance": 50
+    },
+    "36_to_26": {
+      "speed": 55,
+      "distance": 50
+    },
+    "36_to_46": {
+      "speed": 55,
+      "distance": 50
+    },
+    "37_to_36": {
+      "speed": 55,
+      "distance": 50
+    },
+    "37_to_46": {
+      "speed": 55,
+      "distance": 50
+    },
+    "37_to_26": {
+      "speed": 55,
+      "distance": 50
+    },
+    "37_to_38": {
+      "speed": 55,
+      "distance": 50
+    },
+    "37_to_48": {
+      "speed": 55,
+      "distance": 50
+    },
+    "37_to_28": {
+      "speed": 55,
+      "distance": 50
+    },
+    "37_to_27": {
+      "speed": 55,
+      "distance": 50
+    },
+    "37_to_47": {
+      "speed": 55,
+      "distance": 50
+    },
+    "38_to_37": {
+      "speed": 55,
+      "distance": 50
+    },
+    "38_to_47": {
+      "speed": 55,
+      "distance": 50
+    },
+    "38_to_27": {
+      "speed": 55,
+      "distance": 50
+    },
+    "38_to_39": {
+      "speed": 55,
+      "distance": 50
+    },
+    "38_to_49": {
+      "speed": 55,
+      "distance": 50
+    },
+    "38_to_29": {
+      "speed": 55,
+      "distance": 50
+    },
+    "38_to_28": {
+      "speed": 55,
+      "distance": 50
+    },
+    "38_to_48": {
+      "speed": 55,
+      "distance": 50
+    },
+    "39_to_38": {
+      "speed": 55,
+      "distance": 50
+    },
+    "39_to_48": {
+      "speed": 55,
+      "distance": 50
+    },
+    "39_to_28": {
+      "speed": 55,
+      "distance": 50
+    },
+    "39_to_29": {
+      "speed": 55,
+      "distance": 50
+    },
+    "39_to_49": {
+      "speed": 55,
+      "distance": 50
+    },
+    "40_to_41": {
+      "speed": 55,
+      "distance": 50
+    },
+    "40_to_51": {
+      "speed": 55,
+      "distance": 50
+    },
+    "40_to_31": {
+      "speed": 55,
+      "distance": 50
+    },
+    "40_to_30": {
+      "speed": 55,
+      "distance": 50
+    },
+    "40_to_50": {
+      "speed": 55,
+      "distance": 50
+    },
+    "41_to_40": {
+      "speed": 55,
+      "distance": 50
+    },
+    "41_to_50": {
+      "speed": 55,
+      "distance": 50
+    },
+    "41_to_30": {
+      "speed": 55,
+      "distance": 50
+    },
+    "41_to_42": {
+      "speed": 55,
+      "distance": 50
+    },
+    "41_to_52": {
+      "speed": 55,
+      "distance": 50
+    },
+    "41_to_32": {
+      "speed": 55,
+      "distance": 50
+    },
+    "41_to_31": {
+      "speed": 55,
+      "distance": 50
+    },
+    "41_to_51": {
+      "speed": 55,
+      "distance": 50
+    },
+    "42_to_41": {
+      "speed": 55,
+      "distance": 50
+    },
+    "42_to_51": {
+      "speed": 55,
+      "distance": 50
+    },
+    "42_to_31": {
+      "speed": 55,
+      "distance": 50
+    },
+    "42_to_43": {
+      "speed": 55,
+      "distance": 50
+    },
+    "42_to_53": {
+      "speed": 55,
+      "distance": 50
+    },
+    "42_to_33": {
+      "speed": 55,
+      "distance": 50
+    },
+    "42_to_32": {
+      "speed": 55,
+      "distance": 50
+    },
+    "42_to_52": {
+      "speed": 55,
+      "distance": 50
+    },
+    "43_to_42": {
+      "speed": 55,
+      "distance": 50
+    },
+    "43_to_52": {
+      "speed": 55,
+      "distance": 50
+    },
+    "43_to_32": {
+      "speed": 55,
+      "distance": 50
+    },
+    "43_to_44": {
+      "speed": 55,
+      "distance": 50
+    },
+    "43_to_54": {
+      "speed": 55,
+      "distance": 50
+    },
+    "43_to_34": {
+      "speed": 55,
+      "distance": 50
+    },
+    "43_to_33": {
+      "speed": 55,
+      "distance": 50
+    },
+    "43_to_53": {
+      "speed": 55,
+      "distance": 50
+    },
+    "44_to_43": {
+      "speed": 55,
+      "distance": 50
+    },
+    "44_to_53": {
+      "speed": 55,
+      "distance": 50
+    },
+    "44_to_33": {
+      "speed": 55,
+      "distance": 50
+    },
+    "44_to_45": {
+      "speed": 55,
+      "distance": 50
+    },
+    "44_to_55": {
+      "speed": 55,
+      "distance": 50
+    },
+    "44_to_35": {
+      "speed": 55,
+      "distance": 50
+    },
+    "44_to_34": {
+      "speed": 55,
+      "distance": 50
+    },
+    "44_to_54": {
+      "speed": 55,
+      "distance": 50
+    },
+    "45_to_44": {
+      "speed": 55,
+      "distance": 50
+    },
+    "45_to_54": {
+      "speed": 55,
+      "distance": 50
+    },
+    "45_to_34": {
+      "speed": 55,
+      "distance": 50
+    },
+    "45_to_46": {
+      "speed": 55,
+      "distance": 50
+    },
+    "45_to_56": {
+      "speed": 55,
+      "distance": 50
+    },
+    "45_to_36": {
+      "speed": 55,
+      "distance": 50
+    },
+    "45_to_35": {
+      "speed": 55,
+      "distance": 50
+    },
+    "45_to_55": {
+      "speed": 55,
+      "distance": 50
+    },
+    "46_to_45": {
+      "speed": 55,
+      "distance": 50
+    },
+    "46_to_55": {
+      "speed": 55,
+      "distance": 50
+    },
+    "46_to_35": {
+      "speed": 55,
+      "distance": 50
+    },
+    "46_to_47": {
+      "speed": 55,
+      "distance": 50
+    },
+    "46_to_57": {
+      "speed": 55,
+      "distance": 50
+    },
+    "46_to_37": {
+      "speed": 55,
+      "distance": 50
+    },
+    "46_to_36": {
+      "speed": 55,
+      "distance": 50
+    },
+    "46_to_56": {
+      "speed": 55,
+      "distance": 50
+    },
+    "47_to_46": {
+      "speed": 55,
+      "distance": 50
+    },
+    "47_to_56": {
+      "speed": 55,
+      "distance": 50
+    },
+    "47_to_36": {
+      "speed": 55,
+      "distance": 50
+    },
+    "47_to_48": {
+      "speed": 55,
+      "distance": 50
+    },
+    "47_to_58": {
+      "speed": 55,
+      "distance": 50
+    },
+    "47_to_38": {
+      "speed": 55,
+      "distance": 50
+    },
+    "47_to_37": {
+      "speed": 55,
+      "distance": 50
+    },
+    "47_to_57": {
+      "speed": 55,
+      "distance": 50
+    },
+    "48_to_47": {
+      "speed": 55,
+      "distance": 50
+    },
+    "48_to_57": {
+      "speed": 55,
+      "distance": 50
+    },
+    "48_to_37": {
+      "speed": 55,
+      "distance": 50
+    },
+    "48_to_49": {
+      "speed": 55,
+      "distance": 50
+    },
+    "48_to_59": {
+      "speed": 55,
+      "distance": 50
+    },
+    "48_to_39": {
+      "speed": 55,
+      "distance": 50
+    },
+    "48_to_38": {
+      "speed": 55,
+      "distance": 50
+    },
+    "48_to_58": {
+      "speed": 55,
+      "distance": 50
+    },
+    "49_to_48": {
+      "speed": 55,
+      "distance": 50
+    },
+    "49_to_58": {
+      "speed": 55,
+      "distance": 50
+    },
+    "49_to_38": {
+      "speed": 55,
+      "distance": 50
+    },
+    "49_to_39": {
+      "speed": 55,
+      "distance": 50
+    },
+    "49_to_59": {
+      "speed": 55,
+      "distance": 50
+    },
+    "50_to_51": {
+      "speed": 55,
+      "distance": 50
+    },
+    "50_to_61": {
+      "speed": 55,
+      "distance": 50
+    },
+    "50_to_41": {
+      "speed": 55,
+      "distance": 50
+    },
+    "50_to_40": {
+      "speed": 55,
+      "distance": 50
+    },
+    "50_to_60": {
+      "speed": 55,
+      "distance": 50
+    },
+    "51_to_50": {
+      "speed": 55,
+      "distance": 50
+    },
+    "51_to_60": {
+      "speed": 55,
+      "distance": 50
+    },
+    "51_to_40": {
+      "speed": 55,
+      "distance": 50
+    },
+    "51_to_52": {
+      "speed": 55,
+      "distance": 50
+    },
+    "51_to_62": {
+      "speed": 55,
+      "distance": 50
+    },
+    "51_to_42": {
+      "speed": 55,
+      "distance": 50
+    },
+    "51_to_41": {
+      "speed": 55,
+      "distance": 50
+    },
+    "51_to_61": {
+      "speed": 55,
+      "distance": 50
+    },
+    "52_to_51": {
+      "speed": 55,
+      "distance": 50
+    },
+    "52_to_61": {
+      "speed": 55,
+      "distance": 50
+    },
+    "52_to_41": {
+      "speed": 55,
+      "distance": 50
+    },
+    "52_to_53": {
+      "speed": 55,
+      "distance": 50
+    },
+    "52_to_63": {
+      "speed": 55,
+      "distance": 50
+    },
+    "52_to_43": {
+      "speed": 55,
+      "distance": 50
+    },
+    "52_to_42": {
+      "speed": 55,
+      "distance": 50
+    },
+    "52_to_62": {
+      "speed": 55,
+      "distance": 50
+    },
+    "53_to_52": {
+      "speed": 55,
+      "distance": 50
+    },
+    "53_to_62": {
+      "speed": 55,
+      "distance": 50
+    },
+    "53_to_42": {
+      "speed": 55,
+      "distance": 50
+    },
+    "53_to_54": {
+      "speed": 55,
+      "distance": 50
+    },
+    "53_to_64": {
+      "speed": 55,
+      "distance": 50
+    },
+    "53_to_44": {
+      "speed": 55,
+      "distance": 50
+    },
+    "53_to_43": {
+      "speed": 55,
+      "distance": 50
+    },
+    "53_to_63": {
+      "speed": 55,
+      "distance": 50
+    },
+    "54_to_53": {
+      "speed": 55,
+      "distance": 50
+    },
+    "54_to_63": {
+      "speed": 55,
+      "distance": 50
+    },
+    "54_to_43": {
+      "speed": 55,
+      "distance": 50
+    },
+    "54_to_55": {
+      "speed": 55,
+      "distance": 50
+    },
+    "54_to_65": {
+      "speed": 55,
+      "distance": 50
+    },
+    "54_to_45": {
+      "speed": 55,
+      "distance": 50
+    },
+    "54_to_44": {
+      "speed": 55,
+      "distance": 50
+    },
+    "54_to_64": {
+      "speed": 55,
+      "distance": 50
+    },
+    "55_to_54": {
+      "speed": 55,
+      "distance": 50
+    },
+    "55_to_64": {
+      "speed": 55,
+      "distance": 50
+    },
+    "55_to_44": {
+      "speed": 55,
+      "distance": 50
+    },
+    "55_to_56": {
+      "speed": 55,
+      "distance": 50
+    },
+    "55_to_66": {
+      "speed": 55,
+      "distance": 50
+    },
+    "55_to_46": {
+      "speed": 55,
+      "distance": 50
+    },
+    "55_to_45": {
+      "speed": 55,
+      "distance": 50
+    },
+    "55_to_65": {
+      "speed": 55,
+      "distance": 50
+    },
+    "56_to_55": {
+      "speed": 55,
+      "distance": 50
+    },
+    "56_to_65": {
+      "speed": 55,
+      "distance": 50
+    },
+    "56_to_45": {
+      "speed": 55,
+      "distance": 50
+    },
+    "56_to_57": {
+      "speed": 55,
+      "distance": 50
+    },
+    "56_to_67": {
+      "speed": 55,
+      "distance": 50
+    },
+    "56_to_47": {
+      "speed": 55,
+      "distance": 50
+    },
+    "56_to_46": {
+      "speed": 55,
+      "distance": 50
+    },
+    "56_to_66": {
+      "speed": 55,
+      "distance": 50
+    },
+    "57_to_56": {
+      "speed": 55,
+      "distance": 50
+    },
+    "57_to_66": {
+      "speed": 55,
+      "distance": 50
+    },
+    "57_to_46": {
+      "speed": 55,
+      "distance": 50
+    },
+    "57_to_58": {
+      "speed": 55,
+      "distance": 50
+    },
+    "57_to_68": {
+      "speed": 55,
+      "distance": 50
+    },
+    "57_to_48": {
+      "speed": 55,
+      "distance": 50
+    },
+    "57_to_47": {
+      "speed": 55,
+      "distance": 50
+    },
+    "57_to_67": {
+      "speed": 55,
+      "distance": 50
+    },
+    "58_to_57": {
+      "speed": 55,
+      "distance": 50
+    },
+    "58_to_67": {
+      "speed": 55,
+      "distance": 50
+    },
+    "58_to_47": {
+      "speed": 55,
+      "distance": 50
+    },
+    "58_to_59": {
+      "speed": 55,
+      "distance": 50
+    },
+    "58_to_69": {
+      "speed": 55,
+      "distance": 50
+    },
+    "58_to_49": {
+      "speed": 55,
+      "distance": 50
+    },
+    "58_to_48": {
+      "speed": 55,
+      "distance": 50
+    },
+    "58_to_68": {
+      "speed": 55,
+      "distance": 50
+    },
+    "59_to_58": {
+      "speed": 55,
+      "distance": 50
+    },
+    "59_to_68": {
+      "speed": 55,
+      "distance": 50
+    },
+    "59_to_48": {
+      "speed": 55,
+      "distance": 50
+    },
+    "59_to_49": {
+      "speed": 55,
+      "distance": 50
+    },
+    "59_to_69": {
+      "speed": 55,
+      "distance": 50
+    },
+    "60_to_61": {
+      "speed": 55,
+      "distance": 50
+    },
+    "60_to_71": {
+      "speed": 55,
+      "distance": 50
+    },
+    "60_to_51": {
+      "speed": 55,
+      "distance": 50
+    },
+    "60_to_50": {
+      "speed": 55,
+      "distance": 50
+    },
+    "60_to_70": {
+      "speed": 55,
+      "distance": 50
+    },
+    "61_to_60": {
+      "speed": 55,
+      "distance": 50
+    },
+    "61_to_70": {
+      "speed": 55,
+      "distance": 50
+    },
+    "61_to_50": {
+      "speed": 55,
+      "distance": 50
+    },
+    "61_to_62": {
+      "speed": 55,
+      "distance": 50
+    },
+    "61_to_72": {
+      "speed": 55,
+      "distance": 50
+    },
+    "61_to_52": {
+      "speed": 55,
+      "distance": 50
+    },
+    "61_to_51": {
+      "speed": 55,
+      "distance": 50
+    },
+    "61_to_71": {
+      "speed": 55,
+      "distance": 50
+    },
+    "62_to_61": {
+      "speed": 55,
+      "distance": 50
+    },
+    "62_to_71": {
+      "speed": 55,
+      "distance": 50
+    },
+    "62_to_51": {
+      "speed": 55,
+      "distance": 50
+    },
+    "62_to_63": {
+      "speed": 55,
+      "distance": 50
+    },
+    "62_to_73": {
+      "speed": 55,
+      "distance": 50
+    },
+    "62_to_53": {
+      "speed": 55,
+      "distance": 50
+    },
+    "62_to_52": {
+      "speed": 55,
+      "distance": 50
+    },
+    "62_to_72": {
+      "speed": 55,
+      "distance": 50
+    },
+    "63_to_62": {
+      "speed": 55,
+      "distance": 50
+    },
+    "63_to_72": {
+      "speed": 55,
+      "distance": 50
+    },
+    "63_to_52": {
+      "speed": 55,
+      "distance": 50
+    },
+    "63_to_64": {
+      "speed": 55,
+      "distance": 50
+    },
+    "63_to_74": {
+      "speed": 55,
+      "distance": 50
+    },
+    "63_to_54": {
+      "speed": 55,
+      "distance": 50
+    },
+    "63_to_53": {
+      "speed": 55,
+      "distance": 50
+    },
+    "63_to_73": {
+      "speed": 55,
+      "distance": 50
+    },
+    "64_to_63": {
+      "speed": 55,
+      "distance": 50
+    },
+    "64_to_73": {
+      "speed": 55,
+      "distance": 50
+    },
+    "64_to_53": {
+      "speed": 55,
+      "distance": 50
+    },
+    "64_to_65": {
+      "speed": 55,
+      "distance": 50
+    },
+    "64_to_75": {
+      "speed": 55,
+      "distance": 50
+    },
+    "64_to_55": {
+      "speed": 55,
+      "distance": 50
+    },
+    "64_to_54": {
+      "speed": 55,
+      "distance": 50
+    },
+    "64_to_74": {
+      "speed": 55,
+      "distance": 50
+    },
+    "65_to_64": {
+      "speed": 55,
+      "distance": 50
+    },
+    "65_to_74": {
+      "speed": 55,
+      "distance": 50
+    },
+    "65_to_54": {
+      "speed": 55,
+      "distance": 50
+    },
+    "65_to_66": {
+      "speed": 55,
+      "distance": 50
+    },
+    "65_to_76": {
+      "speed": 55,
+      "distance": 50
+    },
+    "65_to_56": {
+      "speed": 55,
+      "distance": 50
+    },
+    "65_to_55": {
+      "speed": 55,
+      "distance": 50
+    },
+    "65_to_75": {
+      "speed": 55,
+      "distance": 50
+    },
+    "66_to_65": {
+      "speed": 55,
+      "distance": 50
+    },
+    "66_to_75": {
+      "speed": 55,
+      "distance": 50
+    },
+    "66_to_55": {
+      "speed": 55,
+      "distance": 50
+    },
+    "66_to_67": {
+      "speed": 55,
+      "distance": 50
+    },
+    "66_to_77": {
+      "speed": 55,
+      "distance": 50
+    },
+    "66_to_57": {
+      "speed": 55,
+      "distance": 50
+    },
+    "66_to_56": {
+      "speed": 55,
+      "distance": 50
+    },
+    "66_to_76": {
+      "speed": 55,
+      "distance": 50
+    },
+    "67_to_66": {
+      "speed": 55,
+      "distance": 50
+    },
+    "67_to_76": {
+      "speed": 55,
+      "distance": 50
+    },
+    "67_to_56": {
+      "speed": 55,
+      "distance": 50
+    },
+    "67_to_68": {
+      "speed": 55,
+      "distance": 50
+    },
+    "67_to_78": {
+      "speed": 55,
+      "distance": 50
+    },
+    "67_to_58": {
+      "speed": 55,
+      "distance": 50
+    },
+    "67_to_57": {
+      "speed": 55,
+      "distance": 50
+    },
+    "67_to_77": {
+      "speed": 55,
+      "distance": 50
+    },
+    "68_to_67": {
+      "speed": 55,
+      "distance": 50
+    },
+    "68_to_77": {
+      "speed": 55,
+      "distance": 50
+    },
+    "68_to_57": {
+      "speed": 55,
+      "distance": 50
+    },
+    "68_to_69": {
+      "speed": 55,
+      "distance": 50
+    },
+    "68_to_79": {
+      "speed": 55,
+      "distance": 50
+    },
+    "68_to_59": {
+      "speed": 55,
+      "distance": 50
+    },
+    "68_to_58": {
+      "speed": 55,
+      "distance": 50
+    },
+    "68_to_78": {
+      "speed": 55,
+      "distance": 50
+    },
+    "69_to_68": {
+      "speed": 55,
+      "distance": 50
+    },
+    "69_to_78": {
+      "speed": 55,
+      "distance": 50
+    },
+    "69_to_58": {
+      "speed": 55,
+      "distance": 50
+    },
+    "69_to_59": {
+      "speed": 55,
+      "distance": 50
+    },
+    "69_to_79": {
+      "speed": 55,
+      "distance": 50
+    },
+    "70_to_71": {
+      "speed": 55,
+      "distance": 50
+    },
+    "70_to_81": {
+      "speed": 55,
+      "distance": 50
+    },
+    "70_to_61": {
+      "speed": 55,
+      "distance": 50
+    },
+    "70_to_60": {
+      "speed": 55,
+      "distance": 50
+    },
+    "70_to_80": {
+      "speed": 55,
+      "distance": 50
+    },
+    "71_to_70": {
+      "speed": 55,
+      "distance": 50
+    },
+    "71_to_80": {
+      "speed": 55,
+      "distance": 50
+    },
+    "71_to_60": {
+      "speed": 55,
+      "distance": 50
+    },
+    "71_to_72": {
+      "speed": 55,
+      "distance": 50
+    },
+    "71_to_82": {
+      "speed": 55,
+      "distance": 50
+    },
+    "71_to_62": {
+      "speed": 55,
+      "distance": 50
+    },
+    "71_to_61": {
+      "speed": 55,
+      "distance": 50
+    },
+    "71_to_81": {
+      "speed": 55,
+      "distance": 50
+    },
+    "72_to_71": {
+      "speed": 55,
+      "distance": 50
+    },
+    "72_to_81": {
+      "speed": 55,
+      "distance": 50
+    },
+    "72_to_61": {
+      "speed": 55,
+      "distance": 50
+    },
+    "72_to_73": {
+      "speed": 55,
+      "distance": 50
+    },
+    "72_to_83": {
+      "speed": 55,
+      "distance": 50
+    },
+    "72_to_63": {
+      "speed": 55,
+      "distance": 50
+    },
+    "72_to_62": {
+      "speed": 55,
+      "distance": 50
+    },
+    "72_to_82": {
+      "speed": 55,
+      "distance": 50
+    },
+    "73_to_72": {
+      "speed": 55,
+      "distance": 50
+    },
+    "73_to_82": {
+      "speed": 55,
+      "distance": 50
+    },
+    "73_to_62": {
+      "speed": 55,
+      "distance": 50
+    },
+    "73_to_74": {
+      "speed": 55,
+      "distance": 50
+    },
+    "73_to_84": {
+      "speed": 55,
+      "distance": 50
+    },
+    "73_to_64": {
+      "speed": 55,
+      "distance": 50
+    },
+    "73_to_63": {
+      "speed": 55,
+      "distance": 50
+    },
+    "73_to_83": {
+      "speed": 55,
+      "distance": 50
+    },
+    "74_to_73": {
+      "speed": 55,
+      "distance": 50
+    },
+    "74_to_83": {
+      "speed": 55,
+      "distance": 50
+    },
+    "74_to_63": {
+      "speed": 55,
+      "distance": 50
+    },
+    "74_to_75": {
+      "speed": 55,
+      "distance": 50
+    },
+    "74_to_85": {
+      "speed": 55,
+      "distance": 50
+    },
+    "74_to_65": {
+      "speed": 55,
+      "distance": 50
+    },
+    "74_to_64": {
+      "speed": 55,
+      "distance": 50
+    },
+    "74_to_84": {
+      "speed": 55,
+      "distance": 50
+    },
+    "75_to_74": {
+      "speed": 55,
+      "distance": 50
+    },
+    "75_to_84": {
+      "speed": 55,
+      "distance": 50
+    },
+    "75_to_64": {
+      "speed": 55,
+      "distance": 50
+    },
+    "75_to_76": {
+      "speed": 55,
+      "distance": 50
+    },
+    "75_to_86": {
+      "speed": 55,
+      "distance": 50
+    },
+    "75_to_66": {
+      "speed": 55,
+      "distance": 50
+    },
+    "75_to_65": {
+      "speed": 55,
+      "distance": 50
+    },
+    "75_to_85": {
+      "speed": 55,
+      "distance": 50
+    },
+    "76_to_75": {
+      "speed": 55,
+      "distance": 50
+    },
+    "76_to_85": {
+      "speed": 55,
+      "distance": 50
+    },
+    "76_to_65": {
+      "speed": 55,
+      "distance": 50
+    },
+    "76_to_77": {
+      "speed": 55,
+      "distance": 50
+    },
+    "76_to_87": {
+      "speed": 55,
+      "distance": 50
+    },
+    "76_to_67": {
+      "speed": 55,
+      "distance": 50
+    },
+    "76_to_66": {
+      "speed": 55,
+      "distance": 50
+    },
+    "76_to_86": {
+      "speed": 55,
+      "distance": 50
+    },
+    "77_to_76": {
+      "speed": 55,
+      "distance": 50
+    },
+    "77_to_86": {
+      "speed": 55,
+      "distance": 50
+    },
+    "77_to_66": {
+      "speed": 55,
+      "distance": 50
+    },
+    "77_to_78": {
+      "speed": 55,
+      "distance": 50
+    },
+    "77_to_88": {
+      "speed": 55,
+      "distance": 50
+    },
+    "77_to_68": {
+      "speed": 55,
+      "distance": 50
+    },
+    "77_to_67": {
+      "speed": 55,
+      "distance": 50
+    },
+    "77_to_87": {
+      "speed": 55,
+      "distance": 50
+    },
+    "78_to_77": {
+      "speed": 55,
+      "distance": 50
+    },
+    "78_to_87": {
+      "speed": 55,
+      "distance": 50
+    },
+    "78_to_67": {
+      "speed": 55,
+      "distance": 50
+    },
+    "78_to_79": {
+      "speed": 55,
+      "distance": 50
+    },
+    "78_to_89": {
+      "speed": 55,
+      "distance": 50
+    },
+    "78_to_69": {
+      "speed": 55,
+      "distance": 50
+    },
+    "78_to_68": {
+      "speed": 55,
+      "distance": 50
+    },
+    "78_to_88": {
+      "speed": 55,
+      "distance": 50
+    },
+    "79_to_78": {
+      "speed": 55,
+      "distance": 50
+    },
+    "79_to_88": {
+      "speed": 55,
+      "distance": 50
+    },
+    "79_to_68": {
+      "speed": 55,
+      "distance": 50
+    },
+    "79_to_69": {
+      "speed": 55,
+      "distance": 50
+    },
+    "79_to_89": {
+      "speed": 55,
+      "distance": 50
+    },
+    "80_to_81": {
+      "speed": 55,
+      "distance": 50
+    },
+    "80_to_91": {
+      "speed": 55,
+      "distance": 50
+    },
+    "80_to_71": {
+      "speed": 55,
+      "distance": 50
+    },
+    "80_to_70": {
+      "speed": 55,
+      "distance": 50
+    },
+    "80_to_90": {
+      "speed": 55,
+      "distance": 50
+    },
+    "81_to_80": {
+      "speed": 55,
+      "distance": 50
+    },
+    "81_to_90": {
+      "speed": 55,
+      "distance": 50
+    },
+    "81_to_70": {
+      "speed": 55,
+      "distance": 50
+    },
+    "81_to_82": {
+      "speed": 55,
+      "distance": 50
+    },
+    "81_to_92": {
+      "speed": 55,
+      "distance": 50
+    },
+    "81_to_72": {
+      "speed": 55,
+      "distance": 50
+    },
+    "81_to_71": {
+      "speed": 55,
+      "distance": 50
+    },
+    "81_to_91": {
+      "speed": 55,
+      "distance": 50
+    },
+    "82_to_81": {
+      "speed": 55,
+      "distance": 50
+    },
+    "82_to_91": {
+      "speed": 55,
+      "distance": 50
+    },
+    "82_to_71": {
+      "speed": 55,
+      "distance": 50
+    },
+    "82_to_83": {
+      "speed": 55,
+      "distance": 50
+    },
+    "82_to_93": {
+      "speed": 55,
+      "distance": 50
+    },
+    "82_to_73": {
+      "speed": 55,
+      "distance": 50
+    },
+    "82_to_72": {
+      "speed": 55,
+      "distance": 50
+    },
+    "82_to_92": {
+      "speed": 55,
+      "distance": 50
+    },
+    "83_to_82": {
+      "speed": 55,
+      "distance": 50
+    },
+    "83_to_92": {
+      "speed": 55,
+      "distance": 50
+    },
+    "83_to_72": {
+      "speed": 55,
+      "distance": 50
+    },
+    "83_to_84": {
+      "speed": 55,
+      "distance": 50
+    },
+    "83_to_94": {
+      "speed": 55,
+      "distance": 50
+    },
+    "83_to_74": {
+      "speed": 55,
+      "distance": 50
+    },
+    "83_to_73": {
+      "speed": 55,
+      "distance": 50
+    },
+    "83_to_93": {
+      "speed": 55,
+      "distance": 50
+    },
+    "84_to_83": {
+      "speed": 55,
+      "distance": 50
+    },
+    "84_to_93": {
+      "speed": 55,
+      "distance": 50
+    },
+    "84_to_73": {
+      "speed": 55,
+      "distance": 50
+    },
+    "84_to_85": {
+      "speed": 55,
+      "distance": 50
+    },
+    "84_to_95": {
+      "speed": 55,
+      "distance": 50
+    },
+    "84_to_75": {
+      "speed": 55,
+      "distance": 50
+    },
+    "84_to_74": {
+      "speed": 55,
+      "distance": 50
+    },
+    "84_to_94": {
+      "speed": 55,
+      "distance": 50
+    },
+    "85_to_84": {
+      "speed": 55,
+      "distance": 50
+    },
+    "85_to_94": {
+      "speed": 55,
+      "distance": 50
+    },
+    "85_to_74": {
+      "speed": 55,
+      "distance": 50
+    },
+    "85_to_86": {
+      "speed": 55,
+      "distance": 50
+    },
+    "85_to_96": {
+      "speed": 55,
+      "distance": 50
+    },
+    "85_to_76": {
+      "speed": 55,
+      "distance": 50
+    },
+    "85_to_75": {
+      "speed": 55,
+      "distance": 50
+    },
+    "85_to_95": {
+      "speed": 55,
+      "distance": 50
+    },
+    "86_to_85": {
+      "speed": 55,
+      "distance": 50
+    },
+    "86_to_95": {
+      "speed": 55,
+      "distance": 50
+    },
+    "86_to_75": {
+      "speed": 55,
+      "distance": 50
+    },
+    "86_to_87": {
+      "speed": 55,
+      "distance": 50
+    },
+    "86_to_97": {
+      "speed": 55,
+      "distance": 50
+    },
+    "86_to_77": {
+      "speed": 55,
+      "distance": 50
+    },
+    "86_to_76": {
+      "speed": 55,
+      "distance": 50
+    },
+    "86_to_96": {
+      "speed": 55,
+      "distance": 50
+    },
+    "87_to_86": {
+      "speed": 55,
+      "distance": 50
+    },
+    "87_to_96": {
+      "speed": 55,
+      "distance": 50
+    },
+    "87_to_76": {
+      "speed": 55,
+      "distance": 50
+    },
+    "87_to_88": {
+      "speed": 55,
+      "distance": 50
+    },
+    "87_to_98": {
+      "speed": 55,
+      "distance": 50
+    },
+    "87_to_78": {
+      "speed": 55,
+      "distance": 50
+    },
+    "87_to_77": {
+      "speed": 55,
+      "distance": 50
+    },
+    "87_to_97": {
+      "speed": 55,
+      "distance": 50
+    },
+    "88_to_87": {
+      "speed": 55,
+      "distance": 50
+    },
+    "88_to_97": {
+      "speed": 55,
+      "distance": 50
+    },
+    "88_to_77": {
+      "speed": 55,
+      "distance": 50
+    },
+    "88_to_89": {
+      "speed": 55,
+      "distance": 50
+    },
+    "88_to_99": {
+      "speed": 55,
+      "distance": 50
+    },
+    "88_to_79": {
+      "speed": 55,
+      "distance": 50
+    },
+    "88_to_78": {
+      "speed": 55,
+      "distance": 50
+    },
+    "88_to_98": {
+      "speed": 55,
+      "distance": 50
+    },
+    "89_to_88": {
+      "speed": 55,
+      "distance": 50
+    },
+    "89_to_98": {
+      "speed": 55,
+      "distance": 50
+    },
+    "89_to_78": {
+      "speed": 55,
+      "distance": 50
+    },
+    "89_to_79": {
+      "speed": 55,
+      "distance": 50
+    },
+    "89_to_99": {
+      "speed": 55,
+      "distance": 50
+    },
+    "90_to_91": {
+      "speed": 55,
+      "distance": 50
+    },
+    "90_to_81": {
+      "speed": 55,
+      "distance": 50
+    },
+    "90_to_80": {
+      "speed": 55,
+      "distance": 50
+    },
+    "91_to_90": {
+      "speed": 55,
+      "distance": 50
+    },
+    "91_to_80": {
+      "speed": 55,
+      "distance": 50
+    },
+    "91_to_92": {
+      "speed": 55,
+      "distance": 50
+    },
+    "91_to_82": {
+      "speed": 55,
+      "distance": 50
+    },
+    "91_to_81": {
+      "speed": 55,
+      "distance": 50
+    },
+    "92_to_91": {
+      "speed": 55,
+      "distance": 50
+    },
+    "92_to_81": {
+      "speed": 55,
+      "distance": 50
+    },
+    "92_to_93": {
+      "speed": 55,
+      "distance": 50
+    },
+    "92_to_83": {
+      "speed": 55,
+      "distance": 50
+    },
+    "92_to_82": {
+      "speed": 55,
+      "distance": 50
+    },
+    "93_to_92": {
+      "speed": 55,
+      "distance": 50
+    },
+    "93_to_82": {
+      "speed": 55,
+      "distance": 50
+    },
+    "93_to_94": {
+      "speed": 55,
+      "distance": 50
+    },
+    "93_to_84": {
+      "speed": 55,
+      "distance": 50
+    },
+    "93_to_83": {
+      "speed": 55,
+      "distance": 50
+    },
+    "94_to_93": {
+      "speed": 55,
+      "distance": 50
+    },
+    "94_to_83": {
+      "speed": 55,
+      "distance": 50
+    },
+    "94_to_95": {
+      "speed": 55,
+      "distance": 50
+    },
+    "94_to_85": {
+      "speed": 55,
+      "distance": 50
+    },
+    "94_to_84": {
+      "speed": 55,
+      "distance": 50
+    },
+    "95_to_94": {
+      "speed": 55,
+      "distance": 50
+    },
+    "95_to_84": {
+      "speed": 55,
+      "distance": 50
+    },
+    "95_to_96": {
+      "speed": 55,
+      "distance": 50
+    },
+    "95_to_86": {
+      "speed": 55,
+      "distance": 50
+    },
+    "95_to_85": {
+      "speed": 55,
+      "distance": 50
+    },
+    "96_to_95": {
+      "speed": 55,
+      "distance": 50
+    },
+    "96_to_85": {
+      "speed": 55,
+      "distance": 50
+    },
+    "96_to_97": {
+      "speed": 55,
+      "distance": 50
+    },
+    "96_to_87": {
+      "speed": 55,
+      "distance": 50
+    },
+    "96_to_86": {
+      "speed": 55,
+      "distance": 50
+    },
+    "97_to_96": {
+      "speed": 55,
+      "distance": 50
+    },
+    "97_to_86": {
+      "speed": 55,
+      "distance": 50
+    },
+    "97_to_98": {
+      "speed": 55,
+      "distance": 50
+    },
+    "97_to_88": {
+      "speed": 55,
+      "distance": 50
+    },
+    "97_to_87": {
+      "speed": 55,
+      "distance": 50
+    },
+    "98_to_97": {
+      "speed": 55,
+      "distance": 50
+    },
+    "98_to_87": {
+      "speed": 55,
+      "distance": 50
+    },
+    "98_to_99": {
+      "speed": 55,
+      "distance": 50
+    },
+    "98_to_89": {
+      "speed": 55,
+      "distance": 50
+    },
+    "98_to_88": {
+      "speed": 55,
+      "distance": 50
+    },
+    "99_to_98": {
+      "speed": 55,
+      "distance": 50
+    },
+    "99_to_88": {
+      "speed": 55,
+      "distance": 50
+    },
+    "99_to_89": {
+      "speed": 55,
+      "distance": 50
+    }
+  }
+}
