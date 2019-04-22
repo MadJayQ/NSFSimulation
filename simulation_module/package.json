@@ -1,6 +1,8 @@
 {
     "main": "lib/binding.js",
-    "dependencies": {},
+    "dependencies": {
+        "threads": "^0.12.1"
+    },
     "scripts": {
         "pretest": "tsc",
         "test": "node --napi-modules ./test/test_binding.js",

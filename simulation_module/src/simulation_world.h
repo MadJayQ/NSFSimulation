@@ -28,10 +28,13 @@ class SimulationWorld
 {
 public:
     SimulationWorld(std::weak_ptr<SimulationSettings> settings);
-
     void SetCurrentMap(const std::string& map);
+    
     void InitializeParticipants(SimulationParticipantSettings* settings);
+    void RandomizeParticipants(int numParticipants);
     void RunSimulation(SimulationData* data);
+    void TraceParticipant(const std::string& name);
+    void UnTraceParticipant(const std::string& name);
 
 public:
     int width;

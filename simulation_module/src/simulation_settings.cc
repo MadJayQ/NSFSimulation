@@ -20,13 +20,11 @@ void SimulationSettings::LoadSettingsFile(const std::string& settingsPath)
         json settingsJson;
         jsonFile >> settingsJson;
         assert(jsonFile.good()); //Check sanity of input json file
-        auto parametersJson = READ_JSON_RET(settingsJson, parameters, nlohmann::json); //Rip parameters out
+        //auto parametersJson = READ_JSON_RET(settingsJson, parameters, nlohmann::json); //Rip parameters out
         auto mapsJson = READ_JSON_RET(settingsJson, maps, nlohmann::json);
-        parameters_ = std::make_unique<SimulationParameters>(parametersJson);
+        //parameters_ = std::make_unique<SimulationParameters>(parametersJson);
         maps_ = std::make_unique<SimulationMaps>(mapsJson);
-        READ_JSON(width, settingsJson, width, int);
-        READ_JSON(height, settingsJson, height, int);
-        std::cout << "Running simulation\nVersion:" << READ_JSON_RET(settingsJson, version, std::string) << "\nWidth: " << width << "\nHeight: " << height << std::endl;
+        std::cout << "Running simulation\nVersion:" << READ_JSON_RET(settingsJson, version, std::string) << std::endl;
     } catch (detail::parse_error error) {
         auto errorMsg = error.what();
         std::cout << errorMsg << std::endl;

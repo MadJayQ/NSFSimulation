@@ -1,0 +1,23 @@
+{
+    "metadata":
+    {
+        "name": "TestGrid",
+        "author": "Jake",
+        "rootDirectory": "F:\\Programming\\Work\\NSFSimulation\\maps\\testgrid",
+        "units":
+        {
+            "distance": "km",
+            "speed": "m/s"
+        },
+        "bucketSize": "42",
+        "binSize": "2"
+    },
+    "nodes":
+    {
+        "filePath": "junctions.json"
+    },
+    "edges":
+    {
+        "filePath": "edges.json"
+    }
+}

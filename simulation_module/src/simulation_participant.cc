@@ -1,8 +1,12 @@
 #include "simulation_participant.h"
 #include "simulation_map.h"
-
+#include "simulation_job.h"
 #include "simulation_data.h"
 #include "combinations.h"
+#include "models/simulation_behaviour.h"
+
+#include "simulation_common.hpp"
+
 
 #include <iostream>
 
@@ -33,131 +37,97 @@ SimulationParticipantSettings::SimulationParticipantSettings(const std::string &
     }
 }
 
+void SimulationParticipant::TeleportTo(SimulationNode* node, SimulationData* data)
+{
+    if(current_node_)
+    {
+        current_node_->ParticipantLeave(this);
+    }
+
+    node->ParticipantEnter(this);
+    current_node_ = node;
+
+    current_job_ = nullptr;
+}
+
 void SimulationParticipant::PreSimulationSetup()
 {
     isFinished_ = false; //
 }
 
-void SimulationParticipant::MoveTo(SimulationNode *dst)
+void SimulationParticipant::MoveTo(SimulationEdge *edge, SimulationData* data)
+{
+
+    JobFinishCallback cb = [this](SimulationJob* job, SimulationData* data) -> void
+    {
+        OnTraversalComplete(reinterpret_cast<TraversalJob*>(job), data);
+    };
+    current_job_.reset(
+        new TraversalJob(this, data, edge, cb)
+    );
+}
+
+
+
+
+void SimulationParticipant::OnTraversalComplete(TraversalJob *job, SimulationData *data)
 {
     if (current_node_)
     {
         current_node_->ParticipantLeave(this);
     }
+
+
+    auto dst = job->Destination();
     dst->ParticipantEnter(this);
     current_node_ = dst;
+
+    behaviour_->CalculateExpectedUtility(data, this); //Start a new job
 }
 
-struct probability_solver
+
+void SimulationParticipant::BeginTrace(SimulationParticipant* part)
 {
-    float cumulativeProbability;
-    std::vector<SimulationParticipant*>* allParticipantsMinusThis;
-    SimulationParticipant* thisCar;
-    float t;
-
-    bool operator()(std::vector<SimulationParticipant*>::const_iterator first, std::vector<SimulationParticipant*>::const_iterator last)
-    {
-        std::vector<SimulationParticipant*> A;
-        std::vector<SimulationParticipant*> ANot;
-        if (first != last)
-        {
-            A.push_back(*first);
-            for (++first; first != last; ++first)
-                A.push_back(*first);
-        }
-        for (auto participant : *allParticipantsMinusThis)
-        {
-            if (std::find(A.begin(), A.end(), participant) == A.end())
-            {
-                ANot.push_back(participant);
-            }
-        }
-
-        float tempProb = thisCar->SampleProbabilityCurve(t);
-        float tempNotProb = 1.f;
-        for(auto participant : A)
-        {
-            tempProb *= participant->SampleProbabilityCurve(t);
-        }
-        for(auto participant : ANot)
-        {
-            tempNotProb *= (1.f - participant->SampleProbabilityCurve(t));
-        }
-        cumulativeProbability += (tempProb * tempNotProb);
-        return false;
-    }
-};
-
-void
-SimulationParticipant::ParticipantThink(SimulationData *data)
+    std::cout << "Begining trace table for participant " << part->Name() << std::endl;
+    std::cout << center("edge", 15) << " | " << center("n", 15) << " | " << center("prob", 15) << " | " << center("reward", 15) << " | " << center("E(U)", 15) << "\n";
+}
+void SimulationParticipant::TraceEdgeIteration(SimulationEdge* edge, int n, float prob, float reward, float utility, bool finalItr)
 {
-    auto dstNode = current_node_->ShortestPath(destination_node_); //Default to closest path
-    auto graph = const_cast<SimulationGraph *>(current_node_->GetGraph());
-    auto allParticipants = graph->GetParticipants({});
-    auto allParticipantsMinusThis = graph->GetParticipants({this});
-    auto adjacencyList = current_node_->EdgeList;
-    auto N = allParticipants.size();
-    auto t = data->GetTime();        //Current simulation timestamp
-    SimulationNode* bestNode = nullptr;
-    float bestUtility = 0.f;
-    for (auto &node : adjacencyList) //Foreach adjacent node
+    auto edgeName = edge->Source()->Key() + "->" + edge->Destination()->Key();
+    if(finalItr)
     {
-        float expectedUtility = 0.f; //Our expected utility
-        for (int i = 1; i <= N; i++) //For i = 1 ... N
-        {
-            float utility = (float)i / powf((float)(*node)->GetBudget(), 2.f); //U(i) = i / R^2
-            float cumulativeProbability = 0.f;
-            if (i == 1) //If we're only calculating the utility for 1 car, it is our probability times the probability that no one else will be there
-            {
-                float p = this->SampleProbabilityCurve(t);
-                float cumulativeOtherProbability = 1.f;
-                for (auto participant : allParticipantsMinusThis)
-                {
-                    cumulativeOtherProbability *= (1.f - participant->SampleProbabilityCurve(t));
-                }
-                cumulativeProbability = p * cumulativeOtherProbability;
-            }
-            else if (i == N || i == N - 1) //If we're calculating the probability of all the cars being there, sample all of their probability curves
-            {
-                cumulativeProbability = 1.f;
-                for (auto participant : allParticipants)
-                {
-                    cumulativeProbability *= participant->SampleProbabilityCurve(t);
-                }
-            }
-            else //Use our super high time complexity algorithm
-            {
-                probability_solver prob;
-                prob.cumulativeProbability = 0.f;
-                prob.allParticipantsMinusThis = &allParticipantsMinusThis;
-                prob.thisCar = this;
-                prob.t = t;
-                for_each_combination(allParticipantsMinusThis.begin(), allParticipantsMinusThis.begin() + (i - 1), allParticipantsMinusThis.end(), prob);
-                cumulativeProbability = prob.cumulativeProbability;
-            }
-            expectedUtility += cumulativeProbability * utility;
-        }
-        if(expectedUtility > bestUtility)
-        {
-            bestUtility = expectedUtility;
-            bestNode = node->Destination();
-        }
+        edgeName += "*";
     }
-
-    if(bestNode != nullptr)
-    {
-        dstNode = bestNode;
-    }
-
-    data->RecordHop(this, std::make_pair(current_node_, dstNode));
-    MoveTo(dstNode);
+    std::cout << center(edgeName, 15) << " | " << prd((double)n, 0, 15) << " | " << prd(prob, 12, 15) << " | " << prd(reward, 0, 15) << " | " << prd(utility, 12, 15) << "\n";  
 }
 
-float SimulationParticipant::SampleProbabilityCurve(float t)
+void SimulationParticipant::EndTrace(SimulationParticipant* participant, SimulationEdge* bestEdge, float utility)
 {
-    //Sample our distribution at a random point
-    return s_dist(s_randomNoise);
+    auto edgeName = bestEdge->Source()->Key() + "->" + bestEdge->Destination()->Key();
+    std::cout << "Car " << participant->Name() << " is traversing along " << edgeName << std::endl; 
 }
+
+void SimulationParticipant::PreSimulationSetup(SimulationBehaviour* behaviour)
+{
+    behaviour_ = behaviour;
+    Capacity = 2500;
+}
+
+
+void SimulationParticipant::ParticipantThink(SimulationData *data)
+{
+    //Participants should always have a job, if they don't they are just being set up
+    //TODO(Jake): Also when a participant is done collecting they probably shouldn't have a job either
+    if (current_job_ == nullptr) //Initial setup
+    {
+        behaviour_->InitialTick(data, this);
+    }
+    else
+    {
+        current_job_->Process(data->GetDeltaTime());
+    }
+}
+
 
 void SimulationParticipant::ParticipantPostThink(SimulationData *data)
 {

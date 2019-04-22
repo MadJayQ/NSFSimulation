@@ -25,5 +25,13 @@ class SimulationSettings {
         return this._addonInstance;
     }
 }
+class SimulationData {
+    constructor() {
+        throw "No";
+    }
+    getHopCount(name) {
+        return this._addonInstance.getHopCount(name);
+    }
+}
 module.exports.SimulationModule = SimulationModule;
 module.exports.SimulationSettings = SimulationSettings;

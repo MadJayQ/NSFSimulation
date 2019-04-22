@@ -37,3 +37,8 @@ SimulationNode* SimulationNode::ShortestPath(const SimulationNode* dst)
 {
     return graph_->ShortestPath(const_cast<const SimulationNode*>(this), dst);
 }
+
+std::list<const SimulationNode*> SimulationNode::ShortestPathAsList(const SimulationNode* dst)
+{
+    return graph_->ShortestPathAsList(const_cast<const SimulationNode*>(this), dst);
+}

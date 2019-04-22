@@ -25,9 +25,13 @@ public:
     int GetHopCount(const std::string& name);
     float GetTime() { return _current_timestamp; }
     void ResetClock() { _current_timestamp = 0.f; }
-    void AdvanceClock(float dt) { _current_timestamp += dt; }
+    void AdvanceClock(float dt) { _delta_time = dt; _current_timestamp += dt; }
+    float GetDeltaTime() const { return _delta_time; }
     float CurrentTime() const { return _current_timestamp; }
+    int GetHops();
+    float GetCoverage(int totalNodes);
 private:
     std::unordered_map<std::string, std::vector<SimulationHop>> hop_data_;
     float _current_timestamp;
+    float _delta_time;
 };
