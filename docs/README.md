@@ -6,6 +6,9 @@ Crowdsourcing is a computational paradigm to leverage the power of crowds by out
 
 The resulting information of the proposed incentive mechanism may be leveraged by people and other rational participants such as autonomous vehicles to better plan their daily activities. For example, individuals can avoid environmental conditions that represent a risk for their health or change their daily commute to produce the lowest stress level. Other potential applications include autonomous vehicle scheduling and navigation, smart robots navigation and smart utilization of transportation resources. The proposed project will facilitate and encourage interdisciplinary collaboration among the disciplines of computer science, transportation engineering and environmental science. Specifically, interdisciplinary courses and laboratories will be developed while employing peer-to-peer Web technology, such as Wiki pages, to facilitate instant and direct access to ideas and data related to the project.
 
+**Meet the team**
+![Screenshot](the_team_edited.jpg)
+
 **About**
 
 This is a simulation software for the [NSF Project](https://nsf.gov/awardsearch/showAward?AWD_ID=1739409&HistoricalAwards=false) on Mobile Crowdsourcing by Luis. G Jaimes at Florida Polytechnic University
