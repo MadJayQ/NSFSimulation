@@ -67,50 +67,66 @@ With NodeJS compile the NodeJS binary with [node-gyp](https://github.com/nodejs/
 Instead of premake5.lua for NodeJS the binding is specified in binding.gyp
 
 ## Map layout
-To demonstrate a basic map layout, a simple map structure of a 3-node directed graph is presented with the following node layout
-```
-    0->1->2
-    
-    Distance from 0 to 1: 50km, Average speed: 45km/hr, Speed Deviation: 3.5km/hr
-    Distance from 1 to 2: 43km  Average speed: 30km/hr, Speed Deviation: 5km/hr
-```
+The simulation software utilizes a preset map JSON configuration to detail the structure of the map data structures. Three separate files are utilzied to define the map layout.
 
-in JSON
+
 ```
 {
     "metadata":
     {
-        "name": "Test"
-        "author": "Jake"
-        "units":
-        {
-            "distance": "km",
-            "speed": "km/hr"
-        }
+        "name": "TestGrid",
+        "author": "Jake",
+        "rootDirectory": "F:\\Programming\\Work\\NSFSimulation\\maps\\testgrid",
+        "gridWidth":500
+        "gridHeight":500
     },
     "nodes":
     {
-        "0":{}
-        "1":{}
-        "2":{}
+        "filePath": "junctions.json"
     },
     "edges":
     {
-        "0_to_1":
-        {
-            "distance": 50.0,
-            "avgSpeed": 45.0,
-            "speedDev": 3.5
-        },
-        "1_to_2":
-        {
-            "distance": 43.0,
-            "avgSpeed": 30.0,
-            "speedDev": 5.0
-        }
+        "filePath": "edges.json"
     }
 }
 ```
+
+edges.json contains all of the edges, the key of the source node, and the key of the destination node. Speed and distance are overrided by the simulation and are just placeholders. 
+```
+{
+  "1586": {
+    "from": "21",
+    "to": "22",
+    "speed": 55,
+    "distance": 50
+  },
+  ...
+  .....
+  .......
+  "e188": {
+    "from": "24",
+    "to": "19",
+    "speed": 55,
+    "distance": 50
+  }
+}
+```
+
+junctions.json contains all of the nodes, and an associated budget, the value you place in here is overrided by the simulation and is just a placeholder
+```
+{
+    "0": {
+        "budget": "200"
+    },
+    ...
+    ....
+    ......
+    "24": {
+        "budget":"190"
+    }
+}
+```
+
 
 ## To Use
 
