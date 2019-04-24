@@ -69,6 +69,8 @@ Instead of premake5.lua for NodeJS the binding is specified in binding.gyp
 ## Map layout
 The simulation software utilizes a preset map JSON configuration to detail the structure of the map data structures. Three separate files are utilzied to define the map layout.
 
+**<mapname>.json**
+
 
 ```
 {
@@ -91,7 +93,7 @@ The simulation software utilizes a preset map JSON configuration to detail the s
 }
 ```
 
-edges.json contains all of the edges, the key of the source node, and the key of the destination node. Speed and distance are overrided by the simulation and are just placeholders. 
+**edges.json** contains all of the edges, the key of the source node, and the key of the destination node. Speed and distance are overrided by the simulation and are just placeholders. 
 ```
 {
   "1586": {
@@ -112,7 +114,7 @@ edges.json contains all of the edges, the key of the source node, and the key of
 }
 ```
 
-junctions.json contains all of the nodes, and an associated budget, the value you place in here is overrided by the simulation and is just a placeholder
+**junctions.json** contains all of the nodes, and an associated budget, the value you place in here is overrided by the simulation and is just a placeholder
 ```
 {
     "0": {
