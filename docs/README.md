@@ -69,7 +69,7 @@ Instead of premake5.lua for NodeJS the binding is specified in binding.gyp
 ## Map layout
 The simulation software utilizes a preset map JSON configuration to detail the structure of the map data structures. Three separate files are utilzied to define the map layout.
 
-**<mapname>.json**
+**mapname.json**
 
 
 ```
