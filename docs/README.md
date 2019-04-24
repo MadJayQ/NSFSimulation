@@ -129,6 +129,21 @@ The simulation software utilizes a preset map JSON configuration to detail the s
 }
 ```
 
+**car_trace_data.json** contains all of the car trace data across the simulation
+
+```
+{
+    "0": {
+        "trajectory":[0, 1, 3, 5] //List of cells the car traveled through over time
+    }   
+    ...
+    ....
+    .....
+    "100": {
+        "trajectory":[50, 57, 58, 59]
+    }
+}
+```
 
 ## To Use
 
