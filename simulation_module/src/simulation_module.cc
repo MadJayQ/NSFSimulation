@@ -22,12 +22,12 @@ void SimulationModule::Initialize(const std::string &path)
     Settings->LoadSettingsFile(path);
     World = std::make_unique<SimulationWorld>(
         std::weak_ptr<SimulationSettings>(Settings));
-    World->SetCurrentMap("testgrid");
+    World->SetCurrentMap("colognetest");
     auto initEnd = TimestampMS();
     std::cout << "Simulation setup took: " << (initEnd - initiStart) << " ms(real-time)" << std::endl;
     World->InitializeParticipants(
         std::make_unique<SimulationParticipantSettings>(
-            "F:\\Programming\\Work\\NSFSimulation\\Participants.json"
+            "C:\\Users\\jakei_000\\Desktop\\NSFSimulation\\Participants.json"
         ).get()
 
     );

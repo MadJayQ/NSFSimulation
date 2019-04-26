@@ -7,91 +7,142 @@
 #include <iostream>
 #include <limits>
 #include <random>
+#include <functional>
 
 std::list<const SimulationNode *> GetShortestPath(const SimulationNode *node, const std::unordered_map<std::string, const SimulationNode *> &previous);
 std::random_device rd;
 std::mt19937 e2(rd());
 std::uniform_int_distribution<> dist(300, 500);
 
+using ParsedJsonObject = std::pair<std::string, nlohmann::json::object_t>;
+using JsonParsingCallback = std::function<void(ParsedJsonObject)>;
+
+void ParseJsonFile(const std::string &filePath, JsonParsingCallback cb)
+{
+    auto x = [&](int depth, nlohmann::json::parse_event_t event, nlohmann::json &parsed) -> bool {
+        static int state = 0; //Reading file
+        static std::string currentObject;
+        if (event == nlohmann::json::parse_event_t::object_start)
+        {
+            if (state == 0)
+            {
+                state = 1;
+            }
+            if (state == 2)
+            {
+                state = 3; //Reading object
+            }
+        }
+        if (event == nlohmann::json::parse_event_t::key)
+        {
+            if (state == 1)
+            {
+                //Reading object
+                state = 2;
+                currentObject = parsed.get<std::string>();
+            }
+        }
+        if (event == nlohmann::json::parse_event_t::object_end)
+        {
+            if (state == 3)
+            {
+                ParsedJsonObject object = std::make_pair(currentObject, parsed.get<nlohmann::json::object_t>());
+                cb(object);
+                state = 1;
+                return false;
+            }
+        }
+        return true;
+    };
+    std::ifstream f(filePath);
+    nlohmann::json::parse(f, x);
+}
+
 SimulationGraph::SimulationGraph(const std::string &mapJsonFile)
 {
-    auto graphJson = ReadJsonFile(mapJsonFile);
-    auto nodesJson = READ_JSON_RET(graphJson, nodes, nlohmann::json);
+    nodes_ = NodeMap();                                               //Initialize node map
+    auto graphJson = ReadJsonFile(mapJsonFile);                       //Read in JSON data file
+    auto nodesJson = READ_JSON_RET(graphJson, nodes, nlohmann::json); //Read in nodes subsection
+    std::cout << "Parsing nodes...";
+    auto startMS = TimestampMS();
     if (nodesJson.find("filePath") != nodesJson.end())
     {
         auto metadata = READ_JSON_RET(graphJson, metadata, nlohmann::json);
         auto rootDirectory = READ_JSON_RET(metadata, rootDirectory, std::string);
-        nodesJson = ReadJsonFile(rootDirectory + "\\" + READ_JSON_RET(nodesJson, filePath, std::string));
+        auto fullPath = rootDirectory + "\\" + READ_JSON_RET(nodesJson, filePath, std::string); //Grab path to nodes
+        //nodesJson = ReadJsonFile(fullPath);
+        auto graph = this;
+        //Parse sequentially
+        ParseJsonFile(fullPath, [&](ParsedJsonObject obj) -> void {
+            auto key = obj.first;
+            try
+            {
+                if (!HasNode(key))
+                {
+                    nodes_[key] = std::make_unique<SimulationNode>(key, graph);
+                    if (obj.second.find("budget") != obj.second.end())
+                    {
+                        nodes_[key]->SetBudget(
+                            std::stoi(obj.second["budget"].get<std::string>()));
+                    }
+                    else
+                    {
+                        nodes_[key]->SetBudget(dist(e2));
+                    }
+                }
+            }
+            catch (std::invalid_argument e)
+            {
+                return;
+            }
+        });
     }
+    auto itr = nodes_.begin(), itrEnd = nodes_.end();
+    for (unsigned i = 0; itr != itrEnd; ++itr, ++i)
+    {
+        lut_[i] = itr;
+    }
+    std::cout << " took " << (TimestampMS() - startMS) << "(ms)." << std::endl;
+    std::cout << "Parsing edges...";
+    startMS = TimestampMS();
     auto edgesJson = READ_JSON_RET(graphJson, edges, nlohmann::json);
     if (edgesJson.find("filePath") != edgesJson.end())
     {
         auto metadata = READ_JSON_RET(graphJson, metadata, nlohmann::json);
         auto rootDirectory = READ_JSON_RET(metadata, rootDirectory, std::string);
-        edgesJson = ReadJsonFile(rootDirectory + "\\" + READ_JSON_RET(edgesJson, filePath, std::string));
-    }
-    nodes_ = NodeMap();
-    for (auto itr = nodesJson.begin(); itr != nodesJson.end(); ++itr)
-    {
-        try
-        {
-            auto key = itr.key();
-            if (!HasNode(key))
+        auto fullPath = rootDirectory + "\\" + READ_JSON_RET(edgesJson, filePath, std::string);
+        std::cout << "Reading: " << fullPath << "...";
+        auto startMS = TimestampMS();
+        ParseJsonFile(fullPath, [&](ParsedJsonObject obj) -> void {
+            try
             {
-                nodes_[key] = std::make_unique<SimulationNode>(key, this); //Create our new node
-                if (itr->find("budget") != itr->end())
+                auto edge = obj.second;                                                       //Read our edge
+                std::string edgeName = obj.first;                                             //Our edge name
+                std::pair<SimulationNode *, SimulationNode *> edgeNodes = {nullptr, nullptr}; //The nodes our edge will occupy
+                auto from = edge["from"].get<std::string>();
+                auto to = edge["to"].get<std::string>();
+                edgeNodes.first = GetNode(from); //Source node
+                edgeNodes.second = GetNode(to);  //Destination node
+                //Construct edge parameters, default to 50 and 55 with dev 8 for now
+                auto pdf = std::vector<double>();
+                if (edge.find("pdf") != edge.end())
                 {
-                    auto json = *itr;
-                    auto budget = READ_JSON_RET((*itr), budget, std::string);
-                    nodes_[key]->SetBudget(std::stoi(budget));
+                    pdf = edge["pdf"].get<std::vector<double>>();
                 }
-                else
-                {
-
-                    nodes_[key]->SetBudget(dist(e2));
-                }
+                EdgeConstructData params(
+                    (edge.find("distance") != edge.end()) ? edge["distance"].get<float>() : 50,
+                    ProbabilityDensityFunction(
+                        pdf));
+                params.distance = 50.f;
+                ConstructEdge(edgeName, edgeNodes, &params);
             }
-        }
-        catch (std::invalid_argument e)
-        {
-            continue;
-        }
-    }
-    auto itr = nodes_.begin(), itrEnd = nodes_.end();
-    for(unsigned i = 0; itr != itrEnd; ++itr, ++i)
-    {
-        lut_[i] = itr;
-    } 
-    for (auto itr = edgesJson.begin(); itr != edgesJson.end(); ++itr)
-    {
-        try
-        {
-            auto edge = (*itr).get<nlohmann::json>();                                     //Read our edge
-            std::string edgeName = itr.key();                                             //Our edge name
-            std::pair<SimulationNode *, SimulationNode *> edgeNodes = {nullptr, nullptr}; //The nodes our edge will occupy
-            auto from = edge["from"].get<std::string>();
-            auto to = edge["to"].get<std::string>();
-            edgeNodes.first = GetNode(from); //Source node
-            edgeNodes.second = GetNode(to);          //Destination node
-            //Construct edge parameters, default to 50 and 55 with dev 8 for now
-            auto pdf = std::vector<double>();
-            if(edge.find("pdf") != edge.end())
+            catch (std::invalid_argument e)
             {
-                pdf = edge["pdf"].get<std::vector<double>>();
+                return;
             }
-            EdgeConstructData params(
-                (edge.find("distance") != edge.end()) ? edge["distance"].get<float>() : 50, 
-                ProbabilityDensityFunction(
-                    pdf
-                ));
-            params.distance = 50.f;
-            ConstructEdge(edgeName, edgeNodes, &params);
-        }
-        catch (std::invalid_argument e)
-        {
-            continue;
-        }
+        });
     }
+    std::cout << " took " << (TimestampMS() - startMS) << "(ms)." << std::endl;
     std::cout << nodes_.size() << " nodes have been parsed." << std::endl;
 }
 
@@ -278,14 +329,13 @@ void SimulationGraph::ConstructEdge(const std::string &name, std::pair<Simulatio
     pair.first->EdgeList.push_back(edges_[name].get());
 }
 
-
 /*
     RandomNode - 
     Randomly select a node uniformly from the map
 */
-SimulationNode* SimulationGraph::RandomNode()
+SimulationNode *SimulationGraph::RandomNode()
 {
     auto distribution = std::uniform_int_distribution<int>(0, lut_.size());
     auto generator = std::default_random_engine();
-    return lut_[distribution(generator)]->second.get(); 
+    return lut_[distribution(generator)]->second.get();
 }
